@@ -3,12 +3,14 @@
 /**
  * Module dependencies.
  */
-
-import app from '../app';
-import deb from 'debug';
 import http from 'http';
-const debug = deb('appiontment-booking-api:server')
+import deb from 'debug';
 
+
+import app from '../app.js';
+const debug = deb('appiontment-booking-api:server')
+import logger from '../utils/logger.js';
+import { connectToDb, initialzeDbSchema } from '../config/db.js';
 /**
  * Get port from environment and store in Express.
  */
@@ -50,6 +52,40 @@ function normalizePort(val) {
   return false;
 }
 
+
+const signals = {
+  'SIGHUP': 1,
+  'SIGINT': 2,
+  'SIGTERM': 15
+};
+
+let shuttingDown = false;
+
+const shutdown = (signal, value) => {
+  if (shuttingDown) {
+    logger.info(`Already shutting down. Received ${signal} again`);
+    return;
+  }
+  shuttingDown = true
+  logger.info(`Received ${signal}. Shutting down gracefully`)
+  server.close((err) => {
+    if (err) {
+      logger.error("Error closing server", err)
+      process.exit(1)
+    } else {
+      logger.info('server closed. Exiting the process.')
+      process.exit(0)
+    }
+  })
+}
+
+Object.keys(signals).forEach((signal) => {
+  process.on(signal, () => {
+    logger.info(`Recieved ${signal}`)
+    shutdown(signal, signals[signal])
+  })
+})
+
 /**
  * Event listener for HTTP server "error" event.
  */
@@ -89,3 +125,21 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
+const startServer = async () => {
+  try {
+    logger.info(`Attempting to Start server on port ${port}`)
+    await connectToDb()
+    await initialzeDbSchema()
+    logger.info(`Starting server on port ${port}`)
+    server.listen(port);
+    server.on('error', onError);
+    server.on('listening', onListening);
+  } catch (error) {
+    logger.error('Failed during server startup process: ', error)
+    process.exit(1)
+  }
+}
+
+startServer()
