@@ -40,7 +40,7 @@ const initialzeDbSchema = async () => {
     logger.info("Initializing database schema...");
     await client.query("CREATE EXTENSION IF NOT EXISTS pgcrypto");
 
-    // 1) Client table
+
     await client.query(`
       CREATE TABLE IF NOT EXISTS client (
         clientId         UUID    PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -48,17 +48,18 @@ const initialzeDbSchema = async () => {
         last_name        VARCHAR(50)  NOT NULL,
         email            VARCHAR(255) UNIQUE NOT NULL,
         password         VARCHAR(255) NOT NULL,
+        confirmPassword VARCHAR(255) NOT NULL,
         profile_image_url VARCHAR(255)
       );
     `);
     logger.info("client table has been created");
 
-    // 2) Service provider table
     await client.query(`
       CREATE TABLE IF NOT EXISTS service_provider (
         spId              UUID    PRIMARY KEY DEFAULT gen_random_uuid(),
         email             VARCHAR(255) UNIQUE NOT NULL,
         password          VARCHAR(255) NOT NULL,
+        confirmPassword VARCHAR(255) NOT NULL,
         profile_image_url VARCHAR(255),
         profession        VARCHAR(50)  NOT NULL,
         description       VARCHAR(255) NOT NULL,
@@ -67,19 +68,17 @@ const initialzeDbSchema = async () => {
     `);
     logger.info("service_provider table has been created");
 
-    // 3) Timeslot table
     await client.query(`
       CREATE TABLE IF NOT EXISTS timeslot (
         id          UUID    PRIMARY KEY DEFAULT gen_random_uuid(),
+        spId        UUID    NOT NULL DEFAULT gen_random_uuid(),
         workingDays VARCHAR(50) NOT NULL,
         workingTime VARCHAR(50) NOT NULL,
-        spId        UUID    NOT NULL DEFAULT gen_random_uuid(),
         FOREIGN KEY (spId) REFERENCES service_provider(spId)
       );
     `);
     logger.info("timeslot table has been created");
 
-    // 4) Appointment table
     await client.query(`
       CREATE TABLE IF NOT EXISTS appointment (
         id        UUID PRIMARY KEY DEFAULT gen_random_uuid(),

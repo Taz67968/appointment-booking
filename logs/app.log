@@ -81,3 +81,1702 @@
 {"level":"info","message":"appointment table has been created","timestamp":"2025-04-24 22:13:43"}
 {"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-24 22:13:43"}
 {"level":"info","message":"Recieved SIGINT","timestamp":"2025-04-25 12:17:29"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:05:04"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:19:13"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:19:13"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:19:13"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:19:13"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:19:13"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:19:13"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:19:13"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:20:05"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:20:05"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:20:05"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:20:05"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:20:05"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:20:05"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:20:22"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:20:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:20:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:20:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:20:22"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:20:22"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:20:22"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:20:24"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:20:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:20:24"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:20:24"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:20:24"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:20:24"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:20:24"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:20:26"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:20:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:20:26"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:20:26"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:20:26"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:20:26"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:20:26"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:13"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:13"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:13"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:13"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:13"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:13"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:13"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:19"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:19"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:19"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:19"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:19"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:19"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:19"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:40"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:40"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:40"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:40"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:40"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:40"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:40"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:42"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:42"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:42"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:42"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:42"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:42"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:42"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:45"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:45"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:45"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:45"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:45"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:45"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:45"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:47"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:47"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:47"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:47"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:47"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:47"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:49"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:49"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:49"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:49"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:49"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:49"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:49"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:54"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:54"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:54"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:54"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:54"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:54"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:54"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:26:56"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:26:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:26:56"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:26:56"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:26:56"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:26:56"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:26:56"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:27:01"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:27:01"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:27:01"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:27:01"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:27:01"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:27:01"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:27:01"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:27:03"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:27:03"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:27:03"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:27:03"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:27:03"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:27:03"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:27:03"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:27:06"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:27:06"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:27:06"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:27:06"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:27:06"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:27:06"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:27:06"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:27:59"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:28:02"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:45:14"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:45:19"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:45:24"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:15"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:18"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:21"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:27"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:31"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:33"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:37"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:42"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:45"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:46:46"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 13:56:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:23:36"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:23:41"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:06"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:09"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:10"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:19"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:19"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:19"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:19"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:19"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:20"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:20"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:20"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:20"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:20"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:29"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:35"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:38"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:39"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:39"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:40"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:42"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:44"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:54"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:24:56"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:25:44"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:25:45"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:25:48"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:25:56"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:25:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:25:56"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:25:56"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:25:56"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:25:57"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:25:57"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:25:57"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:25:57"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:25:57"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:25:58"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:25:59"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:08"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:14"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:16"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:16"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:17"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:23"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:39"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:48"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:50"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:26:54"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:04"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:04"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:05"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:09"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:12"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:14"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:17"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:33"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:36"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:27:40"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:28:45"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:28:47"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:28:50"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:29:21"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:29:27"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:29:29"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:01"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:02"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:05"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:05"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:06"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:08"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:10"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:15"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:21"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:22"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:32"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:34"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:39"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:42"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:51"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:55"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:58"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:30:59"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:14"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:19"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:24"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:27"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:34"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:36"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:42"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:47"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:31:49"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:11"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:15"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:20"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:22"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:23"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:24"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:26"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:28"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:29"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:32"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:35"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:45"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:45"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:46"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:32:47"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:37:24"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:37:27"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:37:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:49:16"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:49:20"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:49:22"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:49:23"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:19"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:26"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:31"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:37"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:40"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:44"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:46"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:50:48"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:00"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:20"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:21"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:22"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:35"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:40"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:41"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:43"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:44"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:49"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:52"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:51:55"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:52:44"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:52:49"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:52:51"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:00"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:07"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:11"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:15"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:22"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:24"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:27"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:27"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:28"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:31"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:41"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:43"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:47"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:50"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:52"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:54"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:56"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:53:58"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:00"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:04"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:04"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:04"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:04"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:04"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:05"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:05"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:05"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:05"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:05"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:09"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:11"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:15"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:19"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:22"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:28"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:54:31"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:56:09"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:56:11"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:56:13"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-25 14:56:35"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2025-04-25 14:57:42"}
