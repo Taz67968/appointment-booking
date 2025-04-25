@@ -62,3 +62,22 @@
 {"level":"info","message":"service_provider table has been created","timestamp":"2025-04-24 17:23:45"}
 {"level":"info","message":"timeslot table has been created","timestamp":"2025-04-24 17:23:45"}
 {"level":"info","message":"appointment table has been created","timestamp":"2025-04-24 17:23:45"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-24 22:12:08"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"Attempting to Start server on port 4000","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"client table has been created","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"service_provider table has been created","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"timeslot table has been created","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"appointment table has been created","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"Starting server on port 4000","timestamp":"2025-04-24 22:13:43"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2025-04-25 12:17:29"}
