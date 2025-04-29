@@ -55,7 +55,7 @@ if (process.env.NODE_ENV !== "production") {
 
 logger.stream = {
     write:(message) => {
-        logger.info(message.substring(0, message.lasIndex("\n")))
+        logger.info(message.substring(0, message.lastIndexOf("\n")))
     }
 }
 

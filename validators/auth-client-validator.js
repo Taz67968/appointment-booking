@@ -15,3 +15,17 @@ export const validate = (req, res, next) => {
   }
   next();
 };
+
+const loginSchema = Joi.object({
+  email: Joi.string().email({ maxDomainSegments: 2 }).required(),
+  password: Joi.string().required(),
+})
+
+
+export const loginValidator = (req, res, next) => {
+  const { error } = loginSchema.validate(req.body);
+  if (error) {
+    return res.status(400).json({ message: error.details[0].message });
+  }
+  next();
+}
