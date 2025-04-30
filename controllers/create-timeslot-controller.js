@@ -1,122 +1,97 @@
-import {query} from "../config/db.js"
-import logger from "../utils/logger.js"
-
-
-
-export async function deleteTimeslot(req,res, next) {
-    const timeslotId = req.params.id
-    const userId = req.user.id
-
-
+import { query } from "../config/db.js";
+import logger from '../utils/logger.js'
+export async function createTimeslotHandler(req,res,next) {
+    const {workingDays, workingTime} = req.body
+    const providerId = req.user.id
     try {
-        const deleteTimeslotQuery = `DELETE FROM timeslot WHERE id = $1 AND spId = $2 AND workingDays = $3 AND workingTime = $4 RETURNING id`
-        const result = await query(deleteTimeslotQuery, [timeslotId, userId])
-
-
-        if (result.rows.length === 0) {
-            logger.warn(`Delete failed: Timeslot not found or access denied for timeslot ID ${timeslotId}, user ID ${userId}`)
-            const checkTimeslotExistenceQuery = 'SELECT id FROM timeslot WHERE id = $1'
-            const checkResult = await query (checkTimeslotExistenceQuery, [timeslotId])
-            if (checkResult.rows.length === 0) {
-                return res.status(404).json({message: "Timeslot does not exist"})
-            }else{
-                return res.status(403).json({message: "You don't have permission to delete this task"})
-            }            
-        }
-        logger.info(`Timeslot ${timeslotId} deleted Successfully by user ${userId}`)
-        return res.status(204).json({ message: "Timslot deleted Successfully"})
+        const insertTimeSlot =`INSERT INTO timeslot (owner_id, workingDays, workingTime)
+                               VALUES ($1,$2,$3) RETURNING *;
+                               `;
+    
+    const result = await query(insertTimeSlot, [providerId,workingDays, workingTime])
+    const newTimeSlot = result.rows[0]
+    logger.info(`successfully created timeslot ${newTimeSlot.id} by ${providerId}`)
+    return res.status(201).json(newTimeSlot)
     } catch (error) {
-        logger.error(`Error Deleting timslot ${timeslotId} for user ${userId} : `, error)
-        return res.status(error.status || 500).json({message: error.message || "Server error while delete the timslot"})
+        logger.error(`Error creating time slot for ${providerId}:`, error)
+        return res.status(500).json({message: error.message || 'server error while creating time slot'})
     }
 }
-
-
-export async function updateTimeslot(req, res, next) {
-    const timeslotId = req.params.id
-    const userId = req.user.id
-    const { workingDays, workingTime } = req.body
-  
+export async function getAllTimeslots(req,res,next) {
+    const providerId=req.user.id
     try {
-  
-      const updateTimeslotQuery = `
-                              UPDATE tasks SET workingDays= $1, workingTime= $2
-                              WHERE id=$3 AND spId=$4
-                              RETURNING *
-                              `
-      const result = await query(updateTimeslotQuery, [workingDays, workingTime,timeslotId, userId])
-  
-      if (result.rows.length === 0) {
-        logger.warn(`Update failed: Timeslot not found or access denied for task ID ${timeslotId}, user ID ${userId}`)
-        const checkTimeslotExistenceQuery = 'SELECT id FROM tasks WHERE id = $1'
-        const checkResult = await query(checkTimeslotExistenceQuery, [timeslotId])
-        if (checkResult.rows.length === 0) {
-          return res.status(404).json({ message: "Task does not exist" })
-        } else {
-          return res.status(403).json({ message: "You do not have permission to update this task" })
+        const getslot = `SELECT id,workingDays, workingTime FROM timeslot WHERE owner_id = $1
+                        `;
+        const newResult= await query(getslot,[providerId])
+        logger.debug(`fetched ${newResult.rows.length} time slot for provider:${providerId}`)
+        return res.status(200).json(newResult.rows)
+    } catch (error) {
+        logger.error(`failed to get time slot for provider: ${providerId}`)
+        return res.status(500).json({message: error.message|| 'server error while fetching time slot '})
+    }
+}
+export async function  getTimslotById(req,res,next) {
+    const slotId = req.params.id
+    const providerId = req.user.id
+    try {
+        const getslotId = `SELECT id, workingDays, workingTime FROM timeslot WHERE
+                            id = $1 AND owner_id = $2`;
+        const result = await query(getslotId,[slotId, providerId])
+        if(result.rows.length === 0){
+            logger.warn(`slot not found or access denied to task ${slotId}, provider id ${providerId}`)
+            return res.status(404).json({message: `task not found or access denied for ${slotId} with provider id:${providerId}`})
         }
-      }
-  
-      logger.info(`Timeslot ${timeslotId} updated Successfully by user ${userId}`)
-      return res.json(result.rows[0])
+        logger.debug(`fetched ${slotId} for ${providerId}`)
+        return res.json(result.rows[0])
     } catch (error) {
-      logger.error(`Error Updating task ${timeslotId} for user ${userId} : `, error)
-      return res.status(error.status || 500).json({ message: error.message || "Server error while update the task" })
+       logger.error(`error while fetchin time slot${slotId}`)
+       return res.status(500).json({message: error.message || `server error occured while fetching time slot ${slotId}`})
     }
-  }
-  
-  export async function getTimslotById(req, res, next) {
-    const timeslotId = req.params.id
-    const userId = req.user.id
-  
+}
+export  async function updateTimeslot(req,res,next) {
+    const slotId = req.params.id
+    const providerId = req.user.id
+    const {workingDays, workingTime} = req.body
     try {
-      const getTaskQuery = `SELECT * FROM tasks WHERE id = $1 AND owner_id = $2`
-      const result = await query(getTaskQuery, [timeslotId, userId])
-  
-      if (result.rows.length === 0) {
-        logger.warn(`Task not found or access denied for task ID ${timeslotId}, user ID ${userId}`)
-        return res.status(404).json({ message: "Task not found or you do not have permission to view it" })
-      }
-  
-      logger.debug(`Fetched task ${timeslotId} for user ${userId}`)
-      return res.json(result.rows[0])
+        const updateslot = `UPDATE timeslot SET workingDays = $1, workingTime=$2 WHERE id = $3 AND owner_id = $4 RETURNING *`;
+        const result = await query(updateslot,[workingDays, workingTime,slotId,providerId])
+        if(result.rows.length === 0){
+            logger.warn(`update failed:slot not found or access denied to task ${slotId}, provider id ${providerId}`)
+            const checkslot = `SELECT id FROM timeslot WHERE id = $1`
+            const newResult = await query(checkslot,[slotId])
+            if(newResult.rows.length === 0){
+                return res.status(404).json({message:"time slot not found"})
+            } else {
+                return res.status(403).json({message:"you dont have permission for this time slot"})
+            }
+        }
+        logger.info(`successfully updated time slot ${slotId} by provider ${providerId}`)
+        return res.json(result.rows[0])
     } catch (error) {
-      logger.error(`Error fetching task ${timeslotId} for user ${userId} : `, error)
-      return res.status(error.status || 500).json({ message: error.message || "Server error while fetching the task" })
+        logger.error(`error updating time slot ${slotId} for provider ${providerId}:`,error)
+        return res.status(error.status || 500).json({message:error.message||`error updating time slot ${slotId}`})
     }
-  }
-  
-  export async function getAllTimeslots(req, res, next) {
-    const userId = req.user.id
+}
+export async function deleteTimeslot(req,res,next){
+    const slotId = req.params.id
+    const providerId = req.user.id
     try {
-      const fetchTimeslotsQuery = `SELECT workingDays = $1, workingTime = $2 FROM timeslot
-                                WHERE owner_id = $1 ORDER BY created_at DESC
-                              `
-      const result = await query(fetchTimeslotsQuery, [userId])
-      logger.debug(`Fetched ${result.rows.length} timeslot for user : ${userId}`)
-      return res.status(200).json(result.rows)
+        const deleteSlot = `DELETE FROM timeslot WHERE id = $1 and owner_id = $2`;
+        const result = await query(deleteSlot,[slotId,providerId])
+        if(result.rowCount === 0){
+            logger.warn(`fail to delete time slot ${slotId} or access denied for provider ${providerId} `)
+            const checkExistance = `SELECT id FROM timeslot WHERE id = $1`;
+            const newResult = await query(checkExistance, [slotId])
+            if(newResult.rows.length === 0 ){
+                return res.status(404).json({message:`time slot not found`})
+            }else{
+                return res.status(403).json({message:`you do not have permission for this time slot`})
+            }
+        }
+        logger.info(`successfully deleted time slot:${slotId} by provider: ${providerId}`)
+        return res.status(204).json({message:'time slot was deleted'})
     } catch (error) {
-      logger.error(`Error fetching timeslots for user ${userId} : `, error)
-      return res.status(error.status || 500).json({ message: error.message || "Server error while fetching the timeslot" })
+        logger.error(`error deleting time slot:${slotId} for provider:${providerId}:`,error)
+        return res.status(error.status||500).json({message:error.message || `server error while deleting ${slotId}`})
     }
-  }
-  
-  export async function createTimeslotHandler(req, res, next) {
-    const { workingDays,workingTime } = req.body
-    const userId = req.user.id
-    try {
-      const insertTimeslotQuery = `
-        INSERT INTO timeslot (id,spId,workingDays,workingTime)
-        VALUES ($1, $2, $3, $4)
-        RETURNING *;
-      `;
-      const result = await query(insertTimeslotQuery, [userId, workingDays,workingTime])
-      const newTimeslot = result.rows[0]
-      logger.info(`Timeslot created Successfully by the user ${userId} : ${newTimeslot.id}`)
-      return res.status(201).json(newTimeslot)
-    } catch (error) {
-      logger.error(`Error creating task for user ${userId} : `, error)
-      return res.status(error.status || 500).json({ message: error.message || "Server error while creating the task" })
-    }
-  }
-  
+}

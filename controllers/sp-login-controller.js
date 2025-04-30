@@ -6,21 +6,21 @@ import jwt from "jsonwebtoken";
 export default async function providerLoginHandler(req, res, next) {
   const { email, password } = req.body;
   try {
-    const findProviderSQL = `SELECT spId, email, first_name, last_name, password FROM serviceProvider WHERE email = $1`;
-    const providerResult = await query(findProviderSQL, [email])
+    const findProviderSQL = `SELECT id, email, first_name, last_name, password FROM serviceProvider WHERE email = $1`;
+    const providerResult = await query(findProviderSQL, [email]);
     if (providerResult.rowCount === 0) {
       logger.warn(`Login attempt failed: Provider not found - ${email}`);
       return res.status(401).json({ message: "invalid Credentials" });
     }
-    const provider = providerResult.rows[0];
+    const provider = providerResult.rows[0]
     const passwordMatch = await bcrypt.compare(password, provider.password);
     if (!passwordMatch) {
       logger.warn(`Login attempt failed: Incorrect pasword - ${email}`);
       return res.status(401).json({ message: "Invalid password" });
     }
     const payload = {
-        provider: {
-        id: provider.spId,
+      user: {
+        id: provider.id,
         email: provider.email,
       },
     };
@@ -35,7 +35,9 @@ export default async function providerLoginHandler(req, res, next) {
           logger.warn(`Error generating JWT for ${email}:`, err);
           throw new Error(`Error grnerating authentication token `);
         }
-        logger.info(`user logged in succesfully: ${email} (ID : ${provider.id})`);
+        logger.info(
+          `user logged in succesfully: ${email} (ID : ${provider.id})`
+        );
         res.json({
           message: "Login Succesfull",
           token: token,

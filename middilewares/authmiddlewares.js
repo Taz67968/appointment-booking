@@ -6,19 +6,18 @@ const authMiddleware = (req, res, next) => {
   const token = authHeader && authHeader.startsWith('Bearer ') ? authHeader.split(' ')[1] : null;
 
 
-
   if (!token) {
     logger.warn(`Auth middleware: no token provided`)
     return res.status(401).json({ message: 'No token, authorication has been denied' })
   }
   try {
-    const decodd = jwt.decode(token, process.env.JWT_SECRET)
-    req.user = decodd.user
+    const decoded = jwt.verify(token, process.env.JWT_SECRET)
+    req.user = decoded.user
     logger.debug(`Auth middleware: Token verified for user ID ${req.user.id}`)
     next()
   } catch (error) {
-    logger.error('Auth iddleware: token verification failed', err)
-    if (err.name === 'TokenExpiredError') {
+    logger.error('Auth iddleware: token verification failed', error)
+    if (error.name === 'TokenExpiredError') {
       return res.status(401).json({ message: "Token is expired" })
     }
     if (error.name === 'JsonWebTokenError') {

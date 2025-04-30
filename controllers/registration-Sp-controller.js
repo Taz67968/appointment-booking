@@ -16,7 +16,7 @@ export default async function registrationSpHandler(req, res, next) {
   } = req.body;
 
   try {
-    const checkQuery = "SELECT email FROM serviceProvider WHERE email = $1";
+    const checkQuery = `SELECT email FROM serviceProvider WHERE email = $1`;
     const checkResults = await query(checkQuery, [email]);
     if (checkResults.rows.length > 0) {
       logger.warn(`Registration attempt failed: Email already exists - ${email}`);
@@ -29,7 +29,7 @@ export default async function registrationSpHandler(req, res, next) {
     const insertTable = `
       INSERT INTO serviceProvider (first_name, last_name, email, description, password, profession, booked, confirmpassword )
       VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-      RETURNING spId
+      RETURNING "id"
     `;
     
     const newResult = await query(insertTable, [
@@ -45,11 +45,11 @@ export default async function registrationSpHandler(req, res, next) {
   
 
     const newProvider = newResult.rows[0];
-    logger.info(`Provider registered successfully: ${newProvider.spid}`);
+    logger.info(`Provider registered successfully: ${newProvider.id}`);
 
     res.status(201).json({
       message: "Provider registered successfully",
-      providerId: newProvider.spid,
+      providerId: newProvider.id,
     });
   } catch (error) {
     logger.error(`Error during user registration for ${email}: `, error);

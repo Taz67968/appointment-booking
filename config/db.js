@@ -31,67 +31,66 @@ pool.on("error", (err, client) => {
   logger.error('Unexpected error on idle client in pool', err)
   process.exit(-1)
 })
-
 const initialzeDbSchema = async () => {
   const client = await pool.connect();
   try {
     logger.info("Initializing database schema...");
-    await client.query("CREATE EXTENSION IF NOT EXISTS pgcrypto");
+    
 
+    await client.query("CREATE EXTENSION IF NOT EXISTS pgcrypto");
 
     await client.query(`
       CREATE TABLE IF NOT EXISTS client (
-        clientId         UUID    PRIMARY KEY DEFAULT gen_random_uuid(),
-        first_name       VARCHAR(50)  NOT NULL,
-        last_name        VARCHAR(50)  NOT NULL,
-        email            VARCHAR(255) UNIQUE NOT NULL,
-        password         VARCHAR(255) NOT NULL,
-        confirmPassword VARCHAR(255) NOT NULL,
-        profile_image_url VARCHAR(255)
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        first_name VARCHAR(50) NOT NULL,
+        last_name VARCHAR(50) NOT NULL,
+        email VARCHAR(255) UNIQUE NOT NULL,
+        password VARCHAR(255) NOT NULL
       );
     `);
-    logger.info("client table has been created");
 
     await client.query(`
       CREATE TABLE IF NOT EXISTS serviceProvider (
-        spId              UUID    PRIMARY KEY DEFAULT gen_random_uuid(),
-        first_name       VARCHAR(50)  NOT NULL,
-        last_name       VARCHAR(50)  NOT NULL,
-        email             VARCHAR(255) UNIQUE NOT NULL,
-        password          VARCHAR(255) NOT NULL,
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        first_name VARCHAR(50) NOT NULL,
+        last_name VARCHAR(50) NOT NULL,
+        email VARCHAR(255) UNIQUE NOT NULL,
+        password VARCHAR(255) NOT NULL,
         confirmPassword VARCHAR(255) NOT NULL,
-        profession        VARCHAR(50)  NOT NULL,
-        description       VARCHAR(255) NOT NULL,
-        booked            BOOLEAN
+        profession VARCHAR(50) NOT NULL,
+        description VARCHAR(255) NOT NULL,
+        booked BOOLEAN DEFAULT FALSE
       );
     `);
-    logger.info("serviceProvider table has been created");
 
     await client.query(`
       CREATE TABLE IF NOT EXISTS timeslot (
-        id          UUID    PRIMARY KEY DEFAULT gen_random_uuid(),
-        spId        UUID    NOT NULL DEFAULT gen_random_uuid(),
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        owner_id UUID NOT NULL REFERENCES serviceProvider(id),
         workingDays VARCHAR(50) NOT NULL,
-        workingTime VARCHAR(50) NOT NULL,
-        FOREIGN KEY (spId) REFERENCES service_provider(spId)
+        workingTime VARCHAR(50) NOT NULL
       );
     `);
-    logger.info("timeslot table has been created");
 
     await client.query(`
-      CREATE TABLE IF NOT EXISTS appointment (
-        id        UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-        spId      UUID NOT NULL DEFAULT gen_random_uuid(),
-        clientId  UUID NOT NULL DEFAULT gen_random_uuid(),
-        FOREIGN KEY (clientId) REFERENCES client(clientId),
-        FOREIGN KEY (spId)     REFERENCES service_provider(spId)
+      CREATE TABLE IF NOT EXISTS appointment ( 
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        owner_id UUID NOT NULL REFERENCES serviceProvider(id),
+        clientId UUID NOT NULL REFERENCES client(id),
+        timeslot_id UUID NOT NULL,
+        status VARCHAR(20) NOT NULL,
+        appointment_date DATE NOT NULL
       );
     `);
-    logger.info("appointment table has been created");
 
+    logger.info("Database schema initialized successfully");
   } catch (error) {
-    logger.error(`Error while initializing the schema`, error);
-    process.exit(1);
+    logger.error("Error during schema initialization:", {
+      error: error.message,
+      stack: error.stack,
+      query: error.query
+    });
+    throw error;
   } finally {
     client.release();
   }

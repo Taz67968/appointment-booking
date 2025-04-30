@@ -6,7 +6,7 @@ import jwt from "jsonwebtoken";
 export default async function clientLoginHandler(req, res, next) {
   const { email, password } = req.body;
   try {
-    const findClientSQL = `SELECT clientId, email, first_name, last_name, password FROM client WHERE email = $1`;
+    const findClientSQL = `SELECT id, email, first_name, last_name, password FROM client WHERE email = $1`;
     const clientResult = await query(findClientSQL, [email])
     if (clientResult.rowCount === 0) {
       logger.warn(`Login attempt failed: Client not found - ${email}`);

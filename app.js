@@ -10,6 +10,9 @@ import winstonLogger from "./utils/logger.js"
 import authRouter from "./routes/auth.js"
 import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
+import authMiddleware from './middilewares/authmiddlewares.js';
+import timeslotRouter from './routes/timeslot.js'
+
 
 const app = express();
 
@@ -28,10 +31,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(authMiddleware)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
-
+app.use('/timeslot', timeslotRouter)
 
 export default app
