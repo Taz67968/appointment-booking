@@ -19,7 +19,7 @@ export default async function clientLoginHandler(req, res, next) {
       return res.status(401).json({ message: "Invalid password" });
     }
     const payload = {
-      client: {
+      user: {
         id: client.id,
         email: client.email,
       },

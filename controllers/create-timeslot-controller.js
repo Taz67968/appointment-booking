@@ -89,7 +89,7 @@ export async function deleteTimeslot(req,res,next){
             }
         }
         logger.info(`successfully deleted time slot:${slotId} by provider: ${providerId}`)
-        return res.status(204).json({message:'time slot was deleted'})
+        return res.status(200).json({message:'time slot was deleted'})
     } catch (error) {
         logger.error(`error deleting time slot:${slotId} for provider:${providerId}:`,error)
         return res.status(error.status||500).json({message:error.message || `server error while deleting ${slotId}`})

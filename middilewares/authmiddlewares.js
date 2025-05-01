@@ -4,7 +4,7 @@ import logger from "../utils/logger.js"
 const authMiddleware = (req, res, next) => {
   const authHeader = req.header("Authorization")
   const token = authHeader && authHeader.startsWith('Bearer ') ? authHeader.split(' ')[1] : null;
-
+  
 
   if (!token) {
     logger.warn(`Auth middleware: no token provided`)

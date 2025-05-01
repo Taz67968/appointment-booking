@@ -38,6 +38,6 @@ export default async function registrationHandler(req, res, next) {
     });
   } catch (error) {
     logger.error(`Error during user registration for ${email}: `, error);
-    next(error);
+    next(error);validate
   }
 }
