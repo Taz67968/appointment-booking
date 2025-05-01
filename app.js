@@ -4,6 +4,8 @@ import { fileURLToPath } from 'node:url';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
+import swaggerUi from "swagger-ui-express"
+import swaggerSpec from './swaggerConfig.js';
 
 import winstonLogger from "./utils/logger.js"
 
@@ -37,5 +39,8 @@ app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/timeslot', timeslotRouter)
 app.use("/appiontment", appointmentRouter)
+
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 export default app
