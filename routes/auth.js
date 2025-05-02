@@ -18,8 +18,8 @@ const router = express.Router()
 /**
  * 
  * @swagger
- * paths:
- * auth/clientRegister:
+ * 
+ * /auth/clientRegister:
  *  post:
  *     summary: Register a new client
  *     requestBody:

@@ -184,7 +184,7 @@ router.put(
 /**
  * @swagger
  * 
- *   /timeslot/:id/DeleteTimeslot:
+ *   /timeslot/{id}/DeleteTimeslot:
  *   delete:
  *     summary: Delete an existing timeslot
  *     security:
