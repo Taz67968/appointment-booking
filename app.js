@@ -12,7 +12,6 @@ import winstonLogger from "./utils/logger.js"
 import authRouter from "./routes/auth.js"
 import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
-import authMiddleware from './middilewares/authmiddlewares.js';
 import timeslotRouter from './routes/timeslot.js'
 import appointmentRouter from "./routes/appointment.js"
 
