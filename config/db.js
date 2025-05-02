@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 
 const { Pool } = pg;
 
-dotenv.config({path:'.env'})
+dotenv.config()
 
 const { PGUSER, PGPASSWORD, PGHOST, PGNAME, PGPORT, NODE_ENV } = process.env;
 
