@@ -1,5 +1,4 @@
 import express from 'express';
-import authMiddleware from '../middilewares/authmiddlewares.js';
 const router = express.Router();
 
 /* GET users listing. */
