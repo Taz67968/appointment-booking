@@ -1,7 +1,10 @@
 import pg from "pg";
 import logger from "../utils/logger.js";
+import dotenv from 'dotenv'
 
 const { Pool } = pg;
+
+dotenv.config({path:'.env'})
 
 const { PGUSER, PGPASSWORD, PGHOST, PGNAME, PGPORT, NODE_ENV } = process.env;
 

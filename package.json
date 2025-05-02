@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env ./bin/www",
-    "dev": "nodemon --env-file=.env ./bin/www"
+    "start": "node file=.env ./bin/www",
+    "dev": "nodemon file=.env ./bin/www"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
