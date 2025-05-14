@@ -13,6 +13,7 @@ export default async function registrationSpHandler(req, res, next) {
     email,
     password,
     booked,
+    role,
   } = req.body;
 
   try {
@@ -27,7 +28,7 @@ export default async function registrationSpHandler(req, res, next) {
     logger.debug(`Password hashed for email: ${email}`);
 
     const insertTable = `
-      INSERT INTO serviceProvider (first_name, last_name, email, description, password, profession, booked, confirmpassword )
+      INSERT INTO serviceProvider (first_name, last_name, email, description, password, profession, booked, role )
       VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
       RETURNING "id"
     `;
@@ -40,7 +41,7 @@ export default async function registrationSpHandler(req, res, next) {
       hashedPassword,
       profession,
       booked,
-      hashedPassword,
+      role,
     ]);
   
 

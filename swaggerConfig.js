@@ -70,7 +70,8 @@ const swaggerOptions = {
           properties: {
             id: { type: 'string', format: 'uuid' },
             workingDays: { type: 'string' },
-            workingTime: { type: 'string' },
+            startTime: { type: 'string' },
+            endTime: { type: 'string' },
           },
           required: ['id', 'workingDays', 'workingTime'],
         },

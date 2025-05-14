@@ -25,7 +25,6 @@ const authMiddleware = (req, res, next) => {
     }
     return res.status(error.status || 500).json({ message: error.message || "server error during token verification" })
   }
-
 }
 
 export default authMiddleware

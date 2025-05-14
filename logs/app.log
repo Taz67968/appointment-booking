@@ -13817,3 +13817,508 @@
 {"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-02 14:37:08"}
 {"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-02 14:37:08"}
 {"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-02 14:37:08"}
+{"level":"info","message":"Recieved SIGHUP","timestamp":"2025-05-02 16:37:26"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 13:13:48"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 13:13:49"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 13:13:49"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 13:13:49"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 13:13:49"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 13:13:49"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 13:13:49"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 13:13:49"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 13:19:02"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 13:19:02"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 13:19:03"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 13:19:03"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 13:19:03"}
+{"error":"syntax error at or near \")\"","level":"error","message":"Error during schema initialization:","stack":"error: syntax error at or near \")\"\n    at /home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/pg/lib/client.js:545:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async initialzeDbSchema (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/config/db.js:67:5)\n    at async startServer (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/bin/www:123:5)","timestamp":"2025-05-13 13:19:03"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 13:19:07"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 13:19:33"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 13:19:34"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 13:19:34"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 13:19:34"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 13:19:34"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 13:19:34"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 13:19:34"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 13:19:34"}
+{"level":"info","message":"Recieved SIGHUP","timestamp":"2025-05-13 13:22:09"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:12:54"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:12:55"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:12:55"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:12:55"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:12:55"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:12:55"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:12:55"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:12:55"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:13:51"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:13:56"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:00"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:04"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:12"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:14:16"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:09"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:10"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:13"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:14"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:17"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:23"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:26"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:28"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:49:31"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:10"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:11"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:14"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:21"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:50:25"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:51:38"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:51:41"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:52:08"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:52:11"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:52:12"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:52:12"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:52:12"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:52:12"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:52:12"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:52:12"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:52:12"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2025-05-13 21:55:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-13 21:56:39"}
+{"level":"info","message":"Recieved SIGHUP","timestamp":"2025-05-13 21:59:50"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 11:39:04"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:10:55:36 +0000] \"POST /auth/clientRegister HTTP/1.1\" 400 34 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 11:55:36"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 11:56:35"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM client WHERE email = $1..., params: [\"paul1@gmail.com\"], duration: 469ms, rows: 0}","timestamp":"2025-05-14 11:56:35"}
+{"level":"error","message":"Error executing query: { text: INSERT INTO client (first_name, last_name, email, password, role)\n                             VALUE..., params: [\"paul\",\"peter\",\"paul1@gmail.com\",\"$2b$10$opfSkyNM.g6bPUPhu6/mf.vG0NqJFczb6YHZK0raPhmJaQtdZZeV6\",\"client\"], error: column \"role\" of relation \"client\" does not exist}","timestamp":"2025-05-14 11:56:36"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 11:58:00"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 11:58:14"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM client WHERE email = $1..., params: [\"paul1@gmail.com\"], duration: 10ms, rows: 0}","timestamp":"2025-05-14 11:58:14"}
+{"level":"error","message":"Error executing query: { text: INSERT INTO client (first_name, last_name, email, password, role)\n                             VALUE..., params: [\"paul\",\"peter\",\"paul1@gmail.com\",\"$2b$10$yqYHiVCFyv366sKgEgucvOC14E92vtRYGiOwDYeX8DZVRCoAHCI56\",\"client\"], error: column \"role\" of relation \"client\" does not exist}","timestamp":"2025-05-14 11:58:14"}
+{"code":"42703","file":"parse_target.c","length":123,"level":"error","line":"1066","message":"Error during user registration for paul1@gmail.com:  column \"role\" of relation \"client\" does not exist","name":"error","position":"61","routine":"checkInsertTargets","severity":"ERROR","stack":"error: column \"role\" of relation \"client\" does not exist\n    at /home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/config/db.js:116:22)\n    at async registrationHandler (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/controllers/registration-controller.js:24:23)","timestamp":"2025-05-14 11:58:14"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:10:58:14 +0000] \"POST /auth/clientRegister HTTP/1.1\" 500 666 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 11:58:14"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2025-05-14 11:58:40"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 11:59:22"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 11:59:22"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 11:59:22"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 11:59:22"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 11:59:22"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 11:59:23"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 11:59:23"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 11:59:23"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM client WHERE email = $1..., params: [\"paul1@gmail.com\"], duration: 3ms, rows: 0}","timestamp":"2025-05-14 11:59:30"}
+{"level":"info","message":"Executed query: { text: INSERT INTO client (first_name, last_name, email, password, role)\n                             VALUE..., params: [\"paul\",\"peter\",\"paul1@gmail.com\",\"$2b$10$XFsbaGc2cultudEwcRvJGuyxSQC0eK/g457FG7i9rBzGPL0BXFpIG\",\"client\"], duration: 40ms, rows: 1}","timestamp":"2025-05-14 11:59:30"}
+{"level":"info","message":"client registered successfully: d9f21998-6317-40c8-a06c-e4d77eb2a18b","timestamp":"2025-05-14 11:59:30"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:10:59:30 +0000] \"POST /auth/clientRegister HTTP/1.1\" 201 101 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 11:59:30"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:11:01:16 +0000] \"POST /auth/clientLogin HTTP/1.1\" 400 1188 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 12:01:16"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 12:01:41"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"paul1@gmail.com\"], duration: 42ms, rows: 1}","timestamp":"2025-05-14 12:01:41"}
+{"level":"error","message":"Error during login process for paul1@gmail.com:  user is not defined","stack":"ReferenceError: user is not defined\n    at clientLoginHandler (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/controllers/client-login-controller.js:23:13)","timestamp":"2025-05-14 12:01:41"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:11:01:41 +0000] \"POST /auth/clientLogin HTTP/1.1\" 500 33 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 12:01:41"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:50"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:52"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 12:16:57"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 12:16:57"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 12:16:58"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 12:16:58"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 12:16:58"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 12:16:58"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:58"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:58"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:16:59"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:17:02"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 12:17:04"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"paul1@gmail.com\"], duration: 13ms, rows: 1}","timestamp":"2025-05-14 12:17:10"}
+{"level":"info","message":"user logged in succesfully: paul1@gmail.com (ID : d9f21998-6317-40c8-a06c-e4d77eb2a18b)","timestamp":"2025-05-14 12:17:10"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:11:17:10 +0000] \"POST /auth/clientLogin HTTP/1.1\" 200 433 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 12:17:10"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:12:39:46 +0000] \"POST /auth/providerRegister HTTP/1.1\" 400 48 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 13:39:46"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 13:39:55"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM serviceProvider WHERE email = $1..., params: [\"john1@example.com\"], duration: 39ms, rows: 0}","timestamp":"2025-05-14 13:39:55"}
+{"level":"info","message":"Executed query: { text: \n      INSERT INTO serviceProvider (first_name, last_name, email, description, password, profession,..., params: [\"John\",\"Doe\",\"john1@example.com\",\"Experienced professional\",\"$2b$10$Y3LsqLhJ8VFZ1HHUfmd2aObcOGaIL7VJZ1xZiqVR5BOGRPxwA9QnK\",\"Plumber\",false,\"provider\"], duration: 2ms, rows: 1}","timestamp":"2025-05-14 13:39:55"}
+{"level":"info","message":"Provider registered successfully: 8af679c4-cfd4-47bf-832b-344e86edfbaf","timestamp":"2025-05-14 13:39:55"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:12:39:55 +0000] \"POST /auth/providerRegister HTTP/1.1\" 201 98 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 13:39:55"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM serviceProvider WHERE email = $1..., params: [\"john1@example.com\"], duration: 5ms, rows: 1}","timestamp":"2025-05-14 13:39:57"}
+{"level":"warn","message":"Registration attempt failed: Email already exists - john1@example.com","timestamp":"2025-05-14 13:39:57"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:12:39:57 +0000] \"POST /auth/providerRegister HTTP/1.1\" 409 34 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 13:39:57"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:12:40:11 +0000] \"POST /auth/providerLogin HTTP/1.1\" 400 34 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 13:40:11"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 13:40:40"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM serviceProvider WHERE email = $1..., params: [\"john1@example.com\"], duration: 19ms, rows: 1}","timestamp":"2025-05-14 13:40:40"}
+{"level":"info","message":"user logged in succesfully: john1@example.com (ID : 8af679c4-cfd4-47bf-832b-344e86edfbaf)","timestamp":"2025-05-14 13:40:40"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:12:40:40 +0000] \"POST /auth/providerLogin HTTP/1.1\" 200 442 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 13:40:40"}
+{"expiredAt":"2025-05-01T04:52:58.000Z","level":"error","message":"Auth iddleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/jsonwebtoken/verify.js:101:10)\n    at authMiddleware (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/middilewares/authmiddlewares.js:14:25)\n    at Layer.handle [as handle_request] (/home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/express/lib/router/layer.js:95:5)\n    at /home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/express/lib/router/index.js:346:12)","timestamp":"2025-05-14 14:00:30"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:13:00:30 +0000] \"POST /timeslot/createTimeslot HTTP/1.1\" 401 30 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 14:00:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:00:48"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"paul1@gmail.com\"], duration: 32ms, rows: 1}","timestamp":"2025-05-14 14:00:48"}
+{"level":"info","message":"user logged in succesfully: paul1@gmail.com (ID : d9f21998-6317-40c8-a06c-e4d77eb2a18b)","timestamp":"2025-05-14 14:00:48"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:13:00:48 +0000] \"POST /auth/clientLogin HTTP/1.1\" 200 433 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 14:00:48"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:02:00"}
+{"level":"error","message":"Error executing query: { text: INSERT INTO timeslot (owner_id, workingDays, startTime, endTime)\n                               VALU..., params: [\"d9f21998-6317-40c8-a06c-e4d77eb2a18b\",\"2023-12-03\",\"09:00:00\",\"10:00:00\"], error: insert or update on table \"timeslot\" violates foreign key constraint \"timeslot_owner_id_fkey\"}","timestamp":"2025-05-14 14:02:00"}
+{"code":"23503","constraint":"timeslot_owner_id_fkey","detail":"Key (owner_id)=(d9f21998-6317-40c8-a06c-e4d77eb2a18b) is not present in table \"serviceprovider\".","file":"ri_triggers.c","length":302,"level":"error","line":"2608","message":"Error creating time slot for d9f21998-6317-40c8-a06c-e4d77eb2a18b: insert or update on table \"timeslot\" violates foreign key constraint \"timeslot_owner_id_fkey\"","name":"error","routine":"ri_ReportViolation","schema":"public","severity":"ERROR","stack":"error: insert or update on table \"timeslot\" violates foreign key constraint \"timeslot_owner_id_fkey\"\n    at /home/tazoh-cliff/Desktop/appiontment-booking-api/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/config/db.js:116:22)\n    at async createTimeslotHandler (file:///home/tazoh-cliff/Desktop/appiontment-booking-api/controllers/create-timeslot-controller.js:11:20)","table":"timeslot","timestamp":"2025-05-14 14:02:00"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:13:02:00 +0000] \"POST /timeslot/createTimeslot HTTP/1.1\" 500 111 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 14:02:00"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:09:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM serviceProvider WHERE email = $1..., params: [\"john1@example.com\"], duration: 10ms, rows: 1}","timestamp":"2025-05-14 14:09:33"}
+{"level":"info","message":"user logged in succesfully: john1@example.com (ID : 8af679c4-cfd4-47bf-832b-344e86edfbaf)","timestamp":"2025-05-14 14:09:33"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:13:09:33 +0000] \"POST /auth/providerLogin HTTP/1.1\" 200 442 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 14:09:33"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:09:55"}
+{"level":"info","message":"Executed query: { text: INSERT INTO timeslot (owner_id, workingDays, startTime, endTime)\n                               VALU..., params: [\"8af679c4-cfd4-47bf-832b-344e86edfbaf\",\"2023-12-03\",\"09:00:00\",\"10:00:00\"], duration: 30ms, rows: 1}","timestamp":"2025-05-14 14:09:55"}
+{"level":"info","message":"successfully created timeslot d4f48682-50ec-4633-a8e0-e0a0b540335b by 8af679c4-cfd4-47bf-832b-344e86edfbaf","timestamp":"2025-05-14 14:09:55"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/May/2025:13:09:55 +0000] \"POST /timeslot/createTimeslot HTTP/1.1\" 201 166 \"-\" \"insomnia/11.0.2\"","timestamp":"2025-05-14 14:09:55"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:20:35"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:20:37"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:22:05"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:22:06"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:22:06"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:22:06"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:22:06"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:22:06"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:22:07"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:22:07"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:22:07"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:11"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:14"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:23"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:24"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:28"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:23:47"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:24:15"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:30"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:39"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:43"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:25:50"}
+{"level":"info","message":"Database is configured for: appointmentbooking","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Attempting to Start server on port 3000","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Starting server on port 3000","timestamp":"2025-05-14 14:42:45"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2025-05-14 15:27:19"}

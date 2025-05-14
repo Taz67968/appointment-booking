@@ -44,6 +44,14 @@ export const createAppointment = async (req, res) => {
     `;
     await query(updateTimeslotQuery, [timeslot_id]);
 
+    const existingAppointment = await pool.query(
+      'SELECT * FROM appointment WHERE timeslot_id = $1 AND appointment_date = $2 AND status = $3',
+      [timeslot_id, appointment_date, 'booked']
+    );
+    if (existingAppointment.rows.length > 0) {
+      return res.status(409).json({ message: "Time slot already booked" });
+    }
+
     logger.info(`Appointment created successfully for client ${clientId}`);
     res.status(201).json({
       message: "Appointment booked successfully",

@@ -5,7 +5,7 @@ import bcrypt from "bcryptjs";
 const HASH_SALT = 10;
 
 export default async function registrationHandler(req, res, next) {
-  const { first_name, last_name, email, password } = req.body;
+  const { first_name, last_name, email, password, role } = req.body;
   try {
     const checkQuery = "SELECT email FROM client WHERE email = $1";
     const CheckResults = await query(checkQuery, [email]);
@@ -18,14 +18,15 @@ export default async function registrationHandler(req, res, next) {
     const hashPassword = await bcrypt.hash(password, HASH_SALT);
     logger.debug(`Password hashed for email: ${email}`);
 
-    const insertTable = `INSERT INTO client (first_name, last_name, email, password)
-                             VALUES($1,$2,$3,$4)
+    const insertTable = `INSERT INTO client (first_name, last_name, email, password, role)
+                             VALUES($1,$2,$3,$4,$5)
                                RETURNING id`;
     const newResult = await query(insertTable, [
       first_name,
       last_name,
       email,
       hashPassword,
+      role,
     ]);
     const newClient = newResult.rows[0];
     logger.info(`client registered successfully: ${newClient.id}`);
@@ -38,6 +39,6 @@ export default async function registrationHandler(req, res, next) {
     });
   } catch (error) {
     logger.error(`Error during user registration for ${email}: `, error);
-    next(error);validate
+    next(error);
   }
 }

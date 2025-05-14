@@ -47,7 +47,8 @@ const initialzeDbSchema = async () => {
         first_name VARCHAR(50) NOT NULL,
         last_name VARCHAR(50) NOT NULL,
         email VARCHAR(255) UNIQUE NOT NULL,
-        password VARCHAR(255) NOT NULL
+        password VARCHAR(255) NOT NULL,
+        role VARCHAR(50) NOT NULL
       );
     `);
 
@@ -58,10 +59,10 @@ const initialzeDbSchema = async () => {
         last_name VARCHAR(50) NOT NULL,
         email VARCHAR(255) UNIQUE NOT NULL,
         password VARCHAR(255) NOT NULL,
-        confirmPassword VARCHAR(255) NOT NULL,
         profession VARCHAR(50) NOT NULL,
         description VARCHAR(255) NOT NULL,
-        booked BOOLEAN DEFAULT FALSE
+        booked BOOLEAN DEFAULT FALSE,
+        role VARCHAR(50) NOT NULL
       );
     `);
 
@@ -70,8 +71,8 @@ const initialzeDbSchema = async () => {
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   owner_id UUID NOT NULL REFERENCES serviceProvider(id),
   workingDays VARCHAR(50) NOT NULL,
-  workingTime VARCHAR(50) NOT NULL,
-  booked BOOLEAN DEFAULT FALSE
+  startTime VARCHAR(50) NOT NULL,
+  endTime VARCHAR(50) NOT NULL
 );
     `);
 

@@ -8,7 +8,7 @@ import deb from 'debug';
 
 
 import app from '../app.js';
-const debug = deb('appiontment-booking-api:server')
+const debug = deb('appointment-booking-api:server')
 import logger from '../utils/logger.js';
 import { connectToDb, initialzeDbSchema } from '../config/db.js';
 /**

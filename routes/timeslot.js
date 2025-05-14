@@ -31,7 +31,9 @@ const router = express.Router();
  *                     format: uuid
  *                   workingDays:
  *                     type: string
- *                   workingTime:
+ *                   startTime:
+ *                     type: string
+ *                    endTime:
  *                     type: string
  *       '403':
  *         description: Forbidden access
@@ -44,14 +46,10 @@ const router = express.Router();
  *                   type: string
  *                   example: "Access denied"
  */
-router.get(
-  "/veiwTimeslot",
-  authMiddleware,
-  getAllTimeslots
-);
+router.get("/viewTimeslot", authMiddleware, getAllTimeslots);
 /**
  * @swagger
- * 
+ *
  * /timeslot/createTimeslot:
  *   post:
  *     summary: Create a new timeslot
@@ -67,12 +65,14 @@ router.get(
  *               workingDays:
  *                 type: string
  *                 example: "Monday"
- *               workingTime:
+ *               startTime:
  *                 type: string
- *                 example: "09:00:00"
+ *               endTime:
+ *                type: string
  *             required:
  *               - workingDays
- *               - workingTime
+ *               - startTime
+ *               - endTime
  *     responses:
  *       '201':
  *         description: Timeslot created successfully
@@ -99,11 +99,12 @@ router.get(
  *                   example: "Missing required fields"
  */
 
-router.post('/createTimeslot',
-    authMiddleware,
-    timeslotValidator, 
-    createTimeslotHandler
-  )
+router.post(
+  "/createTimeslot",
+  authMiddleware,
+  timeslotValidator,
+  createTimeslotHandler
+);
 /**
  * @swagger
  *   /timeslot/:id/updateTimeslot:
@@ -128,12 +129,14 @@ router.post('/createTimeslot',
  *               workingDays:
  *                 type: string
  *                 example: "Tuesday"
- *               workingTime:
- *                 type: string
- *                 example: "10:00:00"
+ *                  startTime:
+ *                    type: string
+ *                   endTime:
+ *                    type: string
  *             required:
  *               - workingDays
- *               - workingTime
+ *               - startTime
+ *               - endTime
  *     responses:
  *       '200':
  *         description: Timeslot updated successfully
@@ -153,7 +156,9 @@ router.post('/createTimeslot',
  *                       format: uuid
  *                     workingDays:
  *                       type: string
- *                     workingTime:
+ *                     startTime:
+ *                       type: string
+ *                     endTime:
  *                       type: string
  *       '404':
  *         description: Timeslot not found
@@ -176,14 +181,10 @@ router.post('/createTimeslot',
  *                   type: string
  *                   example: "You don't have permission for this timeslot"
  */
-router.put(
-  "/:id/updateTimeslot",
-  authMiddleware,
-  updateTimeslot
-);
+router.put("/:id/updateTimeslot", authMiddleware, updateTimeslot);
 /**
  * @swagger
- * 
+ *
  *   /timeslot/{id}/DeleteTimeslot:
  *   delete:
  *     summary: Delete an existing timeslot
@@ -228,9 +229,5 @@ router.put(
  *                   type: string
  *                   example: "You do not have permission for this timeslot"
  */
-router.delete(
-  "/:id/DeleteTimeslot",
-  authMiddleware,
-  deleteTimeslot
-);
+router.delete("/:id/DeleteTimeslot", authMiddleware, deleteTimeslot);
 export default router;

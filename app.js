@@ -22,7 +22,6 @@ const __dirname = dirname(__filname)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 
 
 const morganFormat = process.env.NODE_ENV === "production" ? "dev" : 'combined'
@@ -37,7 +36,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/timeslot', timeslotRouter)
-app.use("/appiontment", appointmentRouter)
+app.use("/appointment", appointmentRouter)
 
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));

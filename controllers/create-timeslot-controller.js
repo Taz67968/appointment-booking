@@ -1,14 +1,14 @@
 import { query } from "../config/db.js";
 import logger from '../utils/logger.js'
 export async function createTimeslotHandler(req,res,next) {
-    const {workingDays, workingTime} = req.body
+    const {workingDays, startTime, endTime} = req.body
     const providerId = req.user.id
     try {
-        const insertTimeSlot =`INSERT INTO timeslot (owner_id, workingDays, workingTime)
-                               VALUES ($1,$2,$3) RETURNING *;
+        const insertTimeSlot =`INSERT INTO timeslot (owner_id, workingDays, startTime, endTime)
+                               VALUES ($1,$2,$3,$4) RETURNING *;
                                `;
     
-    const result = await query(insertTimeSlot, [providerId,workingDays, workingTime])
+    const result = await query(insertTimeSlot, [providerId,workingDays, startTime, endTime])
     const newTimeSlot = result.rows[0]
     logger.info(`successfully created timeslot ${newTimeSlot.id} by ${providerId}`)
     return res.status(201).json(newTimeSlot)
@@ -20,7 +20,7 @@ export async function createTimeslotHandler(req,res,next) {
 export async function getAllTimeslots(req,res,next) {
     const providerId=req.user.id
     try {
-        const getslot = `SELECT id,workingDays, workingTime FROM timeslot WHERE owner_id = $1
+        const getslot = `SELECT id,workingDays, startTime, endTime FROM timeslot WHERE owner_id = $1
                         `;
         const newResult= await query(getslot,[providerId])
         logger.debug(`fetched ${newResult.rows.length} time slot for provider:${providerId}`)
@@ -34,7 +34,7 @@ export async function  getTimslotById(req,res,next) {
     const slotId = req.params.id
     const providerId = req.user.id
     try {
-        const getslotId = `SELECT id, workingDays, workingTime FROM timeslot WHERE
+        const getslotId = `SELECT id, workingDays, startTime, endTime FROM timeslot WHERE
                             id = $1 AND owner_id = $2`;
         const result = await query(getslotId,[slotId, providerId])
         if(result.rows.length === 0){
@@ -51,10 +51,10 @@ export async function  getTimslotById(req,res,next) {
 export  async function updateTimeslot(req,res,next) {
     const slotId = req.params.id
     const providerId = req.user.id
-    const {workingDays, workingTime} = req.body
+    const {workingDays, startTime, endTime} = req.body
     try {
-        const updateslot = `UPDATE timeslot SET workingDays = $1, workingTime=$2 WHERE id = $3 AND owner_id = $4 RETURNING *`;
-        const result = await query(updateslot,[workingDays, workingTime,slotId,providerId])
+        const updateslot = `UPDATE timeslot SET workingDays = $1, startTime= $2, endTime=$3 WHERE id = $4 AND owner_id = $5 RETURNING *`;
+        const result = await query(updateslot,[workingDays, startTime, endTime,slotId,providerId])
         if(result.rows.length === 0){
             logger.warn(`update failed:slot not found or access denied to task ${slotId}, provider id ${providerId}`)
             const checkslot = `SELECT id FROM timeslot WHERE id = $1`

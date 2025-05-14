@@ -5,7 +5,8 @@ const timeslotschema = Joi.object({
   workingDays: Joi.date().iso().required().messages({
     'date.base': 'workingDays must be a valid ISO date (e.g., YYYY-MM-DD)'
   }),
-  workingTime: Joi.string().pattern(timeRegex).required()
+  startTime: Joi.string().pattern(timeRegex).required(),
+  endTime: Joi.string().pattern(timeRegex).required()
 });
 
 

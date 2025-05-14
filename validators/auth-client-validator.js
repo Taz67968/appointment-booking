@@ -6,6 +6,7 @@ const createClientschema = Joi.object({
   email: Joi.string().email({ maxDomainSegments: 2 }).required(),
   password: Joi.string().pattern(new RegExp("^[a-zA-Z0-9]{3,30}$")),
   confirmPassword: Joi.ref("password"),
+  role: Joi.string().required(),
 });
 
 export const validate = (req, res, next) => {
@@ -19,6 +20,7 @@ export const validate = (req, res, next) => {
 const loginSchema = Joi.object({
   email: Joi.string().email({ maxDomainSegments: 2 }).required(),
   password: Joi.string().required(),
+  role: Joi.string().required(),
 })
 
 

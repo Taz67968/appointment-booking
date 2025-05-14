@@ -4,9 +4,9 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 export default async function providerLoginHandler(req, res, next) {
-  const { email, password } = req.body;
+  const { email, password, role } = req.body;
   try {
-    const findProviderSQL = `SELECT id, email, first_name, last_name, password FROM serviceProvider WHERE email = $1`;
+    const findProviderSQL = `SELECT id, email, first_name, last_name, password, role FROM serviceProvider WHERE email = $1`;
     const providerResult = await query(findProviderSQL, [email]);
     if (providerResult.rowCount === 0) {
       logger.warn(`Login attempt failed: Provider not found - ${email}`);
@@ -22,6 +22,7 @@ export default async function providerLoginHandler(req, res, next) {
       user: {
         id: provider.id,
         email: provider.email,
+        role: provider.role,
       },
     };
     jwt.sign(
@@ -46,6 +47,7 @@ export default async function providerLoginHandler(req, res, next) {
             first_name: provider.first_name,
             last_name: provider.last_name,
             email: provider.email,
+            role: provider.role,
           },
         });
       }
