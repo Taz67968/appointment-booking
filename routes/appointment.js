@@ -1,5 +1,5 @@
 import express from "express"
-import { cancelAppointment, createAppointment } from "../controllers/appointment-controller.js";
+import { cancelAppointment, createAppointment, getClientAppointments, getProviderAppointments } from "../controllers/appointment-controller.js";
 import appointAuth from "../middilewares/appointmentAuth.js";
 
 const router = express.Router();
@@ -57,6 +57,102 @@ const router = express.Router();
  *                   example: "Invalid or already booked timeslot"
  */
 router.post("/createAppointment",appointAuth ,createAppointment )
+/**
+ * @swagger
+ *   /appointment/getAppointments:
+ *   get:
+ *     summary: Get all appointments for the authenticated client
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       '200':
+ *         description: List of appointments
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: string
+ *                     format: uuid
+ *                   clientid:
+ *                     type: string
+ *                     format: uuid
+ *                   timeslot_id:
+ *                     type: string
+ *                     format: uuid
+ *                   appointment_date:
+ *                     type: string
+ *                     format: date
+ *                   status:
+ *                     type: string
+ *                   workingDays:
+ *                     type: string
+ *                   startTime:
+ *                     type: string
+ *                   endTime:
+ *                     type: string
+ *                   provider_first_name:
+ *                     type: string
+ *                   provider_last_name:
+ *                     type: string
+ *                   profession:
+ *                     type: string
+ *       '500':
+ *         description: Server error
+ */
+router.get("/getAppointments", appointAuth, getClientAppointments)
+/**
+ * @swagger
+ *   /appointment/getProviderAppointments:
+ *   get:
+ *     summary: Get all appointments for the authenticated provider
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       '200':
+ *         description: List of appointments
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: string
+ *                     format: uuid
+ *                   clientid:
+ *                     type: string
+ *                     format: uuid
+ *                   timeslot_id:
+ *                     type: string
+ *                     format: uuid
+ *                   appointment_date:
+ *                     type: string
+ *                     format: date
+ *                   status:
+ *                     type: string
+ *                   workingDays:
+ *                     type: string
+ *                   startTime:
+ *                     type: string
+ *                   endTime:
+ *                     type: string
+ *                   booked:
+ *                     type: boolean
+ *                   client_first_name:
+ *                     type: string
+ *                   client_last_name:
+ *                     type: string
+ *                   client_email:
+ *                     type: string
+ *       '500':
+ *         description: Server error
+ */
+router.get("/getProviderAppointments", appointAuth, getProviderAppointments)
 /**
  * @swagger
  *  /appointment/cancelAppointment:

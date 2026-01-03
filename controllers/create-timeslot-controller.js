@@ -20,7 +20,7 @@ export async function createTimeslotHandler(req,res,next) {
 export async function getAllTimeslots(req,res,next) {
     const providerId=req.user.id
     try {
-        const getslot = `SELECT id,workingDays, startTime, endTime FROM timeslot WHERE owner_id = $1
+        const getslot = `SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1
                         `;
         const newResult= await query(getslot,[providerId])
         logger.debug(`fetched ${newResult.rows.length} time slot for provider:${providerId}`)

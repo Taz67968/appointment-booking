@@ -33,7 +33,7 @@ const router = express.Router();
  *                     type: string
  *                   startTime:
  *                     type: string
- *                    endTime:
+ *                   endTime:
  *                     type: string
  *       '403':
  *         description: Forbidden access
@@ -68,7 +68,7 @@ router.get("/viewTimeslot", authMiddleware, getAllTimeslots);
  *               startTime:
  *                 type: string
  *               endTime:
- *                type: string
+ *                 type: string
  *             required:
  *               - workingDays
  *               - startTime
@@ -129,10 +129,10 @@ router.post(
  *               workingDays:
  *                 type: string
  *                 example: "Tuesday"
- *                  startTime:
- *                    type: string
- *                   endTime:
- *                    type: string
+ *               startTime:
+ *                 type: string
+ *               endTime:
+ *                 type: string
  *             required:
  *               - workingDays
  *               - startTime

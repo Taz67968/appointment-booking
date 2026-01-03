@@ -72,7 +72,8 @@ const initialzeDbSchema = async () => {
   owner_id UUID NOT NULL REFERENCES serviceProvider(id),
   workingDays VARCHAR(50) NOT NULL,
   startTime VARCHAR(50) NOT NULL,
-  endTime VARCHAR(50) NOT NULL
+  endTime VARCHAR(50) NOT NULL,
+  booked BOOLEAN DEFAULT FALSE
 );
     `);
 
@@ -80,7 +81,7 @@ const initialzeDbSchema = async () => {
       CREATE TABLE IF NOT EXISTS appointment ( 
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         owner_id UUID NOT NULL REFERENCES serviceProvider(id),
-        clientId UUID NOT NULL REFERENCES client(id),
+        clientid UUID NOT NULL REFERENCES client(id),
         timeslot_id UUID NOT NULL REFERENCES timeslot(id),
         status VARCHAR(20) NOT NULL,
         appointment_date DATE NOT NULL
