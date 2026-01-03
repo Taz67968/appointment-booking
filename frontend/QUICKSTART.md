@@ -85,5 +85,5 @@ All endpoints from your backend are integrated:
 - Make sure your backend is running on port 3000 (or update `.env.local`)
 - The frontend stores JWT tokens in localStorage
 - All API calls automatically include the Bearer token in headers
-- The UI is fully responsive and works on mobile devices
+- The UI is fully responsive and works on mobile devices(phones, iphone, tablets)
 
