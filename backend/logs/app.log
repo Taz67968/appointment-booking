@@ -14931,3 +14931,12 @@
 {"level":"info","message":"Retrieved 1 providers","timestamp":"2026-01-03 03:28:32"}
 {"level":"info","message":"::1 - - [03/Jan/2026:02:28:32 +0000] \"GET /users/providers HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cursor/2.2.44 Chrome/138.0.7204.251 Electron/37.7.0 Safari/537.36\"","timestamp":"2026-01-03 03:28:32"}
 {"level":"info","message":"Recieved SIGHUP","timestamp":"2026-01-03 03:39:01"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-01-04 00:31:08"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-01-04 00:31:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-01-04 00:31:08"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-01-04 00:31:08"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-01-04 00:31:08"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-01-04 00:31:09"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-01-04 00:31:09"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-01-04 00:31:09"}
+{"level":"info","message":"Recieved SIGHUP","timestamp":"2026-01-04 01:46:01"}

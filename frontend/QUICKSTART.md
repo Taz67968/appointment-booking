@@ -56,15 +56,15 @@
 
 ## Features Implemented
 
-✅ Client Registration & Login
-✅ Provider Registration & Login
-✅ JWT Token Authentication
-✅ Timeslot Management (Create, Read, Update, Delete) - Provider only
-✅ Appointment Booking - Client
-✅ Appointment Cancellation - Client
-✅ Responsive UI with Tailwind CSS
-✅ TypeScript for type safety
-✅ Protected routes with authentication
+ Client Registration & Login
+ Provider Registration & Login
+ JWT Token Authentication
+ Timeslot Management (Create, Read, Update, Delete) - Provider only
+ Appointment Booking - Client
+ Appointment Cancellation - Client
+ Responsive UI with Tailwind CSS
+ TypeScript for type safety
+ Protected routes with authentication
 
 ## API Endpoints Used
 
