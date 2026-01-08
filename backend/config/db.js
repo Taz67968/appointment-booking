@@ -12,7 +12,8 @@ if (!PGHOST || !PGPASSWORD || !PGNAME || !PGUSER || !PGPORT) {
   logger.error(
     "Database environment variables are missing! Check your .env file."
   );
-  process.exit(1);
+  // process.exit(1);
+  throw new Error("Database environment variables are missing");
 }
 
 const pool = new Pool({
