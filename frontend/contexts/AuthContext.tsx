@@ -63,8 +63,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           last_name: userData.last_name,
           email: userData.email,
           role,
-          profession: 'provider' in userData ? userData.profession : undefined,
-          description: 'provider' in userData ? userData.description : undefined,
+          profession: role === 'provider' ? (userData as any).profession : undefined,
+          description: role === 'provider' ? (userData as any).description : undefined,
         };
 
         setUser(user);
