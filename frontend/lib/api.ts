@@ -96,10 +96,17 @@ const apiCall = async (
   options: RequestInit = {}
 ): Promise<Response> => {
   const token = getAuthToken();
-  const headers: HeadersInit = {
+  const headers: Record<string, string> = {
     'Content-Type': 'application/json',
-    ...options.headers,
   };
+
+  if (typeof options.headers === 'object' && options.headers !== null) {
+    Object.entries(options.headers).forEach(([key, value]) => {
+      if (typeof key === 'string' && typeof value === 'string') {
+        headers[key] = value;
+      }
+    });
+  }
 
   if (token) {
     headers['Authorization'] = `Bearer ${token}`;
