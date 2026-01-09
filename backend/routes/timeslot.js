@@ -9,9 +9,10 @@ import {
 import authMiddleware from "../middilewares/authmiddlewares.js";
 
 const router = express.Router();
+
 /**
  * @swagger
- *  /timeslot/viewTimeslot:
+ * /timeslot/viewTimeslot:
  *   get:
  *     summary: Retrieve all timeslots for the authenticated provider
  *     security:
@@ -44,12 +45,12 @@ const router = express.Router();
  *               properties:
  *                 message:
  *                   type: string
- *                   example: "Access denied"
+ *                   example: Access denied
  */
 router.get("/viewTimeslot", authMiddleware, getAllTimeslots);
+
 /**
  * @swagger
- *
  * /timeslot/createTimeslot:
  *   post:
  *     summary: Create a new timeslot
@@ -61,18 +62,18 @@ router.get("/viewTimeslot", authMiddleware, getAllTimeslots);
  *         application/json:
  *           schema:
  *             type: object
- *             properties:
- *               workingDays:
- *                 type: string
- *                 example: "Monday"
- *               startTime:
- *                 type: string
- *               endTime:
- *                 type: string
  *             required:
  *               - workingDays
  *               - startTime
  *               - endTime
+ *             properties:
+ *               workingDays:
+ *                 type: string
+ *                 example: Monday
+ *               startTime:
+ *                 type: string
+ *               endTime:
+ *                 type: string
  *     responses:
  *       '201':
  *         description: Timeslot created successfully
@@ -83,31 +84,23 @@ router.get("/viewTimeslot", authMiddleware, getAllTimeslots);
  *               properties:
  *                 message:
  *                   type: string
- *                   example: "Timeslot created successfully"
+ *                   example: Timeslot created successfully
  *                 id:
  *                   type: string
  *                   format: uuid
  *       '400':
  *         description: Missing required fields
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: "Missing required fields"
  */
-
 router.post(
   "/createTimeslot",
   authMiddleware,
   timeslotValidator,
   createTimeslotHandler
 );
+
 /**
  * @swagger
- *   /timeslot/:id/updateTimeslot:
+ * /timeslot/{id}/updateTimeslot:
  *   put:
  *     summary: Update an existing timeslot
  *     security:
@@ -125,67 +118,30 @@ router.post(
  *         application/json:
  *           schema:
  *             type: object
- *             properties:
- *               workingDays:
- *                 type: string
- *                 example: "Tuesday"
- *               startTime:
- *                 type: string
- *               endTime:
- *                 type: string
  *             required:
  *               - workingDays
  *               - startTime
  *               - endTime
+ *             properties:
+ *               workingDays:
+ *                 type: string
+ *               startTime:
+ *                 type: string
+ *               endTime:
+ *                 type: string
  *     responses:
  *       '200':
  *         description: Timeslot updated successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: "Timeslot updated successfully"
- *                 updatedTimeslot:
- *                   type: object
- *                   properties:
- *                     id:
- *                       type: string
- *                       format: uuid
- *                     workingDays:
- *                       type: string
- *                     startTime:
- *                       type: string
- *                     endTime:
- *                       type: string
  *       '404':
  *         description: Timeslot not found
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: "Timeslot not found"
  *       '403':
  *         description: Access denied
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: "You don't have permission for this timeslot"
  */
 router.put("/:id/updateTimeslot", authMiddleware, updateTimeslot);
+
 /**
  * @swagger
- *
- *   /timeslot/{id}/DeleteTimeslot:
+ * /timeslot/{id}/DeleteTimeslot:
  *   delete:
  *     summary: Delete an existing timeslot
  *     security:
@@ -200,34 +156,11 @@ router.put("/:id/updateTimeslot", authMiddleware, updateTimeslot);
  *     responses:
  *       '200':
  *         description: Timeslot deleted successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: "Timeslot was deleted"
  *       '404':
  *         description: Timeslot not found
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: "Timeslot not found"
  *       '403':
  *         description: Access denied
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: "You do not have permission for this timeslot"
  */
 router.delete("/:id/DeleteTimeslot", authMiddleware, deleteTimeslot);
+
 export default router;
