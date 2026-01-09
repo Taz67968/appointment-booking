@@ -9,12 +9,15 @@ dotenv.config()
 const { PGUSER, PGPASSWORD, PGHOST, PGNAME, PGPORT, NODE_ENV } = process.env;
 
 if (!PGHOST || !PGPASSWORD || !PGNAME || !PGUSER || !PGPORT) {
-  logger.error(
-    "Database environment variables are missing! Check your .env file."
-  );
-  // process.exit(1);
+  logger.error("❌ Missing DB ENV VARS", {
+    PGHOST,
+    PGUSER,
+    PGNAME,
+    PGPORT
+  });
   throw new Error("Database environment variables are missing");
 }
+
 
 const pool = new Pool({
   user: PGUSER,
