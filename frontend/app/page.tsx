@@ -21,14 +21,9 @@ export default function Home() {
               href="/auth/login?role=client"
               className="text-gray-700 hover:text-indigo-600 font-medium"
             >
-              Client login
+              SignIn
             </Link>
-            <Link
-              href="/auth/login?role=provider"
-              className="text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Provider login
-            </Link>
+            
             <Link
               href="/auth/register?role=client"
               className="hidden sm:inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold text-xs shadow-sm hover:from-indigo-700 hover:to-blue-700 transition-all"
