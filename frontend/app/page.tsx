@@ -21,7 +21,7 @@ export default function Home() {
               href="/auth/login?role=client"
               className="text-gray-700 hover:text-indigo-600 font-medium"
             >
-              SignIn
+              Sign In
             </Link>
             
             <Link
@@ -495,9 +495,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-gray-500">
           <p>© {new Date().getFullYear()} AppointmentHub. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <span>Secure JWT authentication</span>
+            <span>Secure appointment booking</span>
             <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-slate-300" />
-            <span className="hidden sm:inline-block">Built with Next.js & Tailwind CSS</span>
+            <span className="hidden sm:inline-block">Built by Tazoh Cliff</span>
           </div>
         </div>
       </footer>
