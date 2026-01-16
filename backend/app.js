@@ -35,9 +35,9 @@ app.use(morgan(morganFormat, { stream: winstonLogger.stream }));
 
 // CORS configuration
 const allowedOrigins = [
+  "https://appointment-booking-r2vi.vercel.app",
   "http://localhost:5174",
   "http://localhost:3001",
-  "https://appointment-booking-r2vi.vercel.app/",
 ];
 
 const corsOptions = {
