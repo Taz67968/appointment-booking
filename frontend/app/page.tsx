@@ -115,7 +115,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-2xl bg-slate-50 p-4">
                   <p className="text-xs text-gray-500 mb-1">Cancellation rate</p>
-                  <p className="text-2xl font-bold text-gray-900">2%</p>
+                  <p className="text-2xl font-bold text-gray-900">3%</p>
                   <p className="text-xs text-gray-500 mt-1">Last 30 days</p>
                 </div>
               </div>
