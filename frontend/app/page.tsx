@@ -40,7 +40,7 @@ export default function Home() {
           <div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/70 border border-indigo-100 text-xs font-medium text-indigo-700 mb-4 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-400 mr-2" />
-              Live booking dashboard for clients and providers
+              Live booking dashboard for clients and provider
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-4">
               Manage every appointment
