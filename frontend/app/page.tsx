@@ -199,7 +199,7 @@ export default function Home() {
               </div>
               <p className="text-sm text-gray-600">
                 Providers publish their available slots. Clients browse by provider and pick the
-                time that works.
+                time that works
               </p>
             </div>
             <div className="flex flex-col items-start">
