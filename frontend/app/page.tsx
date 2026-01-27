@@ -199,7 +199,7 @@ export default function Home() {
               </div>
               <p className="text-sm text-gray-600">
                 Providers publish their available slots. Clients browse by provider and pick the
-                time that works
+                time that works.
               </p>
             </div>
             <div className="flex flex-col items-start">
@@ -292,7 +292,7 @@ export default function Home() {
               </h3>
               <p className="text-sm text-gray-600">
                 Create recurring slots once and reuse them every week. Clients only see what&apos;s
-                truly available, so you never double-book.
+                truly available, so you never double-book
               </p>
             </div>
             <div>
