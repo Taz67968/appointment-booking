@@ -304,7 +304,7 @@ export default function Home() {
               </h3>
               <p className="text-sm text-gray-600">
                 Clients and providers have dedicated portals. Each sees exactly what they need:
-                bookings, history, and status — nothing more.
+                bookings, history, and status — nothing more
               </p>
             </div>
             <div>
