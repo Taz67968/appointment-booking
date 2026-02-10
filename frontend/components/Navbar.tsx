@@ -41,9 +41,17 @@ export default function Navbar() {
                 </p>
                 <p className="text-xs text-gray-500 capitalize">{user?.role}</p>
               </div>
-              <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
-                {user?.first_name?.[0]}{user?.last_name?.[0]}
-              </div>
+              {user?.profile_image ? (
+                <img
+                  src={`http://localhost:3000${user.profile_image}`}
+                  alt={`${user?.first_name} ${user?.last_name}`}
+                  className="w-10 h-10 rounded-full object-cover border-2 border-indigo-200"
+                />
+              ) : (
+                <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
+                  {user?.first_name?.[0]}{user?.last_name?.[0]}
+                </div>
+              )}
             </div>
             <button
               onClick={handleLogout}

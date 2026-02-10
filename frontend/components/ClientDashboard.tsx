@@ -293,6 +293,61 @@ export default function ClientDashboard() {
               </button>
             </div>
 
+            {/* Products Section */}
+            {productsLoading ? (
+              <div className="text-center py-12 mb-8 border-b border-gray-200 pb-8">
+                <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
+                <p className="mt-2 text-gray-600">Loading products...</p>
+              </div>
+            ) : providerProducts.length > 0 ? (
+              <div className="mb-8 border-b border-gray-200 pb-8">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                  <svg className="w-5 h-5 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  </svg>
+                  Products & Services
+                </h3>
+                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                  {providerProducts.map((product) => (
+                    <div
+                      key={product.id}
+                      className="border-2 border-gray-200 rounded-xl p-4 hover:border-indigo-300 hover:shadow-lg transition-all bg-white"
+                    >
+                      {product.fullImageUrl && (
+                        <div className="mb-3 h-40 rounded-lg overflow-hidden bg-gray-100">
+                          <img
+                            src={product.fullImageUrl}
+                            alt={product.name}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      )}
+                      <h4 className="font-semibold text-gray-900 mb-1 text-lg">{product.name}</h4>
+                      {product.description && (
+                        <p className="text-sm text-gray-600 mb-3 line-clamp-2">{product.description}</p>
+                      )}
+                      {product.price !== null && product.price !== undefined && (
+                        <div className="flex items-end justify-between">
+                          <div>
+                            <p className="text-xs text-gray-500 uppercase tracking-wide">Price</p>
+                            <p className="text-2xl font-bold text-indigo-600">
+                              {product.currency || '$'}{typeof product.price === 'number' ? product.price.toFixed(2) : product.price}
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => setSelectedProduct(product)}
+                            className="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors"
+                          >
+                            View
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
             {timeslotsLoading ? (
               <div className="text-center py-12">
                 <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
@@ -380,6 +435,102 @@ export default function ClientDashboard() {
                 )}
               </>
             )}
+          </div>
+        )}
+
+        {/* Product Detail Modal */}
+        {selectedProduct && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-start">
+                <h2 className="text-2xl font-bold text-gray-900">{selectedProduct.name}</h2>
+                <button
+                  onClick={() => setSelectedProduct(null)}
+                  className="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-lg"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="p-6">
+                {selectedProduct.fullImageUrl && (
+                  <div className="mb-6 rounded-xl overflow-hidden bg-gray-100 h-80">
+                    <img
+                      src={selectedProduct.fullImageUrl}
+                      alt={selectedProduct.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+
+                <div className="space-y-6">
+                  {selectedProduct.description && (
+                    <div>
+                      <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-2">Description</h3>
+                      <p className="text-gray-700 leading-relaxed">{selectedProduct.description}</p>
+                    </div>
+                  )}
+
+                  {selectedProduct.price !== null && selectedProduct.price !== undefined && (
+                    <div>
+                      <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-2">Price</h3>
+                      <div className="flex items-baseline">
+                        <span className="text-4xl font-bold text-indigo-600">
+                          {typeof selectedProduct.price === 'number' ? selectedProduct.price.toFixed(2) : selectedProduct.price}
+                        </span>
+                        <span className="text-xl text-gray-600 ml-2">{selectedProduct.currency || 'USD'}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  <div>
+                    <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3">Provider</h3>
+                    <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                      <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
+                        {selectedProvider?.first_name[0]}{selectedProvider?.last_name[0]}
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900">
+                          {selectedProvider?.first_name} {selectedProvider?.last_name}
+                        </p>
+                        <p className="text-sm text-gray-600">{selectedProvider?.profession}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {selectedProduct.created_at && (
+                    <div>
+                      <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-2">Listed</h3>
+                      <p className="text-gray-700">
+                        {new Date(selectedProduct.created_at).toLocaleDateString('en-US', {
+                          weekday: 'long',
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
+                        })}
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-gray-200 flex gap-4">
+                  <button
+                    onClick={() => setSelectedProduct(null)}
+                    className="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    Close
+                  </button>
+                  <button
+                    onClick={() => setSelectedProduct(null)}
+                    className="flex-1 px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
+                  >
+                    Contact Provider
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         )}
 

@@ -11,6 +11,7 @@ interface User {
   role: 'client' | 'provider';
   profession?: string;
   description?: string;
+  profile_image?: string;
 }
 
 interface RegisterResult {
@@ -72,6 +73,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           role,
           profession: role === 'provider' ? (userData as any).profession : undefined,
           description: role === 'provider' ? (userData as any).description : undefined,
+          profile_image: (userData as any).profile_image,
         };
 
         setUser(user);
