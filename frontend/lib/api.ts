@@ -283,3 +283,88 @@ export const appointmentAPI = {
   },
 };
 
+// Product interface
+export interface Product {
+  id: string;
+  name: string;
+  description: string | null;
+  price: number | null;
+  currency: string | null;
+  image_url: string | null;
+  created_at: string;
+  fullImageUrl?: string | null;
+}
+
+// Upload API
+export const uploadAPI = {
+  uploadProfileImage: async (file: File): Promise<{ message: string; imageUrl: string; fullImageUrl: string }> => {
+    const formData = new FormData();
+    formData.append('profileImage', file);
+
+    const token = getAuthToken();
+    if (!token) {
+      throw new Error('Authentication required');
+    }
+
+    const response = await fetch(`${API_BASE_URL}/upload/profile`, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: `HTTP ${response.status}: ${response.statusText}` }));
+      throw new Error(error.message || `Request failed with status ${response.status}`);
+    }
+
+    return response.json();
+  },
+
+  uploadProduct: async (formData: FormData): Promise<{ message: string; productId: string; imageUrl: string; fullImageUrl: string }> => {
+    const token = getAuthToken();
+    if (!token) {
+      throw new Error('Authentication required');
+    }
+
+    const response = await fetch(`${API_BASE_URL}/upload/product`, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: `HTTP ${response.status}: ${response.statusText}` }));
+      throw new Error(error.message || `Request failed with status ${response.status}`);
+    }
+
+    return response.json();
+  },
+
+  getProducts: async (): Promise<{ products: Product[] }> => {
+    const response = await apiCall('/upload/products', {
+      method: 'GET',
+    });
+    return response.json();
+  },
+
+  getProviderProducts: async (providerId: string): Promise<{ products: Product[] }> => {
+    const response = await fetch(`${API_BASE_URL}/upload/products/provider/${providerId}`);
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: `HTTP ${response.status}: ${response.statusText}` }));
+      throw new Error(error.message || `Request failed with status ${response.status}`);
+    }
+    return response.json();
+  },
+
+  deleteProduct: async (productId: string): Promise<{ message: string }> => {
+    const response = await apiCall(`/upload/products/${productId}`, {
+      method: 'DELETE',
+    });
+    return response.json();
+  },
+};
+

@@ -1,0 +1,882 @@
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:01:17"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:01:17"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:04:39"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:04:39"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:06:52"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:06:52"}
+{"code":"ECONNREFUSED","level":"error","message":"Unable to establish database connection pool","stack":"AggregateError [ECONNREFUSED]: \n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async connectToDb (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:107:20)\n    at async startServer (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/bin/www:122:5)","timestamp":"2026-02-09 16:06:52"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:30:48"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:30:48"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:30:48"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:30:48"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:30:48"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:30:50"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:30:50"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:30:50"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientRegister \u001b[31m500 \u001b[0m7.514 ms - 148\u001b[0m","timestamp":"2026-02-09 16:41:43"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:42:20"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:42:52"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:42:53"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:42:53"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:42:53"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:42:53"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:42:53"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:42:53"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:42:53"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientRegister \u001b[32m204 \u001b[0m1.354 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:14"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientRegister \u001b[33m400 \u001b[0m43.071 ms - 69\u001b[0m","timestamp":"2026-02-09 16:43:14"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientRegister \u001b[32m204 \u001b[0m0.190 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM client WHERE email = $1..., params: [\"liyexas169@coswz.com\"], duration: 62ms, rows: 0}","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"Executed query: { text: INSERT INTO client (first_name, last_name, email, password, role)\n                             VALUE..., params: [\"pq\",\"wt\",\"liyexas169@coswz.com\",\"$2b$10$LMGbUN9Em6WSVsQ6Tvd5dOJwu8vrFDwNxPxQKE5.PoYsJqG0W.zQu\",\"client\"], duration: 11ms, rows: 1}","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"client registered successfully: 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientRegister \u001b[32m201 \u001b[0m213.378 ms - 101\u001b[0m","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientLogin \u001b[32m204 \u001b[0m0.337 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"liyexas169@coswz.com\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 16:43:23"}
+{"level":"info","message":"user logged in succesfully: liyexas169@coswz.com (ID : 1003d2f9-8a4c-4ba7-9a45-2476511626d3)","timestamp":"2026-02-09 16:43:24"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[32m200 \u001b[0m107.748 ms - 439\u001b[0m","timestamp":"2026-02-09 16:43:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/profile \u001b[32m204 \u001b[0m0.798 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:24"}
+{"level":"info","message":"\u001b[0mPOST /upload/profile \u001b[33m401 \u001b[0m17.998 ms - 37\u001b[0m","timestamp":"2026-02-09 16:43:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.232 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.148 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 22ms, rows: 0}","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[32m200 \u001b[0m26.358 ms - 2\u001b[0m","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 24ms, rows: 0}","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[32m200 \u001b[0m25.556 ms - 2\u001b[0m","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 8ms, rows: 0}","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m11.193 ms - -\u001b[0m","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 2ms, rows: 0}","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m5.951 ms - -\u001b[0m","timestamp":"2026-02-09 16:43:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.103 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.825 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.077 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.100 ms - 0\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 28ms, rows: 0}","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m39.129 ms - -\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 31ms, rows: 0}","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m46.100 ms - -\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 2ms, rows: 0}","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m3.729 ms - -\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 8ms, rows: 0}","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m10.738 ms - -\u001b[0m","timestamp":"2026-02-09 16:43:47"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:46:18"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:46:53"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:47:13"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:47:28"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:49:05"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m2.366 ms - 0\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.294 ms - 0\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.111 ms - 0\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.158 ms - 0\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 24ms, rows: 0}","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m40.754 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 47ms, rows: 0}","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m59.101 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 8ms, rows: 0}","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m14.464 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 9ms, rows: 0}","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m16.562 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:36"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m1.867 ms - 0\u001b[0m","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.129 ms - 0\u001b[0m","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 38ms, rows: 0}","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m43.985 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 26ms, rows: 0}","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m30.225 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 3ms, rows: 0}","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m6.465 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 0}","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m1.629 ms - -\u001b[0m","timestamp":"2026-02-09 16:50:48"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.142 ms - 0\u001b[0m","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 21ms, rows: 0}","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m27.519 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.112 ms - 0\u001b[0m","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m7.806 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 0}","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m1.350 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 0}","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m4.087 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:04"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.130 ms - 0\u001b[0m","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 3ms, rows: 0}","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m5.453 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.122 ms - 0\u001b[0m","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.093 ms - 0\u001b[0m","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"1003d2f9-8a4c-4ba7-9a45-2476511626d3\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Retrieved 0 appointments for client 1003d2f9-8a4c-4ba7-9a45-2476511626d3","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m11.874 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 0}","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m7.035 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 0}","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m2.424 ms - -\u001b[0m","timestamp":"2026-02-09 16:51:14"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/providerRegister \u001b[32m204 \u001b[0m0.091 ms - 0\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM serviceProvider WHERE email = $1..., params: [\"eter@gmail.com\"], duration: 12ms, rows: 0}","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Executed query: { text: \n      INSERT INTO serviceProvider (first_name, last_name, email, description, password, profession,..., params: [\"pw\",\"te\",\"eter@gmail.com\",\"eye specialist\",\"$2b$10$lVHChE0OqxKm9NkqK8vBFeWvNEekMcwLio8YukZJkk8/hpCax1uMC\",\"Doctor\",false,\"provider\"], duration: 13ms, rows: 1}","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Provider registered successfully: 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mPOST /auth/providerRegister \u001b[32m201 \u001b[0m186.468 ms - 98\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/providerLogin \u001b[32m204 \u001b[0m0.087 ms - 0\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM serviceProvider WHERE email = $1..., params: [\"eter@gmail.com\"], duration: 6ms, rows: 1}","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"user logged in succesfully: eter@gmail.com (ID : 6dcb1016-0e47-4595-a676-9beead815b41)","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mPOST /auth/providerLogin \u001b[32m200 \u001b[0m99.079 ms - 432\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/profile \u001b[32m204 \u001b[0m0.084 ms - 0\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"error","message":"Error executing query: { text: UPDATE serviceProvider SET profile_image = $1 WHERE id = $2..., params: [\"/uploads/profile/profile-1770652344488-515440391.png\",\"6dcb1016-0e47-4595-a676-9beead815b41\"], error: column \"profile_image\" of relation \"serviceprovider\" does not exist}","timestamp":"2026-02-09 16:52:24"}
+{"code":"42703","file":"analyze.c","length":143,"level":"error","line":"2474","message":"Error uploading profile image: column \"profile_image\" of relation \"serviceprovider\" does not exist","name":"error","position":"28","routine":"transformUpdateTargetList","severity":"ERROR","stack":"error: column \"profile_image\" of relation \"serviceprovider\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:118:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:69:7","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mPOST /upload/profile \u001b[31m500 \u001b[0m19.325 ms - 148\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m1.303 ms - 0\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.292 ms - 0\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 49ms, rows: 0}","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[32m200 \u001b[0m65.215 ms - 2\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 61ms, rows: 0}","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[32m200 \u001b[0m65.886 ms - 2\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.097 ms - 0\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 6ms, rows: 0}","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m8.979 ms - -\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"error","message":"Error executing query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], error: relation \"products\" does not exist}","timestamp":"2026-02-09 16:52:24"}
+{"code":"42P01","file":"parse_relation.c","length":107,"level":"error","line":"1384","message":"Error fetching products: relation \"products\" does not exist","name":"error","position":"72","routine":"parserOpenTable","severity":"ERROR","stack":"error: relation \"products\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:118:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:155:20","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[31m500 \u001b[0m16.535 ms - 148\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.179 ms - 0\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 9ms, rows: 0}","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m32.313 ms - -\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"error","message":"Error executing query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], error: relation \"products\" does not exist}","timestamp":"2026-02-09 16:52:24"}
+{"code":"42P01","file":"parse_relation.c","length":107,"level":"error","line":"1384","message":"Error fetching products: relation \"products\" does not exist","name":"error","position":"72","routine":"parserOpenTable","severity":"ERROR","stack":"error: relation \"products\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:118:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:155:20","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[31m500 \u001b[0m16.295 ms - 148\u001b[0m","timestamp":"2026-02-09 16:52:24"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/product \u001b[32m204 \u001b[0m0.087 ms - 0\u001b[0m","timestamp":"2026-02-09 16:53:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:53:28"}
+{"level":"error","message":"Error executing query: { text: INSERT INTO products (provider_id, name, description, price, image_url)\n       VALUES ($1, $2, $3, $..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\",\"fgfdgssdfg\",\"adff\",\"122\",\"/uploads/products/product-1770652408119-198170466.png\"], error: relation \"products\" does not exist}","timestamp":"2026-02-09 16:53:28"}
+{"code":"42P01","file":"parse_relation.c","length":107,"level":"error","line":"1384","message":"Error uploading product: relation \"products\" does not exist","name":"error","position":"13","routine":"parserOpenTable","severity":"ERROR","stack":"error: relation \"products\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:118:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:115:20","timestamp":"2026-02-09 16:53:28"}
+{"level":"info","message":"\u001b[0mPOST /upload/product \u001b[31m500 \u001b[0m30.375 ms - 148\u001b[0m","timestamp":"2026-02-09 16:53:28"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:56:07"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 16:56:50"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/product \u001b[32m204 \u001b[0m1.216 ms - 0\u001b[0m","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"Executed query: { text: INSERT INTO products (provider_id, name, description, price, image_url)\n       VALUES ($1, $2, $3, $..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\",\"fgfdgssdfg\",\"adff\",\"122\",\"/uploads/products/product-1770652617643-703955729.png\"], duration: 114ms, rows: 1}","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"Product image uploaded for user 6dcb1016-0e47-4595-a676-9beead815b41: product-1770652617643-703955729.png, product ID: b5a7b670-f957-417c-aaf9-5ef6f68b8c1a","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"\u001b[0mPOST /upload/product \u001b[32m201 \u001b[0m151.919 ms - 253\u001b[0m","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.136 ms - 0\u001b[0m","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 3ms, rows: 1}","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[32m200 \u001b[0m13.219 ms - 315\u001b[0m","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[32m200 \u001b[0m29.252 ms - 208821\u001b[0m","timestamp":"2026-02-09 16:56:57"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.129 ms - 0\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m3.848 ms - 0\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.107 ms - 0\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.127 ms - 0\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.234 ms - 0\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.146 ms - 0\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 30ms, rows: 1}","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m32.496 ms - -\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 39ms, rows: 0}","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m57.351 ms - -\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 41ms, rows: 0}","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m49.405 ms - -\u001b[0m","timestamp":"2026-02-09 16:57:28"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 1}","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m10.450 ms - -\u001b[0m","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m13.136 ms - -\u001b[0m","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 3ms, rows: 0}","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m15.753 ms - -\u001b[0m","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 31ms, rows: 0}","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m38.153 ms - -\u001b[0m","timestamp":"2026-02-09 16:57:29"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/createTimeslot \u001b[32m204 \u001b[0m0.110 ms - 0\u001b[0m","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"Executed query: { text: INSERT INTO timeslot (owner_id, workingDays, startTime, endTime)\n                               VALU..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\",\"Wednesday\",\"20:02\",\"21:58\"], duration: 14ms, rows: 1}","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"successfully created timeslot ded8fcea-99b3-44af-b936-1b7d1b09ac68 by 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"\u001b[0mPOST /timeslot/createTimeslot \u001b[32m201 \u001b[0m34.654 ms - 174\u001b[0m","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.125 ms - 0\u001b[0m","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[32m200 \u001b[0m14.589 ms - 126\u001b[0m","timestamp":"2026-02-09 16:58:37"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.100 ms - 0\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.163 ms - 0\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.081 ms - 0\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 23ms, rows: 1}","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m34.334 ms - -\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 40ms, rows: 0}","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m44.098 ms - -\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 42ms, rows: 1}","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m46.790 ms - -\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m3.417 ms - -\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 0}","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m8.927 ms - -\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 3ms, rows: 1}","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m7.527 ms - -\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m1.530 ms - -\u001b[0m","timestamp":"2026-02-09 16:59:08"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/product \u001b[32m204 \u001b[0m0.083 ms - 0\u001b[0m","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"Executed query: { text: INSERT INTO products (provider_id, name, description, price, image_url)\n       VALUES ($1, $2, $3, $..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\",\"asdf\",\"qwe\",\"12\",\"/uploads/products/product-1770652854873-252755369.png\"], duration: 22ms, rows: 1}","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"Product image uploaded for user 6dcb1016-0e47-4595-a676-9beead815b41: product-1770652854873-252755369.png, product ID: f2f13653-5bb9-4caf-a5d9-6d80be4ddaf8","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"\u001b[0mPOST /upload/product \u001b[32m201 \u001b[0m54.712 ms - 253\u001b[0m","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.077 ms - 0\u001b[0m","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 2}","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[32m200 \u001b[0m10.134 ms - 608\u001b[0m","timestamp":"2026-02-09 17:00:54"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[32m200 \u001b[0m1.814 ms - 551802\u001b[0m","timestamp":"2026-02-09 17:00:55"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientRegister \u001b[32m204 \u001b[0m0.111 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM client WHERE email = $1..., params: [\"vowof76975@azeriom.com\"], duration: 15ms, rows: 0}","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"Executed query: { text: INSERT INTO client (first_name, last_name, email, password, role)\n                             VALUE..., params: [\"qew\",\"rerw\",\"vowof76975@azeriom.com\",\"$2b$10$M1gR5Z.VDHBSPL2sN5puDen7tEdLEyxw7/tmf19IBSK8zy7MZRMm2\",\"client\"], duration: 8ms, rows: 1}","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"client registered successfully: 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientRegister \u001b[32m201 \u001b[0m145.741 ms - 101\u001b[0m","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientLogin \u001b[32m204 \u001b[0m0.086 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"vowof76975@azeriom.com\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"user logged in succesfully: vowof76975@azeriom.com (ID : 113eb427-c4c5-4128-878b-501da33df05d)","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[32m200 \u001b[0m93.863 ms - 447\u001b[0m","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/profile \u001b[32m204 \u001b[0m0.288 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"Executed query: { text: UPDATE client SET profile_image = $1 WHERE id = $2..., params: [\"/uploads/profile/profile-1770652989784-367967208.png\",\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"Profile image uploaded for user 113eb427-c4c5-4128-878b-501da33df05d: profile-1770652989784-367967208.png","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"\u001b[0mPOST /upload/profile \u001b[32m201 \u001b[0m7.320 ms - 206\u001b[0m","timestamp":"2026-02-09 17:03:09"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m6.388 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.083 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.068 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.075 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 24ms, rows: 0}","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[32m200 \u001b[0m26.263 ms - 2\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m6.752 ms - -\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 34ms, rows: 1}","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[32m200 \u001b[0m44.924 ms - 160\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m10.376 ms - -\u001b[0m","timestamp":"2026-02-09 17:03:10"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers/6dcb1016-0e47-4595-a676-9beead815b41/timeslots \u001b[32m204 \u001b[0m0.086 ms - 0\u001b[0m","timestamp":"2026-02-09 17:03:13"}
+{"level":"info","message":"Executed query: { text: SELECT id, first_name, last_name, profession, description FROM serviceProvider WHERE id = $1..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 3ms, rows: 1}","timestamp":"2026-02-09 17:03:13"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        t.id,\n        t.workingDays,\n        t.startTime,\n        t.endTime,\n        ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 2ms, rows: 1}","timestamp":"2026-02-09 17:03:13"}
+{"level":"info","message":"Retrieved 1 available timeslots for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:03:13"}
+{"level":"info","message":"\u001b[0mGET /users/providers/6dcb1016-0e47-4595-a676-9beead815b41/timeslots \u001b[32m200 \u001b[0m8.820 ms - 285\u001b[0m","timestamp":"2026-02-09 17:03:13"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.083 ms - 0\u001b[0m","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.082 ms - 0\u001b[0m","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 14ms, rows: 1}","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m15.159 ms - -\u001b[0m","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 20ms, rows: 0}","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m24.461 ms - -\u001b[0m","timestamp":"2026-02-09 17:08:57"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 17:09:59"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m1.348 ms - 0\u001b[0m","timestamp":"2026-02-09 17:10:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.488 ms - 0\u001b[0m","timestamp":"2026-02-09 17:10:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.129 ms - 0\u001b[0m","timestamp":"2026-02-09 17:10:28"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.107 ms - 0\u001b[0m","timestamp":"2026-02-09 17:10:28"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 16ms, rows: 1}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m19.284 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 27ms, rows: 0}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m35.768 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 2ms, rows: 1}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m5.274 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m10.577 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.277 ms - 0\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.094 ms - 0\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.261 ms - 0\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 7ms, rows: 1}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m17.030 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 0}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m20.661 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 2ms, rows: 2}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m13.275 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 0ms, rows: 1}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m3.530 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m3.367 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 2ms, rows: 2}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m4.025 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m3.298 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 6ms, rows: 0}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m9.442 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 2}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m10.497 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 2ms, rows: 0}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m4.956 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 2}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m5.520 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 12ms, rows: 1}","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m16.635 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m1.001 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m2.377 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m2.002 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m0.475 ms - -\u001b[0m","timestamp":"2026-02-09 17:10:29"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.208 ms - 0\u001b[0m","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.181 ms - 0\u001b[0m","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 21ms, rows: 0}","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m32.807 ms - -\u001b[0m","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 31ms, rows: 1}","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m36.515 ms - -\u001b[0m","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m9.095 ms - -\u001b[0m","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 3ms, rows: 0}","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m14.348 ms - -\u001b[0m","timestamp":"2026-02-09 17:14:07"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers/6dcb1016-0e47-4595-a676-9beead815b41/timeslots \u001b[32m204 \u001b[0m0.216 ms - 0\u001b[0m","timestamp":"2026-02-09 17:14:08"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 13ms, rows: 2}","timestamp":"2026-02-09 17:14:08"}
+{"level":"info","message":"\u001b[0mGET /upload/products/provider/6dcb1016-0e47-4595-a676-9beead815b41 \u001b[32m200 \u001b[0m13.940 ms - 608\u001b[0m","timestamp":"2026-02-09 17:14:08"}
+{"level":"info","message":"Executed query: { text: SELECT id, first_name, last_name, profession, description FROM serviceProvider WHERE id = $1..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 15ms, rows: 1}","timestamp":"2026-02-09 17:14:08"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        t.id,\n        t.workingDays,\n        t.startTime,\n        t.endTime,\n        ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 12ms, rows: 1}","timestamp":"2026-02-09 17:14:08"}
+{"level":"info","message":"Retrieved 1 available timeslots for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:14:08"}
+{"level":"info","message":"\u001b[0mGET /users/providers/6dcb1016-0e47-4595-a676-9beead815b41/timeslots \u001b[36m304 \u001b[0m33.381 ms - -\u001b[0m","timestamp":"2026-02-09 17:14:08"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.099 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.095 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.095 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.085 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.085 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.215 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.083 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.070 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.105 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:25"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.087 ms - 0\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 4","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 25ms, rows: 0}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m30.033 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 0ms, rows: 1}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m7.181 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 26ms, rows: 1}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m34.241 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 4","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 33ms, rows: 0}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m41.598 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 4","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 118ms, rows: 2}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m120.860 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 117ms, rows: 0}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m128.438 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 2ms, rows: 1}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m40.945 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 89ms, rows: 1}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m128.923 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 102ms, rows: 0}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m118.825 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 17ms, rows: 2}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m18.074 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m0.389 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m0.353 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 1}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m18.711 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 0}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m19.307 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 6ms, rows: 2}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m23.431 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 5ms, rows: 0}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m9.274 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 9ms, rows: 1}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m12.066 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 13ms, rows: 2}","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m19.454 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m0.746 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m2.461 ms - -\u001b[0m","timestamp":"2026-02-09 17:20:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.099 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.087 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.312 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.063 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 17ms, rows: 1}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m22.495 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 31ms, rows: 0}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m36.742 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 7ms, rows: 1}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m14.280 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 0}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m6.053 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m2.951 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m2.928 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m3.374 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m3.335 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:49"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 3ms, rows: 1}","timestamp":"2026-02-09 17:36:53"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m7.537 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:53"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 5ms, rows: 0}","timestamp":"2026-02-09 17:36:53"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:53"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m9.174 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:53"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 22ms, rows: 1}","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m27.212 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 5ms, rows: 0}","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m28.500 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.090 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.072 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.071 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.071 ms - 0\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 9ms, rows: 1}","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m15.307 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 32ms, rows: 0}","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m40.384 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 8ms, rows: 1}","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m21.503 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 0}","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m29.194 ms - -\u001b[0m","timestamp":"2026-02-09 17:36:54"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.083 ms - 0\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.076 ms - 0\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.081 ms - 0\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 26ms, rows: 2}","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m30.841 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 32ms, rows: 1}","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m35.166 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 21ms, rows: 0}","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m35.952 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m0.891 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m1.504 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:52"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 9ms, rows: 1}","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m14.420 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 11ms, rows: 0}","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m15.569 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 2}","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m10.529 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m1.577 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m1.214 ms - -\u001b[0m","timestamp":"2026-02-09 17:42:53"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.084 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:32"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.092 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:32"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.112 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:32"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.079 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:32"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Client connected from Pool (Total count: 2","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 9ms, rows: 0}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m12.389 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 10ms, rows: 1}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m10.207 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 1 providers","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m2.523 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"113eb427-c4c5-4128-878b-501da33df05d\"], duration: 3ms, rows: 0}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 0 appointments for client 113eb427-c4c5-4128-878b-501da33df05d","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m5.637 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.084 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.071 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.113 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 3ms, rows: 1}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m11.861 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.124 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 3ms, rows: 0}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m9.850 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.089 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 5ms, rows: 2}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m8.449 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.074 ms - 0\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 1}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m3.053 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m3.977 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 0ms, rows: 2}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m3.258 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m0.514 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m1.074 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 0ms, rows: 1}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m3.346 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 0}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m2.923 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 1ms, rows: 2}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m3.462 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 2ms, rows: 1}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m4.947 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 4ms, rows: 0}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Retrieved 0 appointments for provider 6dcb1016-0e47-4595-a676-9beead815b41","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m7.424 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, image_url, created_at\n       FROM products\n       WHERE provide..., params: [\"6dcb1016-0e47-4595-a676-9beead815b41\"], duration: 2ms, rows: 2}","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m8.205 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:33"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652854873-252755369.png \u001b[36m304 \u001b[0m0.524 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:34"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770652617643-703955729.png \u001b[36m304 \u001b[0m1.196 ms - -\u001b[0m","timestamp":"2026-02-09 17:43:34"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-09 17:48:13"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-09 17:48:14"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-09 17:48:14"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-09 17:48:14"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-09 17:48:14"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-09 17:48:14"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 17:48:14"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-09 17:48:14"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/product \u001b[32m204 \u001b[0m1.390 ms - 0\u001b[0m","timestamp":"2026-02-09 17:54:09"}
+{"level":"info","message":"\u001b[0mPOST /upload/product \u001b[33m401 \u001b[0m27.969 ms - 30\u001b[0m","timestamp":"2026-02-09 17:54:09"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-10 10:57:28"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-10 10:57:29"}
+{"code":"28000","file":"miscinit.c","length":108,"level":"error","line":"755","message":"Unable to establish database connection pool role \"appointment_user\" does not exist","name":"error","routine":"InitializeSessionUserId","severity":"FATAL","stack":"error: role \"appointment_user\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async connectToDb (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:131:20)\n    at async startServer (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/bin/www:122:5)","timestamp":"2026-02-10 10:57:29"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:01:23"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-10 11:01:36"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-10 11:01:36"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:01:36"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-10 11:01:36"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-10 11:01:36"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-10 11:01:36"}
+{"level":"info","message":"Recieved SIGHUP","timestamp":"2026-02-10 11:01:59"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:02:56"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m1.237 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.244 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.197 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.210 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.207 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth iddleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at authMiddleware (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/authmiddlewares.js:14:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[33m401 \u001b[0m15.315 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[33m401 \u001b[0m15.565 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.120 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth iddleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at authMiddleware (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/authmiddlewares.js:14:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[33m401 \u001b[0m8.754 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[33m401 \u001b[0m11.364 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[33m401 \u001b[0m23.449 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[33m401 \u001b[0m6.932 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth iddleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at authMiddleware (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/authmiddlewares.js:14:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[33m401 \u001b[0m2.538 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[33m401 \u001b[0m10.082 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[33m401 \u001b[0m14.810 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth iddleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at authMiddleware (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/authmiddlewares.js:14:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[33m401 \u001b[0m16.217 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[33m401 \u001b[0m36.994 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[33m401 \u001b[0m42.797 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:35"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.161 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.098 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.170 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.109 ms - 0\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"expiredAt":"2026-02-09T17:03:09.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[33m401 \u001b[0m6.030 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"expiredAt":"2026-02-09T17:03:09.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[33m401 \u001b[0m2.783 ms - 30\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 59ms, rows: 0}","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[32m200 \u001b[0m60.909 ms - 2\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 2ms, rows: 0}","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m3.266 ms - -\u001b[0m","timestamp":"2026-02-10 11:03:42"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.125 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.086 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.523 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.088 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.210 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth iddleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at authMiddleware (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/authmiddlewares.js:14:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[33m401 \u001b[0m6.783 ms - 30\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[33m401 \u001b[0m8.306 ms - 30\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[33m401 \u001b[0m21.197 ms - 30\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.088 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth iddleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at authMiddleware (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/authmiddlewares.js:14:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[33m401 \u001b[0m7.135 ms - 30\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"expiredAt":"2026-02-09T16:52:24.000Z","level":"error","message":"Auth middleware: token verification failed jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/jsonwebtoken/verify.js:101:10)\n    at appointAuth (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/middilewares/appointmentAuth.js:16:25)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/express/lib/router/index.js:346:12)","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[33m401 \u001b[0m8.120 ms - 30\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[33m401 \u001b[0m1.775 ms - 30\u001b[0m","timestamp":"2026-02-10 11:04:23"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientLogin \u001b[32m204 \u001b[0m0.341 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:43"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:04:43"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"liyexas169@coswz.com\"], duration: 65ms, rows: 0}","timestamp":"2026-02-10 11:04:43"}
+{"level":"warn","message":"Login attempt failed: Client not found - liyexas169@coswz.com","timestamp":"2026-02-10 11:04:43"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[33m401 \u001b[0m90.239 ms - 33\u001b[0m","timestamp":"2026-02-10 11:04:43"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientLogin \u001b[32m204 \u001b[0m0.083 ms - 0\u001b[0m","timestamp":"2026-02-10 11:04:53"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:04:54"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"eter@gmail.com\"], duration: 18ms, rows: 0}","timestamp":"2026-02-10 11:04:54"}
+{"level":"warn","message":"Login attempt failed: Client not found - eter@gmail.com","timestamp":"2026-02-10 11:04:54"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[33m401 \u001b[0m19.130 ms - 33\u001b[0m","timestamp":"2026-02-10 11:04:54"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"eter@gmail.com\"], duration: 3ms, rows: 0}","timestamp":"2026-02-10 11:04:55"}
+{"level":"warn","message":"Login attempt failed: Client not found - eter@gmail.com","timestamp":"2026-02-10 11:04:55"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[33m401 \u001b[0m2.989 ms - 33\u001b[0m","timestamp":"2026-02-10 11:04:55"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientLogin \u001b[32m204 \u001b[0m0.084 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:02"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"peter@gmail.com\"], duration: 1ms, rows: 0}","timestamp":"2026-02-10 11:05:02"}
+{"level":"warn","message":"Login attempt failed: Client not found - peter@gmail.com","timestamp":"2026-02-10 11:05:02"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[33m401 \u001b[0m1.508 ms - 33\u001b[0m","timestamp":"2026-02-10 11:05:02"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"peter@gmail.com\"], duration: 4ms, rows: 0}","timestamp":"2026-02-10 11:05:03"}
+{"level":"warn","message":"Login attempt failed: Client not found - peter@gmail.com","timestamp":"2026-02-10 11:05:03"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[33m401 \u001b[0m5.195 ms - 33\u001b[0m","timestamp":"2026-02-10 11:05:03"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientLogin \u001b[32m204 \u001b[0m0.094 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:27"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:05:27"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"tazohcliff@gmail.com\"], duration: 8ms, rows: 0}","timestamp":"2026-02-10 11:05:27"}
+{"level":"warn","message":"Login attempt failed: Client not found - tazohcliff@gmail.com","timestamp":"2026-02-10 11:05:27"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[33m401 \u001b[0m8.690 ms - 33\u001b[0m","timestamp":"2026-02-10 11:05:27"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientRegister \u001b[32m204 \u001b[0m0.335 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM client WHERE email = $1..., params: [\"liyexas169@coswz.com\"], duration: 51ms, rows: 0}","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Executed query: { text: INSERT INTO client (first_name, last_name, email, password, role)\n                             VALUE..., params: [\"qw\",\"er\",\"liyexas169@coswz.com\",\"$2b$10$3GKUdHp6S9V0Ohzhi8IateTuPBuJ/rzSAXNpLpM/ymIcG7bZG8wZa\",\"client\"], duration: 14ms, rows: 1}","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"client registered successfully: 856ff571-625e-4531-b4dd-f85c1278b30d","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientRegister \u001b[32m201 \u001b[0m169.635 ms - 101\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/clientLogin \u001b[32m204 \u001b[0m0.087 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM client WHERE email = $1..., params: [\"liyexas169@coswz.com\"], duration: 1ms, rows: 1}","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"user logged in succesfully: liyexas169@coswz.com (ID : 856ff571-625e-4531-b4dd-f85c1278b30d)","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[32m200 \u001b[0m94.546 ms - 439\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/profile \u001b[32m204 \u001b[0m0.086 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.084 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.446 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getAppointments \u001b[32m204 \u001b[0m0.075 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/providers \u001b[32m204 \u001b[0m0.074 ms - 0\u001b[0m","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 24ms, rows: 0}","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-10 11:05:56"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m33.295 ms - -\u001b[0m","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        id,\n        first_name,\n        last_name,\n        email,\n        profession,..., params: [], duration: 2ms, rows: 0}","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Retrieved 0 providers","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"\u001b[0mGET /users/providers \u001b[36m304 \u001b[0m4.057 ms - -\u001b[0m","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Executed query: { text: UPDATE client SET profile_image = $1 WHERE id = $2..., params: [\"/uploads/profile/profile-1770717956841-104513072.png\",\"856ff571-625e-4531-b4dd-f85c1278b30d\"], duration: 201ms, rows: 1}","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Profile image uploaded for user 856ff571-625e-4531-b4dd-f85c1278b30d: profile-1770717956841-104513072.png","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"\u001b[0mPOST /upload/profile \u001b[32m201 \u001b[0m218.986 ms - 206\u001b[0m","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"856ff571-625e-4531-b4dd-f85c1278b30d\"], duration: 223ms, rows: 0}","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Retrieved 0 appointments for client 856ff571-625e-4531-b4dd-f85c1278b30d","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m230.985 ms - -\u001b[0m","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"856ff571-625e-4531-b4dd-f85c1278b30d\"], duration: 3ms, rows: 0}","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"Retrieved 0 appointments for client 856ff571-625e-4531-b4dd-f85c1278b30d","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[36m304 \u001b[0m7.980 ms - -\u001b[0m","timestamp":"2026-02-10 11:05:57"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/providerRegister \u001b[32m204 \u001b[0m0.196 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM serviceProvider WHERE email = $1..., params: [\"vowof76975@azeriom.com\"], duration: 12ms, rows: 0}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: \n      INSERT INTO serviceProvider (first_name, last_name, email, description, password, profession,..., params: [\"as\",\"af\",\"vowof76975@azeriom.com\",\"nose specialist\",\"$2b$10$n5cTgqSGHpllkmT8mF/NIOqhPb7Twmdz6551CP0fZvfKAGk5ThaeK\",\"doctor\",false,\"provider\"], duration: 8ms, rows: 1}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Provider registered successfully: 37ec16ab-b332-45b2-82f8-625efd7eda2d","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mPOST /auth/providerRegister \u001b[32m201 \u001b[0m112.599 ms - 98\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /auth/providerLogin \u001b[32m204 \u001b[0m0.087 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role FROM serviceProvider WHERE email = $1..., params: [\"vowof76975@azeriom.com\"], duration: 3ms, rows: 1}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"user logged in succesfully: vowof76975@azeriom.com (ID : 37ec16ab-b332-45b2-82f8-625efd7eda2d)","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mPOST /auth/providerLogin \u001b[32m200 \u001b[0m95.267 ms - 451\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/profile \u001b[32m204 \u001b[0m0.081 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: UPDATE serviceProvider SET profile_image = $1 WHERE id = $2..., params: [\"/uploads/profile/profile-1770718046267-170009202.png\",\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 42ms, rows: 1}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Profile image uploaded for user 37ec16ab-b332-45b2-82f8-625efd7eda2d: profile-1770718046267-170009202.png","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mPOST /upload/profile \u001b[32m201 \u001b[0m49.698 ms - 206\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.088 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.065 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m2.142 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m0.108 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.077 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.093 ms - 0\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 54ms, rows: 0}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Retrieved 0 appointments for provider 37ec16ab-b332-45b2-82f8-625efd7eda2d","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[32m200 \u001b[0m67.016 ms - 2\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 4ms, rows: 0}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Retrieved 0 appointments for provider 37ec16ab-b332-45b2-82f8-625efd7eda2d","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m11.461 ms - -\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 97ms, rows: 0}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[32m200 \u001b[0m118.503 ms - 2\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 2ms, rows: 0}","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m10.068 ms - -\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"error","message":"Error executing query: { text: SELECT id, name, description, price, currency, image_url, created_at\n       FROM products\n       WHE..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], error: column \"currency\" does not exist}","timestamp":"2026-02-10 11:07:26"}
+{"code":"42703","file":"parse_relation.c","length":108,"level":"error","line":"3657","message":"Error fetching products: column \"currency\" does not exist","name":"error","position":"38","routine":"errorMissingColumn","severity":"ERROR","stack":"error: column \"currency\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:142:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:155:20","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[31m500 \u001b[0m146.829 ms - 148\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"error","message":"Error executing query: { text: SELECT id, name, description, price, currency, image_url, created_at\n       FROM products\n       WHE..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], error: column \"currency\" does not exist}","timestamp":"2026-02-10 11:07:26"}
+{"code":"42703","file":"parse_relation.c","length":108,"level":"error","line":"3657","message":"Error fetching products: column \"currency\" does not exist","name":"error","position":"38","routine":"errorMissingColumn","severity":"ERROR","stack":"error: column \"currency\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:142:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:155:20","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[31m500 \u001b[0m74.150 ms - 148\u001b[0m","timestamp":"2026-02-10 11:07:26"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/product \u001b[32m204 \u001b[0m0.082 ms - 0\u001b[0m","timestamp":"2026-02-10 11:08:06"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:08:06"}
+{"level":"error","message":"Error executing query: { text: INSERT INTO products (provider_id, name, description, price, currency, image_url)\n       VALUES ($1,..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\",\"adfv\",\"wer\",\"34\",\"XAF\",\"/uploads/products/product-1770718086128-290196238.png\"], error: column \"currency\" of relation \"products\" does not exist}","timestamp":"2026-02-10 11:08:06"}
+{"code":"42703","file":"parse_target.c","length":129,"level":"error","line":"1080","message":"Error uploading product: column \"currency\" of relation \"products\" does not exist","name":"error","position":"62","routine":"checkInsertTargets","severity":"ERROR","stack":"error: column \"currency\" of relation \"products\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:142:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:115:20","timestamp":"2026-02-10 11:08:06"}
+{"level":"info","message":"\u001b[0mPOST /upload/product \u001b[31m500 \u001b[0m63.775 ms - 148\u001b[0m","timestamp":"2026-02-10 11:08:06"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:08:07"}
+{"level":"error","message":"Error executing query: { text: INSERT INTO products (provider_id, name, description, price, currency, image_url)\n       VALUES ($1,..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\",\"adfv\",\"wer\",\"34\",\"XAF\",\"/uploads/products/product-1770718087960-289332172.png\"], error: column \"currency\" of relation \"products\" does not exist}","timestamp":"2026-02-10 11:08:07"}
+{"code":"42703","file":"parse_target.c","length":129,"level":"error","line":"1080","message":"Error uploading product: column \"currency\" of relation \"products\" does not exist","name":"error","position":"62","routine":"checkInsertTargets","severity":"ERROR","stack":"error: column \"currency\" of relation \"products\" does not exist\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:142:22)\n    at async file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/routes/upload.js:115:20","timestamp":"2026-02-10 11:08:07"}
+{"level":"info","message":"\u001b[0mPOST /upload/product \u001b[31m500 \u001b[0m12.993 ms - 148\u001b[0m","timestamp":"2026-02-10 11:08:07"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:09:45"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2026-02-10 11:10:04"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:10:10"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2026-02-10 11:10:30"}
+{"level":"info","message":"Database is configured for: appointment_booking","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"Attempting to Start server on port 3005","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"Starting server on port 3005","timestamp":"2026-02-10 11:10:58"}
+{"level":"info","message":"\u001b[0mOPTIONS /timeslot/viewTimeslot \u001b[32m204 \u001b[0m1.487 ms - 0\u001b[0m","timestamp":"2026-02-10 11:11:15"}
+{"level":"info","message":"\u001b[0mOPTIONS /appointment/getProviderAppointments \u001b[32m204 \u001b[0m0.361 ms - 0\u001b[0m","timestamp":"2026-02-10 11:11:15"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.117 ms - 0\u001b[0m","timestamp":"2026-02-10 11:11:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-10 11:11:15"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 84ms, rows: 0}","timestamp":"2026-02-10 11:11:15"}
+{"level":"info","message":"Retrieved 0 appointments for provider 37ec16ab-b332-45b2-82f8-625efd7eda2d","timestamp":"2026-02-10 11:11:15"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m88.468 ms - -\u001b[0m","timestamp":"2026-02-10 11:11:15"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 98ms, rows: 0}","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"Retrieved 0 appointments for provider 37ec16ab-b332-45b2-82f8-625efd7eda2d","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"\u001b[0mGET /appointment/getProviderAppointments \u001b[36m304 \u001b[0m103.460 ms - -\u001b[0m","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 322ms, rows: 0}","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m340.769 ms - -\u001b[0m","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"Executed query: { text: SELECT id, workingDays, startTime, endTime, booked FROM timeslot WHERE owner_id = $1\n               ..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 23ms, rows: 0}","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"\u001b[0mGET /timeslot/viewTimeslot \u001b[36m304 \u001b[0m25.203 ms - -\u001b[0m","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"Client connected from Pool (Total count: 3","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, currency, image_url, created_at\n       FROM products\n       WHE..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 341ms, rows: 0}","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[32m200 \u001b[0m349.163 ms - 15\u001b[0m","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, currency, image_url, created_at\n       FROM products\n       WHE..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 2ms, rows: 0}","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[36m304 \u001b[0m6.668 ms - -\u001b[0m","timestamp":"2026-02-10 11:11:16"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/product \u001b[32m204 \u001b[0m0.144 ms - 0\u001b[0m","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"Client connected from Pool (Total count: 1","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"Executed query: { text: INSERT INTO products (provider_id, name, description, price, currency, image_url)\n       VALUES ($1,..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\",\"adsdf\",\"dewrf\",\"1000\",\"XAF\",\"/uploads/products/product-1770718304637-602505402.png\"], duration: 62ms, rows: 1}","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"Product image uploaded for user 37ec16ab-b332-45b2-82f8-625efd7eda2d: product-1770718304637-602505402.png, product ID: 6e5f862b-39c8-487d-b2fc-32f36a9bc2bf","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"\u001b[0mPOST /upload/product \u001b[32m201 \u001b[0m90.081 ms - 253\u001b[0m","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"\u001b[0mOPTIONS /upload/products \u001b[32m204 \u001b[0m0.452 ms - 0\u001b[0m","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"Executed query: { text: SELECT id, name, description, price, currency, image_url, created_at\n       FROM products\n       WHE..., params: [\"37ec16ab-b332-45b2-82f8-625efd7eda2d\"], duration: 3ms, rows: 1}","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"\u001b[0mGET /upload/products \u001b[32m200 \u001b[0m7.473 ms - 329\u001b[0m","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"\u001b[0mGET /uploads/products/product-1770718304637-602505402.png \u001b[32m200 \u001b[0m3.909 ms - 504441\u001b[0m","timestamp":"2026-02-10 11:11:44"}
+{"level":"info","message":"Recieved SIGINT","timestamp":"2026-02-10 11:12:15"}

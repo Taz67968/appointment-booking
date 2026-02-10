@@ -89,6 +89,31 @@ const initialzeDbSchema = async () => {
       );
     `);
 
+    // Ensure profile image columns exist for clients and providers
+    await client.query(`
+      ALTER TABLE client
+      ADD COLUMN IF NOT EXISTS profile_image VARCHAR(255);
+    `);
+
+    await client.query(`
+      ALTER TABLE serviceProvider
+      ADD COLUMN IF NOT EXISTS profile_image VARCHAR(255);
+    `);
+
+    // Create products table for provider product uploads
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS products (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        provider_id UUID NOT NULL REFERENCES serviceProvider(id),
+        name VARCHAR(100) NOT NULL,
+        description TEXT,
+        price NUMERIC,
+        currency VARCHAR(10) DEFAULT 'USD',
+        image_url VARCHAR(255),
+        created_at TIMESTAMP DEFAULT NOW()
+      );
+    `);
+
     logger.info("Database schema initialized successfully");
   } catch (error) {
     logger.error("Error during schema initialization:", {

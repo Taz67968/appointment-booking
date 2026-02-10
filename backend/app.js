@@ -14,6 +14,7 @@ import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
 import timeslotRouter from './routes/timeslot.js'
 import appointmentRouter from "./routes/appointment.js"
+import uploadRouter from "./routes/upload.js"
 import cors from 'cors';
 
 const app = express();
@@ -38,6 +39,7 @@ const allowedOrigins = [
   "https://appointment-booking-r2vi.vercel.app",
   "http://localhost:5174",
   "http://localhost:3001",
+  "http://localhost:3000",
 ];
 
 const corsOptions = {
@@ -69,6 +71,7 @@ app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/timeslot', timeslotRouter)
 app.use("/appointment", appointmentRouter)
+app.use("/upload", uploadRouter)
 
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));

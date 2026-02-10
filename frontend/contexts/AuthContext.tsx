@@ -13,11 +13,18 @@ interface User {
   description?: string;
 }
 
+interface RegisterResult {
+  message: string;
+  clientId?: { id: string };
+  clientid?: { id: string };
+  providerId?: string;
+}
+
 interface AuthContextType {
   user: User | null;
   token: string | null;
   login: (email: string, password: string, role: 'client' | 'provider') => Promise<void>;
-  register: (data: any, role: 'client' | 'provider') => Promise<void>;
+  register: (data: any, role: 'client' | 'provider') => Promise<RegisterResult>;
   logout: () => void;
   isAuthenticated: boolean;
   loading: boolean;
@@ -80,19 +87,24 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
-  const register = async (data: any, role: 'client' | 'provider') => {
+  const register = async (data: any, role: 'client' | 'provider'): Promise<RegisterResult> => {
     try {
       // Add role to the data
       const dataWithRole = { ...data, role };
       
+      let result: RegisterResult;
+      
       if (role === 'client') {
-        await authAPI.clientRegister(dataWithRole);
+        result = await authAPI.clientRegister(dataWithRole);
       } else {
-        await authAPI.providerRegister(dataWithRole);
+        const providerResult = await authAPI.providerRegister(dataWithRole);
+        result = { message: providerResult.message, providerId: providerResult.providerId };
       }
       
       // Auto-login after registration
       await login(data.email, data.password, role);
+      
+      return result;
     } catch (error: any) {
       throw new Error(error.message || 'Registration failed');
     }

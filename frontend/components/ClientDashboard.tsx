@@ -1,21 +1,24 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { appointmentAPI, providerAPI, Appointment, Provider, ProviderWithTimeslots, Timeslot } from '@/lib/api';
+import { appointmentAPI, providerAPI, uploadAPI, Appointment, Provider, ProviderWithTimeslots, Timeslot, Product } from '@/lib/api';
 
 export default function ClientDashboard() {
   const [appointments, setAppointments] = useState<Appointment[]>([]);
   const [providers, setProviders] = useState<Provider[]>([]);
   const [selectedProvider, setSelectedProvider] = useState<Provider | null>(null);
   const [providerTimeslots, setProviderTimeslots] = useState<Timeslot[]>([]);
+  const [providerProducts, setProviderProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [providersLoading, setProvidersLoading] = useState(false);
   const [timeslotsLoading, setTimeslotsLoading] = useState(false);
+  const [productsLoading, setProductsLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTimeslot, setSelectedTimeslot] = useState<string>('');
   const [appointmentDate, setAppointmentDate] = useState('');
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     loadAppointments();
@@ -25,6 +28,7 @@ export default function ClientDashboard() {
   useEffect(() => {
     if (selectedProvider) {
       loadProviderTimeslots(selectedProvider.id);
+      loadProviderProducts(selectedProvider.id);
     }
   }, [selectedProvider]);
 
@@ -65,6 +69,19 @@ export default function ClientDashboard() {
     }
   };
 
+  const loadProviderProducts = async (providerId: string) => {
+    try {
+      setProductsLoading(true);
+      const data = await uploadAPI.getProviderProducts(providerId);
+      setProviderProducts(data.products || []);
+    } catch (err: any) {
+      console.error('Failed to load products:', err);
+      setProviderProducts([]);
+    } finally {
+      setProductsLoading(false);
+    }
+  };
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     loadProviders();
@@ -100,6 +117,7 @@ export default function ClientDashboard() {
     setSelectedProvider(provider);
     setSelectedTimeslot('');
     setAppointmentDate('');
+    setSelectedProduct(null);
   };
 
   const handleCancelAppointment = async (appointmentId: string) => {
