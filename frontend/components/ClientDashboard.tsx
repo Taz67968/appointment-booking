@@ -15,6 +15,12 @@ export default function ClientDashboard() {
   const [productsLoading, setProductsLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const [editingAppointment, setEditingAppointment] = useState<any | null>(null);
+  const [rescheduleTimeslots, setRescheduleTimeslots] = useState<Timeslot[]>([]);
+  const [newAppointmentTimeslot, setNewAppointmentTimeslot] = useState<string>('');
+  const [newAppointmentDate, setNewAppointmentDate] = useState<string>('');
+  const [rescheduleReason, setRescheduleReason] = useState<string>('');
+  const [rescheduleLoading, setRescheduleLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTimeslot, setSelectedTimeslot] = useState<string>('');
   const [appointmentDate, setAppointmentDate] = useState('');
@@ -136,6 +142,52 @@ export default function ClientDashboard() {
       }
     } catch (err: any) {
       setError(err.message || 'Failed to cancel appointment');
+    }
+  };
+
+  const openRescheduleModal = async (appointment: Appointment) => {
+    setEditingAppointment(appointment);
+    setNewAppointmentDate(appointment.appointment_date?.slice(0,10) || '');
+    setNewAppointmentTimeslot(appointment.timeslot_id || '');
+    setRescheduleReason('');
+    try {
+      setRescheduleTimeslots([]);
+      const data = await providerAPI.getTimeslots(appointment.owner_id as string);
+      setRescheduleTimeslots(data.timeslots || []);
+    } catch (err: any) {
+      console.error('Failed to load provider timeslots for reschedule:', err);
+      setRescheduleTimeslots([]);
+    }
+  };
+
+  const handleSubmitReschedule = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!editingAppointment) return;
+    if (!newAppointmentTimeslot || !newAppointmentDate) {
+      setError('Please select a new date and timeslot');
+      return;
+    }
+
+    try {
+      setRescheduleLoading(true);
+      setError('');
+      setSuccess('');
+      await appointmentAPI.clientUpdate(editingAppointment.id, {
+        timeslot_id: newAppointmentTimeslot,
+        appointment_date: newAppointmentDate,
+        reason: rescheduleReason,
+      });
+      setSuccess('Appointment rescheduled successfully');
+      setEditingAppointment(null);
+      await loadAppointments();
+      // if provider being viewed, refresh timeslots
+      if (selectedProvider && selectedProvider.id === editingAppointment.owner_id) {
+        await loadProviderTimeslots(selectedProvider.id);
+      }
+    } catch (err: any) {
+      setError(err.message || 'Failed to reschedule appointment');
+    } finally {
+      setRescheduleLoading(false);
     }
   };
 
@@ -534,6 +586,90 @@ export default function ClientDashboard() {
           </div>
         )}
 
+        {/* Reschedule Modal */}
+        {editingAppointment && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full">
+              <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-start">
+                <h2 className="text-2xl font-bold text-gray-900">Reschedule Appointment</h2>
+                <button
+                  onClick={() => setEditingAppointment(null)}
+                  className="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-lg"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <form onSubmit={handleSubmitReschedule} className="p-6 space-y-4">
+                <p className="text-sm text-gray-600">Rescheduling appointment with <strong>{editingAppointment.provider_first_name} {editingAppointment.provider_last_name}</strong></p>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Select New Date</label>
+                  <input
+                    type="date"
+                    value={newAppointmentDate}
+                    onChange={(e) => setNewAppointmentDate(e.target.value)}
+                    required
+                    min={new Date().toISOString().split('T')[0]}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Choose Timeslot</label>
+                  <div className="grid gap-2 md:grid-cols-2">
+                    {rescheduleTimeslots.map((ts) => (
+                      <button
+                        key={ts.id}
+                        type="button"
+                        onClick={() => setNewAppointmentTimeslot(ts.id)}
+                        className={`p-3 border rounded-lg text-left ${newAppointmentTimeslot === ts.id ? 'border-indigo-500 bg-indigo-50' : 'border-gray-200'} ${ts.booked ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        disabled={ts.booked}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="font-medium text-gray-900">{ts.workingDays}</p>
+                            <p className="text-sm text-gray-600">{ts.startTime} - {ts.endTime}</p>
+                          </div>
+                          {ts.booked && <span className="text-xs text-red-600">Booked</span>}
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Reason for reschedule (optional)</label>
+                  <textarea
+                    value={rescheduleReason}
+                    onChange={(e) => setRescheduleReason(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+
+                <div className="flex justify-end gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setEditingAppointment(null)}
+                    className="px-6 py-2 border border-gray-300 rounded-lg text-gray-700"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={rescheduleLoading}
+                    className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+                  >
+                    {rescheduleLoading ? 'Rescheduling...' : 'Submit'}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+
         {/* My Appointments */}
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
           <div className="flex items-center mb-6">
@@ -635,15 +771,26 @@ export default function ClientDashboard() {
                       </div>
                     </div>
                     {appointment.status === 'booked' && (
-                      <button
-                        onClick={() => handleCancelAppointment(appointment.id)}
-                        className="ml-4 flex items-center space-x-2 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-600 transition-colors shadow-md hover:shadow-lg"
-                      >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                        <span>Cancel</span>
-                      </button>
+                      <div className="flex gap-2">
+                        <button
+                          onClick={() => openRescheduleModal(appointment)}
+                          className="ml-4 flex items-center space-x-2 bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-600 transition-colors shadow-md hover:shadow-lg"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span>Reschedule</span>
+                        </button>
+                        <button
+                          onClick={() => handleCancelAppointment(appointment.id)}
+                          className="ml-4 flex items-center space-x-2 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-600 transition-colors shadow-md hover:shadow-lg"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                          <span>Cancel</span>
+                        </button>
+                      </div>
                     )}
                   </div>
                 </div>

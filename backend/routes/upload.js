@@ -203,6 +203,88 @@ router.get('/products/provider/:providerId', async (req, res, next) => {
 });
 
 /**
+ * PUT /upload/products/:productId
+ * Update a product's details (name, description, price)
+ */
+router.put('/products/:productId', async (req, res, next) => {
+  try {
+    // Verify token
+    const { error, userId } = verifyToken(req);
+    
+    if (error) {
+      return res.status(401).json({ message: error });
+    }
+    
+    if (!userId) {
+      return res.status(401).json({ message: 'Authentication required' });
+    }
+
+    const { productId } = req.params;
+    const { name, description, price, currency } = req.body;
+
+    // Check if product belongs to the user
+    const checkResult = await query(
+      'SELECT * FROM products WHERE id = $1 AND provider_id = $2',
+      [productId, userId]
+    );
+
+    if (checkResult.rows.length === 0) {
+      return res.status(404).json({ message: 'Product not found or unauthorized' });
+    }
+
+    const product = checkResult.rows[0];
+
+    // Update product (only provided fields)
+    const updateFields = [];
+    const updateValues = [];
+    let paramCount = 1;
+
+    if (name !== undefined) {
+      updateFields.push(`name = $${paramCount}`);
+      updateValues.push(name);
+      paramCount++;
+    }
+    if (description !== undefined) {
+      updateFields.push(`description = $${paramCount}`);
+      updateValues.push(description);
+      paramCount++;
+    }
+    if (price !== undefined) {
+      updateFields.push(`price = $${paramCount}`);
+      updateValues.push(price);
+      paramCount++;
+    }
+    if (currency !== undefined) {
+      updateFields.push(`currency = $${paramCount}`);
+      updateValues.push(currency);
+      paramCount++;
+    }
+
+    if (updateFields.length === 0) {
+      return res.status(400).json({ message: 'No fields to update' });
+    }
+
+    updateValues.push(productId);
+    updateValues.push(userId);
+
+    const result = await query(
+      `UPDATE products SET ${updateFields.join(', ')} WHERE id = $${paramCount} AND provider_id = $${paramCount + 1} RETURNING *`,
+      updateValues
+    );
+
+    logger.info(`Product ${productId} updated by user ${userId}`);
+
+    res.json({ 
+      message: 'Product updated successfully',
+      product: result.rows[0]
+    });
+  } catch (error) {
+    logger.error('Error updating product:', error);
+    next(error);
+  }
+});
+
+/**
  * DELETE /upload/products/:productId
  * Delete a product
  */

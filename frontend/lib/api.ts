@@ -248,6 +248,14 @@ export const providerAPI = {
     });
     return response.json();
   },
+
+  updateProfile: async (data: { first_name?: string; last_name?: string; profession?: string; description?: string }): Promise<{ message: string; provider: any }> => {
+    const response = await apiCall('/users/profile', {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  },
 };
 
 // Appointment API
@@ -276,6 +284,29 @@ export const appointmentAPI = {
 
   cancel: async (appointmentId: string): Promise<{ message: string }> => {
     const response = await apiCall('/appointment/cancelAppointment', {
+      method: 'PATCH',
+      body: JSON.stringify({ appointmentId }),
+    });
+    return response.json();
+  },
+  update: async (appointmentId: string, data: { timeslot_id?: string; appointment_date?: string }): Promise<{ message: string }> => {
+    const response = await apiCall(`/appointment/${appointmentId}/update`, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  },
+
+  clientUpdate: async (appointmentId: string, data: { timeslot_id?: string; appointment_date?: string; reason?: string }): Promise<{ message: string }> => {
+    const response = await apiCall(`/appointment/${appointmentId}/client-update`, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  },
+
+  providerCancel: async (appointmentId: string): Promise<{ message: string }> => {
+    const response = await apiCall('/appointment/providerCancel', {
       method: 'PATCH',
       body: JSON.stringify({ appointmentId }),
     });
@@ -364,6 +395,28 @@ export const uploadAPI = {
     const response = await apiCall(`/upload/products/${productId}`, {
       method: 'DELETE',
     });
+    return response.json();
+  },
+
+  updateProduct: async (productId: string, formData: FormData): Promise<{ message: string; product: Product }> => {
+    const token = getAuthToken();
+    if (!token) {
+      throw new Error('Authentication required');
+    }
+
+    const response = await fetch(`${API_BASE_URL}/upload/products/${productId}`, {
+      method: 'PUT',
+      body: formData,
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: `HTTP ${response.status}: ${response.statusText}` }));
+      throw new Error(error.message || `Request failed with status ${response.status}`);
+    }
+
     return response.json();
   },
 };

@@ -1,9 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { timeslotAPI, appointmentAPI, uploadAPI, Timeslot, Appointment, CreateTimeslotData, Product } from '@/lib/api';
+import { useAuth } from '@/contexts/AuthContext';
+import { timeslotAPI, appointmentAPI, uploadAPI, Timeslot, Appointment, CreateTimeslotData, Product, providerAPI } from '@/lib/api';
 
 export default function ProviderDashboard() {
+  const { user, isAuthenticated } = useAuth();
   const [timeslots, setTimeslots] = useState<Timeslot[]>([]);
   const [appointments, setAppointments] = useState<Appointment[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
@@ -16,6 +18,18 @@ export default function ProviderDashboard() {
   const [showProductForm, setShowProductForm] = useState(false);
   const [editingTimeslot, setEditingTimeslot] = useState<Timeslot | null>(null);
   const [uploadingProduct, setUploadingProduct] = useState(false);
+  const [editingProduct, setEditingProduct] = useState<Product | null>(null);
+  const [showEditProfile, setShowEditProfile] = useState(false);
+  const [editingAppointment, setEditingAppointment] = useState<any | null>(null);
+  const [newAppointmentTimeslot, setNewAppointmentTimeslot] = useState<string | null>(null);
+  const [newAppointmentDate, setNewAppointmentDate] = useState<string>('');
+  const [providerRescheduleLoading, setProviderRescheduleLoading] = useState(false);
+  const [editingProfileData, setEditingProfileData] = useState({
+    first_name: user?.first_name || '',
+    last_name: user?.last_name || '',
+    profession: user?.profession || '',
+    description: user?.description || '',
+  });
 
   useEffect(() => {
     loadTimeslots();
@@ -147,6 +161,47 @@ export default function ProviderDashboard() {
     }
   };
 
+  const handleUpdateProduct = async (productId: string, name: string, description: string, price: number | null, currency: string) => {
+    try {
+      setError('');
+      setSuccess('');
+      
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('description', description);
+      if (price !== null) {
+        formData.append('price', price.toString());
+      }
+      formData.append('currency', currency);
+      
+      await uploadAPI.updateProduct(productId, formData);
+      setSuccess('Product updated successfully!');
+      setEditingProduct(null);
+      await loadProducts();
+    } catch (err: any) {
+      setError(err.message || 'Failed to update product');
+    }
+  };
+
+  const handleUpdateProfile = async () => {
+    try {
+      setError('');
+      setSuccess('');
+      
+      await providerAPI.updateProfile({
+        first_name: editingProfileData.first_name,
+        last_name: editingProfileData.last_name,
+        profession: editingProfileData.profession,
+        description: editingProfileData.description,
+      });
+      
+      setSuccess('Profile updated successfully!');
+      setShowEditProfile(false);
+    } catch (err: any) {
+      setError(err.message || 'Failed to update profile');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -157,6 +212,15 @@ export default function ProviderDashboard() {
             <p className="text-gray-600">Manage your timeslots, appointments, and products</p>
           </div>
           <div className="flex gap-3">
+            {/* <button
+              onClick={() => setShowEditProfile(true)}
+              className="flex items-center space-x-2 bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+              <span>Edit Profile</span>
+            </button> */}
             <button
               onClick={() => {
                 setShowProductForm(true);
@@ -292,15 +356,26 @@ export default function ProviderDashboard() {
                       {product.currency || '$'}{typeof product.price === 'number' ? product.price.toFixed(2) : product.price}
                     </p>
                   )}
-                  <button
-                    onClick={() => handleDeleteProduct(product.id)}
-                    className="w-full flex items-center justify-center space-x-1 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-600 transition-colors shadow-md hover:shadow-lg"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                    </svg>
-                    <span>Delete</span>
-                  </button>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => setEditingProduct(product)}
+                      className="flex-1 flex items-center justify-center space-x-1 bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                      </svg>
+                      <span>Edit</span>
+                    </button>
+                    <button
+                      onClick={() => handleDeleteProduct(product.id)}
+                      className="flex-1 flex items-center justify-center space-x-1 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-600 transition-colors shadow-md hover:shadow-lg"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                      </svg>
+                      <span>Delete</span>
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>
@@ -339,28 +414,28 @@ export default function ProviderDashboard() {
               {timeslots.map((timeslot) => (
                 <div
                   key={timeslot.id}
-                  className="border-2 border-gray-200 rounded-xl p-5 hover:shadow-lg transition-all bg-white"
+                  className="border-2 border-indigo-300 rounded-xl p-6 hover:shadow-lg transition-all bg-gradient-to-br from-white to-indigo-50"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
-                      <div className="mb-3">
-                        <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Day</p>
-                        <p className="font-bold text-lg text-gray-900">{timeslot.workingDays}</p>
+                      <div className="mb-4 p-3 bg-indigo-100 rounded-lg">
+                        <p className="text-xs text-indigo-600 uppercase tracking-wide font-bold mb-1">Day</p>
+                        <p className="font-bold text-2xl text-indigo-900">{timeslot.workingDays}</p>
                       </div>
-                      <div className="mb-3">
-                        <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Time</p>
-                        <p className="font-semibold text-gray-900 flex items-center">
-                          <svg className="w-4 h-4 mr-1 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="mb-4 p-3 bg-blue-100 rounded-lg">
+                        <p className="text-xs text-blue-600 uppercase tracking-wide font-bold mb-1">Time Slot</p>
+                        <p className="font-bold text-xl text-blue-900 flex items-center">
+                          <svg className="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                           {timeslot.startTime} - {timeslot.endTime}
                         </p>
                       </div>
                       <div className="mb-4">
-                        <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
+                        <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-bold ${
                           timeslot.booked 
-                            ? 'bg-red-100 text-red-800' 
-                            : 'bg-green-100 text-green-800'
+                            ? 'bg-red-100 text-red-800 border border-red-300' 
+                            : 'bg-green-100 text-green-800 border border-green-300'
                         }`}>
                           {timeslot.booked ? (
                             <>
@@ -382,13 +457,13 @@ export default function ProviderDashboard() {
                       <p className="text-xs text-gray-400 mb-4">ID: {timeslot.id.slice(0, 8)}...</p>
                     </div>
                   </div>
-                  <div className="flex gap-2 pt-4 border-t border-gray-200">
+                  <div className="flex gap-2 pt-4 border-t border-indigo-200">
                     <button
                       onClick={() => {
                         setEditingTimeslot(timeslot);
                         setShowCreateForm(false);
                       }}
-                      className="flex-1 flex items-center justify-center space-x-1 bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
+                      className="flex-1 flex items-center justify-center space-x-1 bg-blue-500 text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -397,7 +472,7 @@ export default function ProviderDashboard() {
                     </button>
                     <button
                       onClick={() => handleDelete(timeslot.id)}
-                      className="flex-1 flex items-center justify-center space-x-1 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-600 transition-colors shadow-md hover:shadow-lg"
+                      className="flex-1 flex items-center justify-center space-x-1 bg-red-500 text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-red-600 transition-colors shadow-md hover:shadow-lg"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -503,6 +578,36 @@ export default function ProviderDashboard() {
                           {appointment.status}
                         </span>
                       </div>
+                      <div className="flex gap-2 mt-4">
+                        <button
+                          onClick={() => {
+                            setEditingAppointment(appointment);
+                            setNewAppointmentDate(appointment.appointment_date?.slice(0,10) || '');
+                            setNewAppointmentTimeslot(appointment.timeslot_id);
+                          }}
+                          className="px-3 py-2 bg-yellow-500 text-white rounded-lg text-sm font-medium hover:bg-yellow-600"
+                        >
+                          Reschedule
+                        </button>
+                        <button
+                          onClick={async () => {
+                            if (!confirm('Cancel this appointment for the client?')) return;
+                            try {
+                              setError('');
+                              setSuccess('');
+                              await appointmentAPI.providerCancel(appointment.id);
+                              setSuccess('Appointment cancelled');
+                              await loadAppointments();
+                              await loadTimeslots();
+                            } catch (err: any) {
+                              setError(err.message || 'Failed to cancel');
+                            }
+                          }}
+                          className="px-3 py-2 bg-red-500 text-white rounded-lg text-sm font-medium hover:bg-red-600"
+                        >
+                          Cancel (Provider)
+                        </button>
+                      </div>
                       <div className="text-xs text-gray-400 space-y-1">
                         <p>Appointment ID: {appointment.id.slice(0, 8)}...</p>
                         <p>Timeslot ID: {appointment.timeslot_id?.slice(0, 8)}...</p>
@@ -514,6 +619,291 @@ export default function ProviderDashboard() {
             </div>
           )}
         </div>
+
+        {/* Edit Profile Modal */}
+          {/* Provider Reschedule Modal */}
+          {editingAppointment && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+              <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full">
+                <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-start">
+                  <h2 className="text-2xl font-bold text-gray-900">Reschedule Appointment</h2>
+                  <button
+                    onClick={() => setEditingAppointment(null)}
+                    className="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-lg"
+                  >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+
+                <form
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    if (!editingAppointment) return;
+                    if (!newAppointmentTimeslot || !newAppointmentDate) {
+                      setError('Please select a new date and timeslot');
+                      return;
+                    }
+                    try {
+                      setProviderRescheduleLoading(true);
+                      setError('');
+                      setSuccess('');
+                      await appointmentAPI.update(editingAppointment.id, {
+                        timeslot_id: newAppointmentTimeslot,
+                        appointment_date: newAppointmentDate,
+                      });
+                      setSuccess('Appointment rescheduled successfully');
+                      setEditingAppointment(null);
+                      await loadAppointments();
+                      await loadTimeslots();
+                    } catch (err: any) {
+                      setError(err.message || 'Failed to reschedule appointment');
+                    } finally {
+                      setProviderRescheduleLoading(false);
+                    }
+                  }}
+                  className="p-6 space-y-4"
+                >
+                  <p className="text-sm text-gray-600">Rescheduling appointment for <strong>{editingAppointment?.client_first_name} {editingAppointment?.client_last_name}</strong></p>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Select New Date</label>
+                    <input
+                      type="date"
+                      value={newAppointmentDate}
+                      onChange={(e) => setNewAppointmentDate(e.target.value)}
+                      required
+                      min={new Date().toISOString().split('T')[0]}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Choose Timeslot</label>
+                    <div className="grid gap-2 md:grid-cols-2">
+                      {timeslots.filter(ts => ts.owner_id === user?.id).map((ts) => (
+                        <button
+                          key={ts.id}
+                          type="button"
+                          onClick={() => setNewAppointmentTimeslot(ts.id)}
+                          className={`p-3 border rounded-lg text-left ${newAppointmentTimeslot === ts.id ? 'border-indigo-500 bg-indigo-50' : 'border-gray-200'} ${ts.booked ? 'opacity-50 cursor-not-allowed' : ''}`}
+                          disabled={ts.booked}
+                        >
+                          <div className="flex items-center justify-between">
+                            <div>
+                              <p className="font-medium text-gray-900">{ts.workingDays}</p>
+                              <p className="text-sm text-gray-600">{ts.startTime} - {ts.endTime}</p>
+                            </div>
+                            {ts.booked && <span className="text-xs text-red-600">Booked</span>}
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex justify-end gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setEditingAppointment(null)}
+                      className="px-6 py-2 border border-gray-300 rounded-lg text-gray-700"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="submit"
+                      disabled={providerRescheduleLoading}
+                      className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+                    >
+                      {providerRescheduleLoading ? 'Rescheduling...' : 'Submit'}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          )}
+
+          {showEditProfile && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full">
+              <div className="border-b border-gray-200 p-6 flex justify-between items-center">
+                <h2 className="text-2xl font-bold text-gray-900">Edit Profile</h2>
+                <button
+                  onClick={() => setShowEditProfile(false)}
+                  className="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-lg"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="p-6 space-y-4">
+                <div>
+                  <label htmlFor="first_name" className="block text-sm font-semibold text-gray-700 mb-2">
+                    First Name
+                  </label>
+                  <input
+                    id="first_name"
+                    type="text"
+                    value={editingProfileData.first_name}
+                    onChange={(e) => setEditingProfileData({ ...editingProfileData, first_name: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="last_name" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Last Name
+                  </label>
+                  <input
+                    id="last_name"
+                    type="text"
+                    value={editingProfileData.last_name}
+                    onChange={(e) => setEditingProfileData({ ...editingProfileData, last_name: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="profession" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Profession
+                  </label>
+                  <input
+                    id="profession"
+                    type="text"
+                    value={editingProfileData.profession}
+                    onChange={(e) => setEditingProfileData({ ...editingProfileData, profession: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="description" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Description
+                  </label>
+                  <textarea
+                    id="description"
+                    rows={4}
+                    value={editingProfileData.description}
+                    onChange={(e) => setEditingProfileData({ ...editingProfileData, description: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div className="border-t border-gray-200 p-6 flex gap-3">
+                <button
+                  onClick={() => setShowEditProfile(false)}
+                  className="flex-1 px-4 py-2 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleUpdateProfile}
+                  className="flex-1 px-4 py-2 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
+                >
+                  Save Changes
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Edit Product Modal */}
+        {editingProduct && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full">
+              <div className="border-b border-gray-200 p-6 flex justify-between items-center">
+                <h2 className="text-2xl font-bold text-gray-900">Edit Product</h2>
+                <button
+                  onClick={() => setEditingProduct(null)}
+                  className="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-lg"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="p-6 space-y-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Product Name
+                  </label>
+                  <input
+                    type="text"
+                    value={editingProduct.name}
+                    onChange={(e) => setEditingProduct({ ...editingProduct, name: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Description
+                  </label>
+                  <textarea
+                    rows={3}
+                    value={editingProduct.description || ''}
+                    onChange={(e) => setEditingProduct({ ...editingProduct, description: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      Price
+                    </label>
+                    <input
+                      type="number"
+                      step="0.01"
+                      value={editingProduct.price || ''}
+                      onChange={(e) => setEditingProduct({ ...editingProduct, price: e.target.value ? parseFloat(e.target.value) : null })}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      Currency
+                    </label>
+                    <select
+                      value={editingProduct.currency || 'USD'}
+                      onChange={(e) => setEditingProduct({ ...editingProduct, currency: e.target.value })}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                    >
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                      <option value="JPY">JPY</option>
+                      <option value="AUD">AUD</option>
+                      <option value="CAD">CAD</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t border-gray-200 p-6 flex gap-3">
+                <button
+                  onClick={() => setEditingProduct(null)}
+                  className="flex-1 px-4 py-2 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={() => {
+                    handleUpdateProduct(
+                      editingProduct.id,
+                      editingProduct.name,
+                      editingProduct.description || '',
+                      editingProduct.price,
+                      editingProduct.currency || 'USD'
+                    );
+                  }}
+                  className="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-xl"
+                >
+                  Save Changes
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

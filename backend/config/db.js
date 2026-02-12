@@ -89,6 +89,12 @@ const initialzeDbSchema = async () => {
       );
     `);
 
+    // Add reschedule reason column for storing client's reschedule reason
+    await client.query(`
+      ALTER TABLE appointment
+      ADD COLUMN IF NOT EXISTS reschedule_reason TEXT;
+    `);
+
     // Ensure profile image columns exist for clients and providers
     await client.query(`
       ALTER TABLE client

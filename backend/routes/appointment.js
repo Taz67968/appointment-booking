@@ -1,5 +1,5 @@
 import express from "express"
-import { cancelAppointment, createAppointment, getClientAppointments, getProviderAppointments } from "../controllers/appointment-controller.js";
+import { cancelAppointment, createAppointment, getClientAppointments, getProviderAppointments, providerUpdateAppointment, providerCancelAppointment, clientUpdateAppointment } from "../controllers/appointment-controller.js";
 import appointAuth from "../middilewares/appointmentAuth.js";
 
 const router = express.Router();
@@ -196,5 +196,10 @@ router.get("/getProviderAppointments", appointAuth, getProviderAppointments)
  *                   example: "Appointment not found or already cancelled"
  */
 router.patch("/cancelAppointment", appointAuth, cancelAppointment)
+
+// Provider routes: update and cancel
+router.put('/:id/update', appointAuth, providerUpdateAppointment);
+router.put('/:id/client-update', appointAuth, clientUpdateAppointment);
+router.patch('/providerCancel', appointAuth, providerCancelAppointment);
 
 export default router

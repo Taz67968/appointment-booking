@@ -1,6 +1,8 @@
 import express from 'express';
 import logger from '../utils/logger.js';
 import { getAllProviders, getProviderTimeslots } from '../controllers/provider-controller.js';
+import { query } from '../config/db.js';
+import authMiddleware from '../middilewares/authmiddlewares.js';
 
 const router = express.Router();
 
@@ -51,5 +53,66 @@ router.get("/providers", getAllProviders);
  *         description: Provider not found
  */
 router.get("/providers/:providerId/timeslots", getProviderTimeslots);
+
+/**
+ * PUT /users/profile
+ * Update authenticated provider's profile
+ */
+router.put("/profile", authMiddleware, async (req, res, next) => {
+  try {
+    const { first_name, last_name, profession, description } = req.body;
+    const userId = req.user.id;
+
+    if (!first_name && !last_name && !profession && !description) {
+      return res.status(400).json({ message: 'No fields to update' });
+    }
+
+    const updateFields = [];
+    const updateValues = [];
+    let paramCount = 1;
+
+    if (first_name !== undefined) {
+      updateFields.push(`first_name = $${paramCount}`);
+      updateValues.push(first_name);
+      paramCount++;
+    }
+    if (last_name !== undefined) {
+      updateFields.push(`last_name = $${paramCount}`);
+      updateValues.push(last_name);
+      paramCount++;
+    }
+    if (profession !== undefined) {
+      updateFields.push(`profession = $${paramCount}`);
+      updateValues.push(profession);
+      paramCount++;
+    }
+    if (description !== undefined) {
+      updateFields.push(`description = $${paramCount}`);
+      updateValues.push(description);
+      paramCount++;
+    }
+
+    updateValues.push(userId);
+
+    const result = await query(
+      `UPDATE serviceProvider SET ${updateFields.join(', ')} WHERE id = $${paramCount} RETURNING id, first_name, last_name, email, profession, description, role`,
+      updateValues
+    );
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'Provider not found' });
+    }
+
+    logger.info(`Provider profile updated for user ${userId}`);
+
+    res.json({ 
+      message: 'Profile updated successfully',
+      provider: result.rows[0]
+    });
+  } catch (error) {
+    logger.error('Error updating provider profile:', error);
+    next(error);
+  }
+});
 
 export default router

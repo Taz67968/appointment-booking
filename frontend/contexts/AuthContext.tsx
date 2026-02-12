@@ -27,6 +27,7 @@ interface AuthContextType {
   login: (email: string, password: string, role: 'client' | 'provider') => Promise<void>;
   register: (data: any, role: 'client' | 'provider') => Promise<RegisterResult>;
   logout: () => void;
+    updateUser: (u: Partial<User>) => void;
   isAuthenticated: boolean;
   loading: boolean;
 }
@@ -122,6 +123,16 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
+  const updateUser = (u: Partial<User>) => {
+    setUser((prev) => {
+      const next = { ...(prev || {}), ...u } as User;
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('user', JSON.stringify(next));
+      }
+      return next;
+    });
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -130,6 +141,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         login,
         register,
         logout,
+          updateUser,
         isAuthenticated: !!user && !!token,
         loading,
       }}
