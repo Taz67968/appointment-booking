@@ -391,6 +391,22 @@ export const uploadAPI = {
     return response.json();
   },
 
+  // Reviews
+  postReview: async (productId: string, data: { rating?: number; comment?: string }): Promise<{ message: string; review?: any }> => {
+    const response = await apiCall(`/upload/products/${productId}/review`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  },
+
+  getReviews: async (productId: string): Promise<{ reviews: any[] }> => {
+    const response = await apiCall(`/upload/products/${productId}/reviews`, {
+      method: 'GET',
+    });
+    return response.json();
+  },
+
   deleteProduct: async (productId: string): Promise<{ message: string }> => {
     const response = await apiCall(`/upload/products/${productId}`, {
       method: 'DELETE',

@@ -203,6 +203,59 @@ router.get('/products/provider/:providerId', async (req, res, next) => {
 });
 
 /**
+ * POST /upload/products/:productId/review
+ * Create or update a review for a product by an authenticated client
+ */
+router.post('/products/:productId/review', async (req, res, next) => {
+  try {
+    const { error, userId, userRole } = verifyToken(req);
+    if (error) return res.status(401).json({ message: error });
+    if (!userId) return res.status(401).json({ message: 'Authentication required' });
+    if (userRole !== 'client') return res.status(403).json({ message: 'Only clients can post reviews' });
+
+    const { productId } = req.params;
+    const { rating, comment } = req.body;
+
+    // Insert or update review (one review per client per product)
+    const result = await query(
+      `INSERT INTO product_reviews (product_id, client_id, rating, comment)
+       VALUES ($1, $2, $3, $4)
+       ON CONFLICT (product_id, client_id) DO UPDATE SET rating = EXCLUDED.rating, comment = EXCLUDED.comment, created_at = NOW()
+       RETURNING *`,
+      [productId, userId, rating || null, comment || null]
+    );
+
+    res.status(201).json({ message: 'Review saved', review: result.rows[0] });
+  } catch (error) {
+    logger.error('Error saving product review:', error);
+    next(error);
+  }
+});
+
+/**
+ * GET /upload/products/:productId/reviews
+ * Public: list reviews for a product
+ */
+router.get('/products/:productId/reviews', async (req, res, next) => {
+  try {
+    const { productId } = req.params;
+    const result = await query(
+      `SELECT pr.id, pr.rating, pr.comment, pr.created_at, c.id as client_id, c.first_name, c.last_name
+       FROM product_reviews pr
+       JOIN client c ON pr.client_id = c.id
+       WHERE pr.product_id = $1
+       ORDER BY pr.created_at DESC`,
+      [productId]
+    );
+
+    res.json({ reviews: result.rows });
+  } catch (error) {
+    logger.error('Error fetching product reviews:', error);
+    next(error);
+  }
+});
+
+/**
  * PUT /upload/products/:productId
  * Update a product's details (name, description, price)
  */

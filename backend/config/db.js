@@ -120,6 +120,19 @@ const initialzeDbSchema = async () => {
       );
     `);
 
+    // Create product reviews table
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS product_reviews (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        product_id UUID NOT NULL REFERENCES products(id) ON DELETE CASCADE,
+        client_id UUID NOT NULL REFERENCES client(id) ON DELETE CASCADE,
+        rating INTEGER,
+        comment TEXT,
+        created_at TIMESTAMP DEFAULT NOW(),
+        UNIQUE (product_id, client_id)
+      );
+    `);
+
     logger.info("Database schema initialized successfully");
   } catch (error) {
     logger.error("Error during schema initialization:", {

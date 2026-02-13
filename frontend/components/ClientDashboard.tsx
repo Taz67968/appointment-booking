@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { appointmentAPI, providerAPI, uploadAPI, Appointment, Provider, ProviderWithTimeslots, Timeslot, Product } from '@/lib/api';
+import { useAuth } from '@/contexts/AuthContext';
 
 export default function ClientDashboard() {
   const [appointments, setAppointments] = useState<Appointment[]>([]);
@@ -25,6 +26,11 @@ export default function ClientDashboard() {
   const [selectedTimeslot, setSelectedTimeslot] = useState<string>('');
   const [appointmentDate, setAppointmentDate] = useState('');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const { user, isAuthenticated } = useAuth();
+  const [productReviews, setProductReviews] = useState<any[]>([]);
+  const [reviewRating, setReviewRating] = useState<number | undefined>(undefined);
+  const [reviewComment, setReviewComment] = useState<string>('');
+  const [reviewLoading, setReviewLoading] = useState(false);
 
   useEffect(() => {
     loadAppointments();
@@ -88,6 +94,16 @@ export default function ClientDashboard() {
     }
   };
 
+  const loadProductReviews = async (productId: string) => {
+    try {
+      const res = await uploadAPI.getReviews(productId);
+      setProductReviews(res.reviews || []);
+    } catch (err: any) {
+      console.error('Failed to load product reviews:', err);
+      setProductReviews([]);
+    }
+  };
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     loadProviders();
@@ -124,6 +140,11 @@ export default function ClientDashboard() {
     setSelectedTimeslot('');
     setAppointmentDate('');
     setSelectedProduct(null);
+  };
+
+  const openProductModal = async (product: Product) => {
+    setSelectedProduct(product);
+    await loadProductReviews(product.id);
   };
 
   const handleCancelAppointment = async (appointmentId: string) => {
@@ -387,7 +408,7 @@ export default function ClientDashboard() {
                             </p>
                           </div>
                           <button
-                            onClick={() => setSelectedProduct(product)}
+                            onClick={(e) => { e.stopPropagation(); openProductModal(product); }}
                             className="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors"
                           >
                             View
@@ -564,6 +585,66 @@ export default function ClientDashboard() {
                         })}
                       </p>
                     </div>
+                  )}
+                </div>
+
+                {/* Reviews Section */}
+                <div className="mt-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Reviews</h3>
+                  {productReviews.length === 0 ? (
+                    <p className="text-sm text-gray-500 mb-4">No reviews yet. Be the first to review.</p>
+                  ) : (
+                    <div className="space-y-4 mb-4">
+                      {productReviews.map((r) => (
+                        <div key={r.id} className="p-3 border rounded-lg bg-gray-50">
+                          <div className="flex items-center justify-between">
+                            <div className="font-medium">{r.first_name} {r.last_name}</div>
+                            <div className="text-sm text-gray-500">{new Date(r.created_at).toLocaleString()}</div>
+                          </div>
+                          {r.rating != null && <div className="text-sm text-yellow-500">Rating: {r.rating} / 5</div>}
+                          {r.comment && <p className="text-sm text-gray-700 mt-2">{r.comment}</p>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {isAuthenticated && user?.role === 'client' && (
+                    <form onSubmit={async (e) => {
+                      e.preventDefault();
+                      if (!selectedProduct) return;
+                      try {
+                        setReviewLoading(true);
+                        await uploadAPI.postReview(selectedProduct.id, { rating: reviewRating, comment: reviewComment });
+                        setReviewComment('');
+                        setReviewRating(undefined);
+                        await loadProductReviews(selectedProduct.id);
+                      } catch (err: any) {
+                        console.error('Failed to submit review:', err);
+                      } finally {
+                        setReviewLoading(false);
+                      }
+                    }} className="space-y-3">
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-1">Rating (optional)</label>
+                        <select value={reviewRating ?? ''} onChange={(e) => setReviewRating(e.target.value ? parseInt(e.target.value) : undefined)} className="px-3 py-2 border rounded-lg">
+                          <option value="">Select</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-1">Comment (optional)</label>
+                        <textarea value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} className="w-full px-3 py-2 border rounded-lg" />
+                      </div>
+                      <div className="flex justify-end">
+                        <button type="submit" disabled={reviewLoading} className="px-4 py-2 bg-indigo-600 text-white rounded-lg">
+                          {reviewLoading ? 'Saving...' : 'Submit Review'}
+                        </button>
+                      </div>
+                    </form>
                   )}
                 </div>
 
