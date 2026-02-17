@@ -1,28 +1,64 @@
-import nodemailer from 'nodemailer';
+import sgMail from '@sendgrid/mail';
+import dotenv from 'dotenv';
 import logger from './logger.js';
 
-// Configure email transporter
-const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST || 'smtp.gmail.com',
-  port: process.env.EMAIL_PORT || 587,
-  secure: process.env.EMAIL_SECURE === 'true', // true for 465, false for other ports
-  auth: {
-    user: process.env.EMAIL_USER || 'your-email@gmail.com',
-    pass: process.env.EMAIL_PASSWORD || 'your-app-password',
-  },
-  tls: {
-    rejectUnauthorized: false,
-  },
+// Load .env if present
+dotenv.config({ path: new URL('../.env', import.meta.url).pathname });
+
+// Basic environment validation to provide clearer runtime guidance
+const requiredEnv = ['SENDGRID_API_KEY', 'EMAIL_FROM'];
+const missing = requiredEnv.filter((k) => !process.env[k]);
+if (missing.length) {
+  logger.warn(`Email environment variables missing: ${missing.join(', ')}. See EMAIL_SETUP.md for configuration steps.`);
+}
+
+// Configure SendGrid with API key
+const sendgridApiKey = process.env.SENDGRID_API_KEY;
+if (sendgridApiKey) {
+  sgMail.setApiKey(sendgridApiKey);
+  logger.info('SendGrid email service configured with API key');
+}
+
+logger.debug('Email config', {
+  provider: 'SendGrid',
+  apiKey: sendgridApiKey ? sendgridApiKey.slice(0, 8) + '****' : '<<missing>>',
+  from: process.env.EMAIL_FROM || '<<missing>>',
 });
 
-// Verify connection (optional, for debugging)
-transporter.verify((error, success) => {
-  if (error) {
-    logger.warn('Email transporter verification failed:', error.message);
-  } else {
-    logger.info('Email transporter ready for sending');
+export async function verifyTransporter() {
+  if (!sendgridApiKey) {
+    logger.warn('SendGrid API key not configured');
+    return false;
   }
-});
+  try {
+    // SendGrid doesn't have a verify method, but we can check if the API key is valid
+    // by making a simple request. For now, we just return true if API key is set.
+    logger.info('SendGrid email transporter ready for sending');
+    return true;
+  } catch (error) {
+    logger.warn('Email transporter verification failed:');
+    logger.warn(error);
+    if (error && error.stack) logger.debug(error.stack);
+    return false;
+  }
+}
+
+export async function sendTestEmail(to) {
+  const from = process.env.EMAIL_FROM;
+  if (!from) throw new Error('EMAIL_FROM must be set to send test emails');
+  const dest = to || from;
+  
+  const msg = {
+    to: dest,
+    from: from,
+    subject: 'AppointmentHub — Test email',
+    text: `This is a test email from AppointmentHub at ${new Date().toISOString()}`,
+  };
+  
+  const [info] = await sgMail.send(msg);
+  logger.info('Test email sent:', info && info.messageId);
+  return info;
+}
 
 /**
  * Send appointment confirmation email to client
@@ -121,8 +157,8 @@ export const sendClientConfirmationEmail = async (
       attachments: calendarAttachment ? [calendarAttachment] : [],
     };
 
-    const result = await transporter.sendMail(mailOptions);
-    logger.info(`Client confirmation email sent to ${clientEmail}:`, result.messageId);
+    const result = await sgMail.send(mailOptions);
+    logger.info(`Client confirmation email sent to ${clientEmail}:`, result[0] && result[0].messageId);
     return true;
   } catch (error) {
     logger.error(`Failed to send client confirmation email to ${clientEmail}:`, error);
@@ -228,8 +264,8 @@ export const sendProviderNotificationEmail = async (
       attachments: calendarAttachment ? [calendarAttachment] : [],
     };
 
-    const result = await transporter.sendMail(mailOptions);
-    logger.info(`Provider notification email sent to ${providerEmail}:`, result.messageId);
+    const result = await sgMail.send(mailOptions);
+    logger.info(`Provider notification email sent to ${providerEmail}:`, result[0] && result[0].messageId);
     return true;
   } catch (error) {
     logger.error(`Failed to send provider notification email to ${providerEmail}:`, error);
@@ -311,8 +347,8 @@ export const sendClientCancellationEmail = async (
       html: htmlContent,
     };
 
-    const result = await transporter.sendMail(mailOptions);
-    logger.info(`Client cancellation email sent to ${clientEmail}:`, result.messageId);
+    const result = await sgMail.send(mailOptions);
+    logger.info(`Client cancellation email sent to ${clientEmail}:`, result[0] && result[0].messageId);
     return true;
   } catch (error) {
     logger.error(`Failed to send client cancellation email to ${clientEmail}:`, error);
@@ -394,8 +430,8 @@ export const sendProviderCancellationEmail = async (
       html: htmlContent,
     };
 
-    const result = await transporter.sendMail(mailOptions);
-    logger.info(`Provider cancellation email sent to ${providerEmail}:`, result.messageId);
+    const result = await sgMail.send(mailOptions);
+    logger.info(`Provider cancellation email sent to ${providerEmail}:`, result[0] && result[0].messageId);
     return true;
   } catch (error) {
     logger.error(`Failed to send provider cancellation email to ${providerEmail}:`, error);

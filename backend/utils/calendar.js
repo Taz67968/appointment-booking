@@ -19,6 +19,12 @@ export const generateAppointmentCalendar = (appointmentData) => {
       workingDays,
     } = appointmentData;
 
+    // Validate required time fields
+    if (!startTime || !endTime) {
+      logger.warn('Missing startTime or endTime for calendar event');
+      return null;
+    }
+
     // Parse time (format: "14:30")
     const [startHour, startMin] = startTime.split(':');
     const [endHour, endMin] = endTime.split(':');
@@ -91,6 +97,12 @@ export const generateCancellationCalendar = (appointmentData) => {
       providerEmail,
       profession,
     } = appointmentData;
+
+    // Validate required time fields
+    if (!startTime || !endTime) {
+      logger.warn('Missing startTime or endTime for cancellation calendar event');
+      return null;
+    }
 
     // Parse time (format: "14:30")
     const [startHour, startMin] = startTime.split(':');
