@@ -6,35 +6,46 @@ const { Pool } = pg;
 
 dotenv.config()
 
+// Check for Supabase DATABASE_URL first, fall back to local PG* variables
+const DATABASE_URL = process.env.DATABASE_URL;
 const { PGUSER, PGPASSWORD, PGHOST, PGNAME, PGPORT, NODE_ENV } = process.env;
 
-if (!PGHOST || !PGPASSWORD || !PGNAME || !PGUSER || !PGPORT) {
+let pool;
+
+if (DATABASE_URL) {
+  // Use Supabase cloud database
+  pool = new Pool({
+    connectionString: DATABASE_URL,
+    connectionTimeoutMillis: 5000,
+  });
+  logger.info("Using Supabase cloud database");
+} else if (PGHOST && PGPASSWORD && PGNAME && PGUSER && PGPORT) {
+  // Use local PostgreSQL database
+  pool = new Pool({
+    user: PGUSER,
+    host: PGHOST,
+    database: PGNAME,
+    password: PGPASSWORD,
+    port: parseInt(PGPORT, 10),
+    connectionTimeoutMillis: 2000,
+  });
+  logger.info(`Using local database: ${PGNAME}`);
+} else {
   logger.error(
-    "Database environment variables are missing! Check your .env file."
+    "Database configuration is missing! Set DATABASE_URL (Supabase) or PG* variables (local)."
   );
-  // process.exit(1);
-  throw new Error("Database environment variables are missing");
+  throw new Error("Database configuration is missing");
 }
 
-const pool = new Pool({
-  user: PGUSER,
-  host: PGHOST,
-  database: PGNAME,
-  password: PGPASSWORD,
-  port: parseInt(PGPORT, 10),
-  connectionTimeoutMillis: 2000,
-});
-
-logger.info(`Database is configured for: ${PGNAME}`);
-
 pool.on("connect", (client) => {
-  logger.info(`Client connected from Pool (Total count: ${pool.totalCount}`);
+  logger.info(`Client connected from Pool (Total count: ${pool.totalCount})`);
 });
 
 pool.on("error", (err, client) => {
   logger.error("Unexpected error on idle client in pool", err);
   process.exit(-1);
 });
+
 const initialzeDbSchema = async () => {
   const client = await pool.connect();
   try {
@@ -156,6 +167,7 @@ const connectToDb = async () => {
     process.exit(1);
   }
 };
+
 const query = async (text, params) => {
   const start = Date.now();
   try {
