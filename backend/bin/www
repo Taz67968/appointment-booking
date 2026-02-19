@@ -11,6 +11,14 @@ import app from '../app.js';
 const debug = deb('appointment-booking-api:server')
 import logger from '../utils/logger.js';
 import { connectToDb, initialzeDbSchema } from '../config/db.js';
+import dotenv from 'dotenv';
+dotenv.config();
+
+// Log environment info for debugging
+console.log('=== Environment Debug ===');
+console.log('DATABASE_URL set:', !!process.env.DATABASE_URL);
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('=========================');
 /**
  * Get port from environment and store in Express.
  */
@@ -119,9 +127,17 @@ function onListening() {
 const startServer = async () => {
   try {
     logger.info(`Attempting to Start server on port ${port}`)
-    await connectToDb()
     
-    // Try to initialize schema, but don't fail if it errors (table may already exist)
+    // Try to connect to database
+    try {
+      await connectToDb()
+      logger.info('Database connected successfully')
+    } catch (dbError) {
+      logger.error('Database connection failed:', dbError.message)
+      // Continue anyway - app might work without DB for some operations
+    }
+    
+    // Try to initialize schema, but don't fail if it errors
     try {
       await initialzeDbSchema()
     } catch (schemaError) {
@@ -131,7 +147,7 @@ const startServer = async () => {
     logger.info(`Starting server on port ${port}`)
     // server.listen(port);
     server.listen(port, '0.0.0.0');
-    logger.info(`Starting server on port ${port}`)
+    logger.info(`Server started on port ${port}`)
     server.on('error', onError);
     server.on('listening', onListening);
   } catch (error) {
