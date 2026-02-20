@@ -2836,3 +2836,70 @@
 {"level":"info","message":"\u001b[0mPATCH /appointment/providerCancel \u001b[32m200 \u001b[0m1144.858 ms - 58\u001b[0m","timestamp":"2026-02-20 10:36:14"}
 {"level":"info","message":"Client cancellation email sent to client+1771580164008@example.com:","timestamp":"2026-02-20 10:36:15"}
 {"level":"info","message":"Provider cancellation email sent to provider+1771580165840@example.com:","timestamp":"2026-02-20 10:36:15"}
+{"level":"info","message":"\u001b[0mGET / \u001b[32m200 \u001b[0m0.679 ms - 53\u001b[0m","timestamp":"2026-02-20 16:21:03"}
+{"level":"info","message":"Client connected from Pool (Total count: 1)","timestamp":"2026-02-20 16:21:04"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM client WHERE email = $1..., params: [\"client+1771600863518@example.com\"], duration: 1265ms, rows: 0}","timestamp":"2026-02-20 16:21:04"}
+{"level":"info","message":"Executed query: { text: INSERT INTO client (first_name, last_name, email, password, role)\n                         VALUES($1..., params: [\"Smoke\",\"Client\",\"client+1771600863518@example.com\",\"$2b$10$PVeHBHdyuCSjySb6p/HiJOERu5fbMhI8sMbXEreezrWdOWW.fEKv6\",\"client\"], duration: 215ms, rows: 1}","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"client registered successfully: 251e3d60-f25d-4e1c-83e8-3d55890a7b93","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientRegister \u001b[32m201 \u001b[0m1557.200 ms - 101\u001b[0m","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role, profile_image FROM client WHERE email = $1..., params: [\"client+1771600863518@example.com\"], duration: 192ms, rows: 1}","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"user logged in succesfully: client+1771600863518@example.com (ID : 251e3d60-f25d-4e1c-83e8-3d55890a7b93)","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"\u001b[0mPOST /auth/clientLogin \u001b[32m200 \u001b[0m273.299 ms - 495\u001b[0m","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"Executed query: { text: SELECT email FROM serviceProvider WHERE email = $1..., params: [\"provider+1771600865360@example.com\"], duration: 246ms, rows: 0}","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"Executed query: { text: \n      INSERT INTO serviceProvider (first_name, last_name, email, description, password, profession,..., params: [\"Smoke\",\"Prov\",\"provider+1771600865360@example.com\",\"Smoke test provider\",\"$2b$10$3NWsHtXsccVFsEN0y0TNmOWzJvZdaTGyI3wR3oGVebslzJYm6dAU6\",\"Tester\",false,\"provider\"], duration: 204ms, rows: 1}","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"Provider registered successfully: 4239d516-2c29-423c-b01f-93e1cf83e3e7","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"\u001b[0mPOST /auth/providerRegister \u001b[32m201 \u001b[0m529.781 ms - 98\u001b[0m","timestamp":"2026-02-20 16:21:05"}
+{"level":"info","message":"Executed query: { text: SELECT id, email, first_name, last_name, password, role, profile_image FROM serviceProvider WHERE em..., params: [\"provider+1771600865360@example.com\"], duration: 201ms, rows: 1}","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"user logged in succesfully: provider+1771600865360@example.com (ID : 4239d516-2c29-423c-b01f-93e1cf83e3e7)","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"\u001b[0mPOST /auth/providerLogin \u001b[32m200 \u001b[0m280.582 ms - 505\u001b[0m","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"Executed query: { text: INSERT INTO timeslot (owner_id, workingDays, startTime, endTime)\n                               VALU..., params: [\"4239d516-2c29-423c-b01f-93e1cf83e3e7\",\"Monday\",\"09:00\",\"10:00\"], duration: 214ms, rows: 1}","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"successfully created timeslot c54e826c-a63d-4950-99aa-39459babdd34 by 4239d516-2c29-423c-b01f-93e1cf83e3e7","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"\u001b[0mPOST /timeslot/createTimeslot \u001b[32m201 \u001b[0m217.393 ms - 171\u001b[0m","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"Executed query: { text: SELECT id, first_name, last_name, profession, description FROM serviceProvider WHERE id = $1..., params: [\"4239d516-2c29-423c-b01f-93e1cf83e3e7\"], duration: 201ms, rows: 1}","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        t.id,\n        t.workingDays,\n        t.startTime,\n        t.endTime,\n        ..., params: [\"4239d516-2c29-423c-b01f-93e1cf83e3e7\"], duration: 200ms, rows: 1}","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"Retrieved 1 available timeslots for provider 4239d516-2c29-423c-b01f-93e1cf83e3e7","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"\u001b[0mGET /users/providers/4239d516-2c29-423c-b01f-93e1cf83e3e7/timeslots \u001b[32m200 \u001b[0m401.973 ms - 292\u001b[0m","timestamp":"2026-02-20 16:21:06"}
+{"level":"info","message":"Executed query: { text: \n      SELECT id, owner_id, booked\n      FROM timeslot\n      WHERE id = $1\n    ..., params: [\"c54e826c-a63d-4950-99aa-39459babdd34\"], duration: 203ms, rows: 1}","timestamp":"2026-02-20 16:21:07"}
+{"level":"info","message":"Executed query: { text: \n      INSERT INTO appointment (clientid, timeslot_id, status, appointment_date, owner_id)\n      VAL..., params: [\"251e3d60-f25d-4e1c-83e8-3d55890a7b93\",\"c54e826c-a63d-4950-99aa-39459babdd34\",\"booked\",\"2026-02-27\",\"4239d516-2c29-423c-b01f-93e1cf83e3e7\"], duration: 232ms, rows: 1}","timestamp":"2026-02-20 16:21:07"}
+{"level":"info","message":"Executed query: { text: \n      UPDATE timeslot\n      SET booked = TRUE\n      WHERE id = $1\n    ..., params: [\"c54e826c-a63d-4950-99aa-39459babdd34\"], duration: 202ms, rows: 1}","timestamp":"2026-02-20 16:21:07"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.appointment_date,\n        t.workingDays,\n        t.startTime,..., params: [\"140275c7-9643-4461-a67b-d24ea3b0abe0\"], duration: 203ms, rows: 1}","timestamp":"2026-02-20 16:21:07"}
+{"level":"warn","message":"Missing startTime or endTime for calendar event","timestamp":"2026-02-20 16:21:07"}
+{"level":"info","message":"Appointment created successfully for client 251e3d60-f25d-4e1c-83e8-3d55890a7b93","timestamp":"2026-02-20 16:21:07"}
+{"level":"info","message":"\u001b[0mPOST /appointment/createAppointment \u001b[32m201 \u001b[0m1062.737 ms - 373\u001b[0m","timestamp":"2026-02-20 16:21:07"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.clientid,\n        a.timeslot_id,\n        a.appointment_date,\n..., params: [\"251e3d60-f25d-4e1c-83e8-3d55890a7b93\"], duration: 204ms, rows: 1}","timestamp":"2026-02-20 16:21:08"}
+{"level":"info","message":"Retrieved 1 appointments for client 251e3d60-f25d-4e1c-83e8-3d55890a7b93","timestamp":"2026-02-20 16:21:08"}
+{"level":"info","message":"\u001b[0mGET /appointment/getAppointments \u001b[32m200 \u001b[0m205.658 ms - 405\u001b[0m","timestamp":"2026-02-20 16:21:08"}
+{"level":"info","message":"Provider notification email sent to provider+1771600865360@example.com:","timestamp":"2026-02-20 16:21:09"}
+{"level":"info","message":"Client confirmation email sent to client+1771600863518@example.com:","timestamp":"2026-02-20 16:21:09"}
+{"level":"info","message":"Client connected from Pool (Total count: 2)","timestamp":"2026-02-20 16:21:09"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.appointment_date,\n        a.reschedule_reason,\n        t.work..., params: [\"140275c7-9643-4461-a67b-d24ea3b0abe0\"], duration: 985ms, rows: 1}","timestamp":"2026-02-20 16:21:10"}
+{"level":"warn","message":"Missing startTime or endTime for calendar event","timestamp":"2026-02-20 16:21:10"}
+{"level":"info","message":"Appointment 140275c7-9643-4461-a67b-d24ea3b0abe0 updated by client 251e3d60-f25d-4e1c-83e8-3d55890a7b93","timestamp":"2026-02-20 16:21:10"}
+{"level":"info","message":"\u001b[0mPUT /appointment/140275c7-9643-4461-a67b-d24ea3b0abe0/client-update \u001b[32m200 \u001b[0m1990.969 ms - 60\u001b[0m","timestamp":"2026-02-20 16:21:10"}
+{"level":"info","message":"Client confirmation email sent to client+1771600863518@example.com:","timestamp":"2026-02-20 16:21:10"}
+{"level":"info","message":"Provider notification email sent to provider+1771600865360@example.com:","timestamp":"2026-02-20 16:21:10"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.appointment_date,\n        t.workingDays,\n        t.startTime,..., params: [\"140275c7-9643-4461-a67b-d24ea3b0abe0\"], duration: 197ms, rows: 1}","timestamp":"2026-02-20 16:21:11"}
+{"level":"warn","message":"Missing startTime or endTime for calendar event","timestamp":"2026-02-20 16:21:11"}
+{"level":"info","message":"Appointment 140275c7-9643-4461-a67b-d24ea3b0abe0 updated by provider 4239d516-2c29-423c-b01f-93e1cf83e3e7","timestamp":"2026-02-20 16:21:11"}
+{"level":"info","message":"\u001b[0mPUT /appointment/140275c7-9643-4461-a67b-d24ea3b0abe0/update \u001b[32m200 \u001b[0m1153.967 ms - 56\u001b[0m","timestamp":"2026-02-20 16:21:11"}
+{"level":"info","message":"Provider notification email sent to provider+1771600865360@example.com:","timestamp":"2026-02-20 16:21:11"}
+{"level":"info","message":"Client confirmation email sent to client+1771600863518@example.com:","timestamp":"2026-02-20 16:21:11"}
+{"level":"info","message":"Executed query: { text: \n        SELECT \n          a.id,\n          a.appointment_date,\n          t.workingDays,\n          t...., params: [\"140275c7-9643-4461-a67b-d24ea3b0abe0\"], duration: 198ms, rows: 1}","timestamp":"2026-02-20 16:21:12"}
+{"level":"info","message":"Appointment 140275c7-9643-4461-a67b-d24ea3b0abe0 cancelled by client 251e3d60-f25d-4e1c-83e8-3d55890a7b93","timestamp":"2026-02-20 16:21:12"}
+{"level":"info","message":"\u001b[0mPATCH /appointment/cancelAppointment \u001b[32m200 \u001b[0m1358.909 ms - 75\u001b[0m","timestamp":"2026-02-20 16:21:12"}
+{"level":"info","message":"Executed query: { text: \n      SELECT id, owner_id, booked\n      FROM timeslot\n      WHERE id = $1\n    ..., params: [\"c54e826c-a63d-4950-99aa-39459babdd34\"], duration: 192ms, rows: 1}","timestamp":"2026-02-20 16:21:12"}
+{"level":"info","message":"Provider cancellation email sent to provider+1771600865360@example.com:","timestamp":"2026-02-20 16:21:12"}
+{"level":"info","message":"Client cancellation email sent to client+1771600863518@example.com:","timestamp":"2026-02-20 16:21:12"}
+{"level":"info","message":"Executed query: { text: \n      INSERT INTO appointment (clientid, timeslot_id, status, appointment_date, owner_id)\n      VAL..., params: [\"251e3d60-f25d-4e1c-83e8-3d55890a7b93\",\"c54e826c-a63d-4950-99aa-39459babdd34\",\"booked\",\"2026-02-27\",\"4239d516-2c29-423c-b01f-93e1cf83e3e7\"], duration: 195ms, rows: 1}","timestamp":"2026-02-20 16:21:13"}
+{"level":"info","message":"Executed query: { text: \n      UPDATE timeslot\n      SET booked = TRUE\n      WHERE id = $1\n    ..., params: [\"c54e826c-a63d-4950-99aa-39459babdd34\"], duration: 200ms, rows: 1}","timestamp":"2026-02-20 16:21:13"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.appointment_date,\n        t.workingDays,\n        t.startTime,..., params: [\"8eaca052-4519-4210-bbd8-f89e42930ec4\"], duration: 192ms, rows: 1}","timestamp":"2026-02-20 16:21:13"}
+{"level":"warn","message":"Missing startTime or endTime for calendar event","timestamp":"2026-02-20 16:21:13"}
+{"level":"info","message":"Appointment created successfully for client 251e3d60-f25d-4e1c-83e8-3d55890a7b93","timestamp":"2026-02-20 16:21:13"}
+{"level":"info","message":"\u001b[0mPOST /appointment/createAppointment \u001b[32m201 \u001b[0m976.520 ms - 373\u001b[0m","timestamp":"2026-02-20 16:21:13"}
+{"level":"info","message":"Provider notification email sent to provider+1771600865360@example.com:","timestamp":"2026-02-20 16:21:13"}
+{"level":"info","message":"Client confirmation email sent to client+1771600863518@example.com:","timestamp":"2026-02-20 16:21:13"}
+{"level":"info","message":"Executed query: { text: \n      SELECT \n        a.id,\n        a.appointment_date,\n        t.workingDays,\n        t.startTime,..., params: [\"8eaca052-4519-4210-bbd8-f89e42930ec4\"], duration: 209ms, rows: 1}","timestamp":"2026-02-20 16:21:14"}
+{"level":"info","message":"Appointment 8eaca052-4519-4210-bbd8-f89e42930ec4 cancelled by provider 4239d516-2c29-423c-b01f-93e1cf83e3e7","timestamp":"2026-02-20 16:21:14"}
+{"level":"info","message":"\u001b[0mPATCH /appointment/providerCancel \u001b[32m200 \u001b[0m1255.428 ms - 58\u001b[0m","timestamp":"2026-02-20 16:21:14"}
+{"level":"info","message":"Provider cancellation email sent to provider+1771600865360@example.com:","timestamp":"2026-02-20 16:21:15"}
+{"level":"info","message":"Client cancellation email sent to client+1771600863518@example.com:","timestamp":"2026-02-20 16:21:15"}
