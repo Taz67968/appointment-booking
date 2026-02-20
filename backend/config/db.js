@@ -12,29 +12,41 @@ const { PGUSER, PGPASSWORD, PGHOST, PGNAME, PGPORT, NODE_ENV } = process.env;
 
 let pool;
 
-if (DATABASE_URL) {
-  // Use Supabase cloud database
-  pool = new Pool({
-    connectionString: DATABASE_URL,
-    connectionTimeoutMillis: 5000,
-  });
-  logger.info("Using Supabase cloud database");
-} else if (PGHOST && PGPASSWORD && PGNAME && PGUSER && PGPORT) {
-  // Use local PostgreSQL database
-  pool = new Pool({
-    user: PGUSER,
-    host: PGHOST,
-    database: PGNAME,
-    password: PGPASSWORD,
-    port: parseInt(PGPORT, 10),
-    connectionTimeoutMillis: 2000,
-  });
-  logger.info(`Using local database: ${PGNAME}`);
-} else {
-  logger.error(
-    "Database configuration is missing! Set DATABASE_URL (Supabase) or PG* variables (local)."
-  );
-  throw new Error("Database configuration is missing");
+console.log('=== DB Config Debug ===');
+console.log('DATABASE_URL exists:', !!DATABASE_URL);
+console.log('PGHOST exists:', !!PGHOST);
+console.log('=========================');
+
+try {
+  if (DATABASE_URL) {
+    // Use Supabase cloud database
+    pool = new Pool({
+      connectionString: DATABASE_URL,
+      connectionTimeoutMillis: 5000,
+    });
+    logger.info("Using Supabase cloud database");
+  } else if (PGHOST && PGPASSWORD && PGNAME && PGUSER && PGPORT) {
+    // Use local PostgreSQL database
+    pool = new Pool({
+      user: PGUSER,
+      host: PGHOST,
+      database: PGNAME,
+      password: PGPASSWORD,
+      port: parseInt(PGPORT, 10),
+      connectionTimeoutMillis: 2000,
+    });
+    logger.info(`Using local database: ${PGNAME}`);
+  } else {
+    logger.error(
+      "Database configuration is missing! Set DATABASE_URL (Supabase) or PG* variables (local)."
+    );
+    // Don't throw here - let the app try to start anyway
+    console.error("WARNING: No database configuration found. App will start but database operations will fail.");
+  }
+} catch (poolError) {
+  console.error('Error creating database pool:', poolError.message);
+  logger.error('Error creating database pool:', poolError);
+  // Don't throw - let app try to start
 }
 
 pool.on("connect", (client) => {
@@ -47,6 +59,10 @@ pool.on("error", (err, client) => {
 });
 
 const initialzeDbSchema = async () => {
+  if (!pool) {
+    console.log('No pool configured, skipping schema initialization');
+    return;
+  }
   const client = await pool.connect();
   try {
     logger.info("Initializing database schema...");
@@ -112,6 +128,13 @@ const initialzeDbSchema = async () => {
       ADD COLUMN IF NOT EXISTS profile_image VARCHAR(255);
     `);
 
+    // Make description column nullable if it exists (was incorrectly added as NOT NULL)
+    await client.query(`
+      ALTER TABLE client ALTER COLUMN description DROP NOT NULL;
+    `).catch(() => {
+      // Ignore if column doesn't exist
+    });
+
     await client.query(`
       ALTER TABLE serviceProvider
       ADD COLUMN IF NOT EXISTS profile_image VARCHAR(255);
@@ -158,17 +181,25 @@ const initialzeDbSchema = async () => {
 };
 
 const connectToDb = async () => {
+  if (!pool) {
+    console.log('No pool configured, skipping DB connection');
+    return;
+  }
   try {
     const client = await pool.connect();
     logger.info(`Database connection pool established successfully`);
     client.release();
   } catch (error) {
     logger.error("Unable to establish database connection pool", error);
-    process.exit(1);
+    // Don't exit - let the app try to start anyway
+    console.error('Database connection error:', error.message);
   }
 };
 
 const query = async (text, params) => {
+  if (!pool) {
+    throw new Error('Database pool not initialized - no database configuration');
+  }
   const start = Date.now();
   try {
     const response = await pool.query(text, params);

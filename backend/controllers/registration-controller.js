@@ -19,8 +19,8 @@ export default async function registrationHandler(req, res, next) {
     logger.debug(`Password hashed for email: ${email}`);
 
     const insertTable = `INSERT INTO client (first_name, last_name, email, password, role)
-                             VALUES($1,$2,$3,$4,$5)
-                               RETURNING id`;
+                         VALUES($1,$2,$3,$4,$5)
+                           RETURNING id`;
     const newResult = await query(insertTable, [
       first_name,
       last_name,
