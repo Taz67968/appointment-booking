@@ -2,6 +2,10 @@ import pg from "pg";
 import logger from "../utils/logger.js";
 import dotenv from 'dotenv'
 
+// Force Node.js to prefer IPv4 addresses for DNS resolution
+process.env.NODE_OPTIONS = (process.env.NODE_OPTIONS || '') + ' --dns-result-order=ipv4first';
+console.log('Node options:', process.env.NODE_OPTIONS);
+
 const { Pool } = pg;
 
 dotenv.config()
