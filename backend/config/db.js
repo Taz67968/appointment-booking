@@ -25,8 +25,10 @@ try {
     if (!connectionString.includes('sslmode')) {
       connectionString += connectionString.includes('?') ? '&sslmode=no-verify' : '?sslmode=no-verify';
     }
-    console.log('Creating pool with Supabase DATABASE_URL (SSL no-verify)...');
+    
+    console.log('Creating pool with Supabase DATABASE_URL...');
     console.log('Connection string:', connectionString.replace(/:[^:@]+@/, ':****@'));
+    
     pool = new Pool({
       connectionString: connectionString,
       connectionTimeoutMillis: 20000,

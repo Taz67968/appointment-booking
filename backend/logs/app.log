@@ -244,3 +244,15 @@
 {"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-23 13:33:59"}
 {"level":"info","message":"Initializing database schema...","timestamp":"2026-02-23 13:33:59"}
 {"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-23 13:34:02"}
+{"level":"info","message":"Recieved SIGTERM","timestamp":"2026-02-23 14:56:08"}
+{"level":"info","message":"Using Supabase cloud database with SSL","timestamp":"2026-02-23 14:56:10"}
+{"level":"info","message":"SendGrid email service configured with API key","timestamp":"2026-02-23 14:56:11"}
+{"code":"SELF_SIGNED_CERT_IN_CHAIN","level":"error","message":"Unable to establish database connection pool self-signed certificate in certificate chain","stack":"Error: self-signed certificate in certificate chain\n    at /Users/5rebaseacademy/Desktop/appointment-booking/backend/node_modules/pg-pool/index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async connectToDb (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/config/db.js:209:20)\n    at async startServer (file:///Users/5rebaseacademy/Desktop/appointment-booking/backend/bin/www:156:7)","timestamp":"2026-02-23 14:56:12"}
+{"level":"info","message":"\u001b[0mGET / \u001b[32m200 \u001b[0m3.790 ms - 53\u001b[0m","timestamp":"2026-02-23 14:56:14"}
+{"level":"info","message":"Recieved SIGTERM","timestamp":"2026-02-23 14:57:39"}
+{"level":"info","message":"Using Supabase cloud database with SSL no-verify","timestamp":"2026-02-23 14:57:40"}
+{"level":"info","message":"SendGrid email service configured with API key","timestamp":"2026-02-23 14:57:41"}
+{"level":"info","message":"Client connected from Pool (Total count: 1)","timestamp":"2026-02-23 14:57:44"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-23 14:57:44"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-23 14:57:44"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-23 14:57:47"}
