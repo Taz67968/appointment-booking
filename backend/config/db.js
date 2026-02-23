@@ -20,18 +20,19 @@ console.log('=========================');
 try {
   if (DATABASE_URL) {
     // Use Supabase cloud database - add sslmode if not present
-    let connectionString = DATABASE_URL;
-    // Use sslmode=no-verify to allow self-signed certificates from Supabase
+    let connectionString = DATABASE_URL.trim();
+    // Use sslmode=no-verify for Supabase to avoid SSL certificate issues
     if (!connectionString.includes('sslmode')) {
       connectionString += connectionString.includes('?') ? '&sslmode=no-verify' : '?sslmode=no-verify';
     }
-    console.log('Creating pool with Supabase DATABASE_URL (SSL disabled for self-signed)...');
+    console.log('Creating pool with Supabase DATABASE_URL (SSL no-verify)...');
+    console.log('Connection string:', connectionString.replace(/:[^:@]+@/, ':****@'));
     pool = new Pool({
       connectionString: connectionString,
-      connectionTimeoutMillis: 15000,
+      connectionTimeoutMillis: 20000,
       idleTimeoutMillis: 10000
     });
-    logger.info("Using Supabase cloud database with SSL verification disabled");
+    logger.info("Using Supabase cloud database with SSL no-verify");
   } else if (PGHOST && PGPASSWORD && PGNAME && PGUSER && PGPORT) {
     // Use local PostgreSQL database
     pool = new Pool({
@@ -194,16 +195,21 @@ const connectToDb = async () => {
   }
   try {
     console.log('Attempting to connect to database...');
+    console.log('Pool config:', {
+      host: pool.options.host,
+      port: pool.options.port,
+      database: pool.options.database
+    });
     const client = await pool.connect();
     console.log('Database client connected successfully');
     logger.info(`Database connection pool established successfully`);
     client.release();
   } catch (error) {
     logger.error("Unable to establish database connection pool", error);
-    // Don't exit - let the app try to start anyway
     console.error('Database connection error:', error.message);
     console.error('Error code:', error.code);
     console.error('Error address:', error.address);
+    console.error('Error errno:', error.errno);
   }
 };
 
