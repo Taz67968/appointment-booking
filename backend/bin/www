@@ -18,8 +18,9 @@ dotenv.config();
 console.log('=== Environment Debug ===');
 console.log('DATABASE_URL set:', !!process.env.DATABASE_URL);
 if (process.env.DATABASE_URL) {
-  console.log('DATABASE_URL value:', process.env.DATABASE_URL.substring(0, 30) + '...');
+  console.log('DATABASE_URL value:', process.env.DATABASE_URL.replace(/:[^:@]+@/, ':****@'));
 }
+console.log('PGHOST exists:', !!process.env.PGHOST);
 console.log('NODE_ENV:', process.env.NODE_ENV);
 console.log('=========================');
 

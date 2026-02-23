@@ -19,12 +19,19 @@ console.log('=========================');
 
 try {
   if (DATABASE_URL) {
-    // Use Supabase cloud database
+    // Use Supabase cloud database - add sslmode if not present
+    let connectionString = DATABASE_URL;
+    // Use sslmode=no-verify to allow self-signed certificates from Supabase
+    if (!connectionString.includes('sslmode')) {
+      connectionString += connectionString.includes('?') ? '&sslmode=no-verify' : '?sslmode=no-verify';
+    }
+    console.log('Creating pool with Supabase DATABASE_URL (SSL disabled for self-signed)...');
     pool = new Pool({
-      connectionString: DATABASE_URL,
-      connectionTimeoutMillis: 5000,
+      connectionString: connectionString,
+      connectionTimeoutMillis: 15000,
+      idleTimeoutMillis: 10000
     });
-    logger.info("Using Supabase cloud database");
+    logger.info("Using Supabase cloud database with SSL verification disabled");
   } else if (PGHOST && PGPASSWORD && PGNAME && PGUSER && PGPORT) {
     // Use local PostgreSQL database
     pool = new Pool({
@@ -186,13 +193,17 @@ const connectToDb = async () => {
     return;
   }
   try {
+    console.log('Attempting to connect to database...');
     const client = await pool.connect();
+    console.log('Database client connected successfully');
     logger.info(`Database connection pool established successfully`);
     client.release();
   } catch (error) {
     logger.error("Unable to establish database connection pool", error);
     // Don't exit - let the app try to start anyway
     console.error('Database connection error:', error.message);
+    console.error('Error code:', error.code);
+    console.error('Error address:', error.address);
   }
 };
 

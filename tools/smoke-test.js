@@ -16,7 +16,7 @@
  * 11. Provider cancels appointment
  */
 
-const BASE = process.env.API_BASE || 'http://localhost:3005';
+const BASE = process.env.API_BASE || 'https://appointment-booking-utc8.onrender.com';
 
 const log = (test, ...a) => console.log(`[SMOKE ${test}]`, ...a);
 const pass = (test) => console.log(`[PASS] ${test}`);
