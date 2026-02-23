@@ -264,3 +264,10 @@
 {"level":"info","message":"Initializing database schema...","timestamp":"2026-02-23 15:35:24"}
 {"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-23 15:35:27"}
 {"level":"info","message":"\u001b[0mGET /api/users \u001b[33m404 \u001b[0m6.608 ms - 148\u001b[0m","timestamp":"2026-02-23 15:36:51"}
+{"level":"info","message":"Recieved SIGTERM","timestamp":"2026-02-23 15:47:32"}
+{"level":"info","message":"Using Supabase cloud database with SSL no-verify (IPv4)","timestamp":"2026-02-23 15:47:34"}
+{"level":"info","message":"SendGrid email service configured with API key","timestamp":"2026-02-23 15:47:34"}
+{"level":"info","message":"Client connected from Pool (Total count: 1)","timestamp":"2026-02-23 15:47:36"}
+{"level":"info","message":"Database connection pool established successfully","timestamp":"2026-02-23 15:47:36"}
+{"level":"info","message":"Initializing database schema...","timestamp":"2026-02-23 15:47:36"}
+{"level":"info","message":"Database schema initialized successfully","timestamp":"2026-02-23 15:47:40"}

@@ -29,8 +29,20 @@ try {
     console.log('Creating pool with Supabase DATABASE_URL...');
     console.log('Connection string:', connectionString.replace(/:[^:@]+@/, ':****@'));
     
+    // Parse connection string to get individual parameters for family: 4 to work
+    const url = new URL(connectionString);
+    const host = url.hostname;
+    const port = parseInt(url.port || '5432', 10);
+    const database = url.pathname.replace('/', '');
+    const user = url.username;
+    const password = url.password;
+    
     pool = new Pool({
-      connectionString: connectionString,
+      host,
+      port,
+      database,
+      user,
+      password,
       connectionTimeoutMillis: 20000,
       idleTimeoutMillis: 10000,
       ssl: {
