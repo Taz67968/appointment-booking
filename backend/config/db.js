@@ -32,9 +32,13 @@ try {
     pool = new Pool({
       connectionString: connectionString,
       connectionTimeoutMillis: 20000,
-      idleTimeoutMillis: 10000
+      idleTimeoutMillis: 10000,
+      ssl: {
+        rejectUnauthorized: false
+      },
+      family: 4  // Force IPv4 only to avoid IPv6 connection issues
     });
-    logger.info("Using Supabase cloud database with SSL no-verify");
+    logger.info("Using Supabase cloud database with SSL no-verify (IPv4)");
   } else if (PGHOST && PGPASSWORD && PGNAME && PGUSER && PGPORT) {
     // Use local PostgreSQL database
     pool = new Pool({
