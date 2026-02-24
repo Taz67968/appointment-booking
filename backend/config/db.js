@@ -23,17 +23,29 @@ console.log('=========================');
 
 try {
   if (DATABASE_URL) {
-    // Use Supabase cloud database - add sslmode if not present
+    // Use cloud database (Supabase or Neon)
     let connectionString = DATABASE_URL.trim();
-    // Use sslmode=no-verify for Supabase to avoid SSL certificate issues
-    if (!connectionString.includes('sslmode')) {
-      connectionString += connectionString.includes('?') ? '&sslmode=no-verify' : '?sslmode=no-verify';
+    
+    // Handle different SSL requirements
+    const isNeon = connectionString.includes('neon.tech');
+    const isSupabase = connectionString.includes('supabase.co');
+    
+    if (isNeon) {
+      // Neon requires sslmode=require
+      if (!connectionString.includes('sslmode')) {
+        connectionString += connectionString.includes('?') ? '&sslmode=require' : '?sslmode=require';
+      }
+    } else if (isSupabase) {
+      // Supabase - add sslmode=no-verify for compatibility
+      if (!connectionString.includes('sslmode')) {
+        connectionString += connectionString.includes('?') ? '&sslmode=no-verify' : '?sslmode=no-verify';
+      }
     }
     
-    console.log('Creating pool with Supabase DATABASE_URL...');
+    console.log('Creating pool with cloud DATABASE_URL...');
     console.log('Connection string:', connectionString.replace(/:[^:@]+@/, ':****@'));
     
-    // Parse connection string to get individual parameters for family: 4 to work
+    // Parse connection string to get individual parameters
     const url = new URL(connectionString);
     const host = url.hostname;
     const port = parseInt(url.port || '5432', 10);
@@ -49,12 +61,10 @@ try {
       password,
       connectionTimeoutMillis: 20000,
       idleTimeoutMillis: 10000,
-      ssl: {
-        rejectUnauthorized: false
-      },
-      family: 4  // Force IPv4 only to avoid IPv6 connection issues
+      ssl: isNeon ? { rejectUnauthorized: false } : { rejectUnauthorized: false },
+      family: 4  // Force IPv4
     });
-    logger.info("Using Supabase cloud database with SSL no-verify (IPv4)");
+    logger.info(`Using cloud database: ${isNeon ? 'Neon' : 'Supabase'}`);
   } else if (PGHOST && PGPASSWORD && PGNAME && PGUSER && PGPORT) {
     // Use local PostgreSQL database
     pool = new Pool({
@@ -223,7 +233,11 @@ const connectToDb = async () => {
       database: pool.options.database
     });
     const client = await pool.connect();
-    console.log('Database client connected successfully');
+    
+    // Test the connection with a simple query
+    await client.query('SELECT 1');
+    
+    console.log('Database client connected and query successful');
     logger.info(`Database connection pool established successfully`);
     client.release();
   } catch (error) {
@@ -232,6 +246,7 @@ const connectToDb = async () => {
     console.error('Error code:', error.code);
     console.error('Error address:', error.address);
     console.error('Error errno:', error.errno);
+    console.error('Database FAILED to connect - queries will fail');
   }
 };
 
