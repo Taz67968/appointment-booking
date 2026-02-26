@@ -4,7 +4,6 @@ import dotenv from 'dotenv'
 
 // Force Node.js to prefer IPv4 addresses for DNS resolution
 process.env.NODE_OPTIONS = (process.env.NODE_OPTIONS || '') + ' --dns-result-order=ipv4first';
-console.log('Node options:', process.env.NODE_OPTIONS);
 
 const { Pool } = pg;
 
@@ -15,11 +14,6 @@ const DATABASE_URL = process.env.DATABASE_URL;
 const { PGUSER, PGPASSWORD, PGHOST, PGNAME, PGPORT, NODE_ENV } = process.env;
 
 let pool;
-
-console.log('=== DB Config Debug ===');
-console.log('DATABASE_URL exists:', !!DATABASE_URL);
-console.log('PGHOST exists:', !!PGHOST);
-console.log('=========================');
 
 try {
   if (DATABASE_URL) {
@@ -41,9 +35,6 @@ try {
         connectionString += connectionString.includes('?') ? '&sslmode=no-verify' : '?sslmode=no-verify';
       }
     }
-    
-    console.log('Creating pool with cloud DATABASE_URL...');
-    console.log('Connection string:', connectionString.replace(/:[^:@]+@/, ':****@'));
     
     // Parse connection string to get individual parameters
     const url = new URL(connectionString);
@@ -81,10 +72,8 @@ try {
       "Database configuration is missing! Set DATABASE_URL (Supabase) or PG* variables (local)."
     );
     // Don't throw here - let the app try to start anyway
-    console.error("WARNING: No database configuration found. App will start but database operations will fail.");
   }
 } catch (poolError) {
-  console.error('Error creating database pool:', poolError.message);
   logger.error('Error creating database pool:', poolError);
   // Don't throw - let app try to start
 }
@@ -100,7 +89,6 @@ pool.on("error", (err, client) => {
 
 const initialzeDbSchema = async () => {
   if (!pool) {
-    console.log('No pool configured, skipping schema initialization');
     return;
   }
   const client = await pool.connect();
@@ -222,31 +210,19 @@ const initialzeDbSchema = async () => {
 
 const connectToDb = async () => {
   if (!pool) {
-    console.log('No pool configured, skipping DB connection');
     return;
   }
   try {
-    console.log('Attempting to connect to database...');
-    console.log('Pool config:', {
-      host: pool.options.host,
-      port: pool.options.port,
-      database: pool.options.database
-    });
     const client = await pool.connect();
     
     // Test the connection with a simple query
     await client.query('SELECT 1');
     
-    console.log('Database client connected and query successful');
     logger.info(`Database connection pool established successfully`);
     client.release();
   } catch (error) {
     logger.error("Unable to establish database connection pool", error);
-    console.error('Database connection error:', error.message);
-    console.error('Error code:', error.code);
-    console.error('Error address:', error.address);
-    console.error('Error errno:', error.errno);
-    console.error('Database FAILED to connect - queries will fail');
+    logger.error('Database connection error:', error.message);
   }
 };
 

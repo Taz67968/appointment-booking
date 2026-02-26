@@ -14,16 +14,6 @@ import { connectToDb, initialzeDbSchema } from '../config/db.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
-// Log environment info for debugging
-console.log('=== Environment Debug ===');
-console.log('DATABASE_URL set:', !!process.env.DATABASE_URL);
-if (process.env.DATABASE_URL) {
-  console.log('DATABASE_URL value:', process.env.DATABASE_URL.replace(/:[^:@]+@/, ':****@'));
-}
-console.log('PGHOST exists:', !!process.env.PGHOST);
-console.log('NODE_ENV:', process.env.NODE_ENV);
-console.log('=========================');
-
 // Global handlers for uncaught errors
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
@@ -139,14 +129,9 @@ function onListening() {
 
 
 const startServer = async () => {
-  console.log('startServer function called');
   try {
-    console.log(`Attempting to Start server on port ${port}`)
-    
     // Try to connect to database
     try {
-      console.log('Attempting database connection...')
-      
       // Add timeout for database connection
       const connectionPromise = connectToDb();
       const timeoutPromise = new Promise((_, reject) => 
@@ -154,34 +139,25 @@ const startServer = async () => {
       );
       
       await Promise.race([connectionPromise, timeoutPromise]);
-      console.log('Database connected successfully')
     } catch (dbError) {
-      console.error('Database connection failed:', dbError.message || dbError)
+      logger.error('Database connection failed:', dbError.message || dbError)
       // Continue anyway - app might work without DB for some operations
     }
     
     // Try to initialize schema, but don't fail if it errors
     try {
-      console.log('Attempting schema initialization...')
       await initialzeDbSchema()
-      console.log('Schema initialized')
     } catch (schemaError) {
-      console.error('Schema initialization warning (continuing anyway):', schemaError.message)
+      logger.error('Schema initialization warning (continuing anyway):', schemaError.message)
     }
     
-    console.log(`Starting server on port ${port}`)
-    // server.listen(port);
     server.listen(port, '0.0.0.0');
-    console.log(`Server started successfully on port ${port}`)
     server.on('error', onError);
     server.on('listening', onListening);
   } catch (error) {
-    console.error('Failed during server startup process: ', error)
     logger.error('Failed during server startup process: ', error)
     process.exit(1)
   }
 }
-startServer().catch(err => {
-  console.error('Unhandled error in startServer:', err);
-  process.exit(1);
-});
+
+startServer();
