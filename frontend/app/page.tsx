@@ -269,7 +269,7 @@ export default function Home() {
                 Why teams switch to AppointmentHub
               </p>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                Less admin, more meaningful sessions.
+                Less admin, more meaningful sessions
               </h2>
             </div>
             <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-500">
@@ -292,7 +292,7 @@ export default function Home() {
               </h3>
               <p className="text-sm text-gray-600">
                 Create recurring slots once and reuse them every week. Clients only see what&apos;s
-                truly available, so you never double-book.
+                truly available, so you never double-book
               </p>
             </div>
             <div>
@@ -304,7 +304,7 @@ export default function Home() {
               </h3>
               <p className="text-sm text-gray-600">
                 Clients and providers have dedicated portals. Each sees exactly what they need:
-                bookings, history, and status — nothing more.
+                bookings, history, and status — nothing more
               </p>
             </div>
             <div>
@@ -316,7 +316,7 @@ export default function Home() {
               </h3>
               <p className="text-sm text-gray-600">
                 JWT-based authentication, modern UI, and instant API responses so your scheduling
-                feels as professional as your services.
+                feels as professional as your services
               </p>
             </div>
           </div>
