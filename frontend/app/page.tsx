@@ -367,7 +367,7 @@ export default function Home() {
             </div>
             <p className="text-sm text-gray-700">
               &quot;I can see my whole week at a glance and instantly tell which slots are booked
-              or free. It&apos;s exactly what I needed without being complicated.&quot;
+              or free. It&apos;s exactly what I needed without being complicated&quot;
             </p>
           </div>
 
@@ -383,7 +383,7 @@ export default function Home() {
             </div>
             <p className="text-sm text-gray-700">
               &quot;The client and provider dashboards just make sense. I spend less time managing
-              bookings and more time with clients.&quot;
+              bookings and more time with clients&quot;
             </p>
           </div>
         </div>
