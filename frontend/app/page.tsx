@@ -77,7 +77,7 @@ export default function Home() {
               </div>
               <p>
                 Trusted by clients and providers with real-time availability, secure
-                login, and instant confirmations
+                login, and instant confirmations.
               </p>
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function Home() {
               </div>
               <p className="text-sm text-gray-600">
                 Bookings are confirmed instantly. Both sides can review upcoming sessions and
-                manage cancellations.
+                manage cancellations
               </p>
             </div>
           </div>
