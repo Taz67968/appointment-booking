@@ -211,7 +211,7 @@ export default function Home() {
               </div>
               <p className="text-sm text-gray-600">
                 Bookings are confirmed instantly. Both sides can review upcoming sessions and
-                manage cancellations
+                manage cancellations.
               </p>
             </div>
           </div>
@@ -230,7 +230,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Smart scheduling</h3>
             <p className="text-sm text-gray-600">
               Providers create weekly time slots, clients book in a few clicks, and your
-              calendar updates instantly
+              calendar updates instantly.
             </p>
           </div>
           <div className="bg-white/80 backdrop-blur rounded-2xl border border-slate-100 p-6 shadow-sm">
