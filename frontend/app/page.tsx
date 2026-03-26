@@ -254,7 +254,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Built-in access control</h3>
             <p className="text-sm text-gray-600">
               Separate client and provider portals, JWT-secured APIs, and role-based
-              dashboards out of the box.
+              dashboards out of the box,
             </p>
           </div>
         </div>
