@@ -269,7 +269,7 @@ export default function Home() {
                 Why teams switch to AppointmentHub
               </p>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                Less admin, more meaningful sessions
+                Less admin, more meaningful sessions.
               </h2>
             </div>
             <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-500">
