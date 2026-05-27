@@ -77,7 +77,7 @@ export default function Home() {
               </div>
               <p>
                 Trusted by clients and providers with real-time availability, secure
-                login, and instant confirmations
+                login, and instant confirmations.
               </p>
             </div>
           </div>
