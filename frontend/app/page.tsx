@@ -443,10 +443,10 @@ export default function Home() {
                 For clients
               </h2>
               <p className="text-gray-600 mb-3 text-sm">
-                Search providers, compare availability, and book appointments in seconds.
+                Search providers, compare availability, and book appointments in seconds
               </p>
               <p className="text-xs text-gray-500 mb-4">
-                View your full appointment history and cancel upcoming bookings securely.
+                View your full appointment history and cancel upcoming bookings securely
               </p>
               <div className="inline-flex items-center text-indigo-600 font-medium group-hover:gap-2 gap-1 transition-all text-sm">
                 Open client portal
@@ -472,7 +472,7 @@ export default function Home() {
               </h2>
               <p className="text-gray-600 mb-3 text-sm">
                 Publish your availability once and let clients book into your calendar
-                automatically.
+                automatically
               </p>
               <p className="text-xs text-gray-500 mb-4">
                 See who&apos;s coming in, which slots are booked, and keep your schedule under
