@@ -242,7 +242,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Clear visibility</h3>
             <p className="text-sm text-gray-600">
               Clients see only available slots. Providers see booked, cancelled, and
-              upcoming sessions in one place
+              upcoming sessions in one place,
             </p>
           </div>
           <div className="bg-white/80 backdrop-blur rounded-2xl border border-slate-100 p-6 shadow-sm">
