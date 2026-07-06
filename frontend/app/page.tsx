@@ -334,7 +334,7 @@ export default function Home() {
           </h2>
           <p className="mt-2 text-sm text-gray-600 max-w-2xl mx-auto">
             From solo practitioners to small teams, AppointmentHub removes friction from every
-            booking.
+            booking
           </p>
         </div>
 
