@@ -472,7 +472,7 @@ export default function Home() {
               </h2>
               <p className="text-gray-600 mb-3 text-sm">
                 Publish your availability once and let clients book into your calendar
-                automatically
+                automatically.
               </p>
               <p className="text-xs text-gray-500 mb-4">
                 See who&apos;s coming in, which slots are booked, and keep your schedule under
